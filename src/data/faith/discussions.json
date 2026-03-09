@@ -1,0 +1,83 @@
+[
+  {
+    "id": "disc-purpose-work",
+    "title": "What Is My Work For?",
+    "titleZh": "我的工作是为了什么？",
+    "description": "Explore the deeper meaning behind our daily work — beyond paychecks and promotions.",
+    "descriptionZh": "探索日常工作背后更深层的意义——超越薪水和晋升。",
+    "questions": [
+      "If money weren't an issue, what kind of work would you do? Why?",
+      "What does a 'good day at work' look like for you? What makes it good?",
+      "How do you decide what's worth working hard for?",
+      "Have you ever felt that your work has a purpose beyond your career goals?"
+    ],
+    "questionsZh": [
+      "如果钱不是问题，你会做什么工作？为什么？",
+      "对你来说，「美好的工作日」是什么样的？是什么让它美好？",
+      "你如何决定什么值得为之努力？",
+      "你是否曾经感觉你的工作有超越职业目标的意义？"
+    ],
+    "category": "workplace",
+    "relatedArticleSlug": "faith-in-workplace"
+  },
+  {
+    "id": "disc-identity-beyond-achievement",
+    "title": "Who Am I Beyond My Achievements?",
+    "titleZh": "成就之外，我是谁？",
+    "description": "In a culture that values output, how do we find worth beyond what we produce?",
+    "descriptionZh": "在重视产出的文化中，我们如何在我们创造的东西之外找到价值？",
+    "questions": [
+      "When someone asks 'who are you?', what's the first thing you think of? Job title? School? Hometown?",
+      "Have you ever felt like your value depends on your performance? How did that feel?",
+      "What would it mean if your worth was given, not earned?",
+      "Who in your life values you for who you are, not what you do?"
+    ],
+    "questionsZh": [
+      "当有人问「你是谁？」时，你首先想到什么？职位？学校？家乡？",
+      "你有没有觉得你的价值取决于你的表现？那是什么感觉？",
+      "如果你的价值是被给予的而不是挣来的，这意味着什么？",
+      "你生命中谁是因为你这个人而重视你，而不是因为你做了什么？"
+    ],
+    "category": "identity"
+  },
+  {
+    "id": "disc-cross-cultural-identity",
+    "title": "Living Between Two Worlds",
+    "titleZh": "活在两个世界之间",
+    "description": "You're not fully 'Chinese' anymore and not fully 'American' either. How do we embrace this in-between identity?",
+    "descriptionZh": "你不再完全是「中国人」，也不完全是「美国人」。我们如何拥抱这个中间的身份？",
+    "questions": [
+      "What parts of Chinese culture feel different to you now that you've lived abroad?",
+      "What parts of American culture do you miss? What parts are you glad to leave behind?",
+      "Do you feel like you fully belong in either place? How do you handle that?",
+      "Could being 'in between' actually be a gift rather than a burden?"
+    ],
+    "questionsZh": [
+      "在国外生活后，中国文化的哪些部分现在让你感觉不同了？",
+      "你怀念美国文化的哪些部分？哪些部分你很高兴离开？",
+      "你觉得你完全属于这两个地方中的任何一个吗？你怎么处理这种感觉？",
+      "「在中间」实际上可能是一种礼物而不是负担吗？"
+    ],
+    "category": "culture"
+  },
+  {
+    "id": "disc-finding-purpose",
+    "title": "What Am I Meant to Do?",
+    "titleZh": "我应该做什么？",
+    "description": "Beyond career success, how do we discover what we're truly meant to contribute to the world?",
+    "descriptionZh": "超越职业成功，我们如何发现我们真正应该为这个世界贡献什么？",
+    "questions": [
+      "What breaks your heart about the world around you?",
+      "What unique experiences or skills do you have that could help others?",
+      "If you could change one thing about your community, what would it be?",
+      "What would it look like to live a life of purpose, not just success?"
+    ],
+    "questionsZh": [
+      "这个世界的什么让你心碎？",
+      "你有什么独特的经历或技能可以帮助他人？",
+      "如果你可以改变你社区的一件事，那会是什么？",
+      "过一个有目的而不仅仅是成功的生活会是什么样子？"
+    ],
+    "category": "purpose"
+  }
+]

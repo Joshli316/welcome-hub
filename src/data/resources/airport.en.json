@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "arrival-guide",
+    "categoryId": "airport",
+    "title": "Complete Airport Arrival Guide",
+    "summary": "The full process from landing to clearing customs, including immigration, luggage, and pickup arrangements.",
+    "content": [
+      { "type": "paragraph", "text": "Arriving at a US airport for the first time can feel overwhelming, but the process is straightforward. This guide walks you through every step." },
+      { "type": "heading", "text": "Immigration Process", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "Follow the signs after landing", "description": "Follow 'Arrivals' or 'Immigration' signs to the inspection area." },
+        { "title": "Wait in line for immigration", "description": "Join the 'Non-US Citizens' or 'Visitors' line. Have your passport, I-20, and I-94 (usually electronic) ready." },
+        { "title": "Immigration officer interview", "description": "Answer simple questions: purpose of visit (study), school name, length of stay. Be polite and confident." },
+        { "title": "Collect your luggage", "description": "Find your flight number at the baggage carousel and wait for your bags. If luggage is lost, report to the Baggage Claim counter." },
+        { "title": "Go through customs", "description": "If you have nothing to declare, take the green lane. Cash over $10,000 or food items must be declared." },
+        { "title": "Reach the arrivals area", "description": "After clearing customs, you'll enter the Arrivals hall. Find your ride or transportation." }
+      ]},
+      { "type": "warning", "text": "Do not bring meat, fruit, seeds, or other agricultural products into the US. Getting caught means fines. If unsure, declare it honestly on the customs form." },
+      { "type": "tip", "text": "Screenshot important info on your phone before landing: pickup contact number, housing address, school international office phone. You can view these even without internet." }
+    ],
+    "lastUpdated": "2026-01-08",
+    "relatedSlugs": []
+  }
+]

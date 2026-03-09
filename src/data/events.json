@@ -1,0 +1,54 @@
+[
+  {
+    "id": "welcome-dinner-2026-spring",
+    "title": "Spring Welcome Dinner",
+    "titleZh": "春季欢迎晚宴",
+    "description": "Join us for a warm welcome dinner with home-cooked food and new friends. Meet local families and other international students.",
+    "descriptionZh": "加入我们的欢迎晚宴，品尝家常菜，结识新朋友。认识当地家庭和其他国际学生。",
+    "date": "2026-08-25",
+    "time": "18:00-20:30",
+    "location": "Community Center, 123 Main St",
+    "locationZh": "社区中心，主街123号",
+    "type": "meal",
+    "signupUrl": "https://forms.gle/example1"
+  },
+  {
+    "id": "campus-tour-2026",
+    "title": "Campus Tour & Coffee",
+    "titleZh": "校园导览与咖啡",
+    "description": "Explore campus with a local guide, then grab coffee together. Learn where everything is before classes start!",
+    "descriptionZh": "和当地向导一起探索校园，然后一起喝咖啡。在开学前了解校园的一切！",
+    "date": "2026-08-27",
+    "time": "10:00-12:00",
+    "location": "Student Union Front Steps",
+    "locationZh": "学生会大楼前台阶",
+    "type": "social",
+    "signupUrl": "https://forms.gle/example2"
+  },
+  {
+    "id": "banking-workshop-2026",
+    "title": "Banking & Phone Setup Workshop",
+    "titleZh": "银行开户与手机办理工作坊",
+    "description": "We'll walk you through opening a bank account and getting a phone plan. Volunteers will accompany you to the bank!",
+    "descriptionZh": "我们将带你了解如何开设银行账户和办理手机卡。志愿者会陪你去银行！",
+    "date": "2026-08-28",
+    "time": "14:00-16:00",
+    "location": "International Student Office, Room 201",
+    "locationZh": "国际学生办公室，201室",
+    "type": "workshop",
+    "signupUrl": "https://forms.gle/example3"
+  },
+  {
+    "id": "grocery-trip-2026",
+    "title": "Grocery Store Trip",
+    "titleZh": "超市购物之旅",
+    "description": "Need groceries but not sure where to go? Join us for a group trip to the supermarket and Asian grocery store.",
+    "descriptionZh": "需要买菜但不知道去哪里？加入我们的超市购物团，一起去超市和亚洲超市。",
+    "date": "2026-08-30",
+    "time": "10:00-13:00",
+    "location": "Meet at Student Union Parking Lot",
+    "locationZh": "学生会停车场集合",
+    "type": "trip",
+    "signupUrl": "https://forms.gle/example4"
+  }
+]

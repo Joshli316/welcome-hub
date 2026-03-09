@@ -1,0 +1,18 @@
+[
+  { "id": "re-research-timeline", "titleKey": "research-timeline", "descriptionKey": "research-timeline-desc", "phase": "six-months-before", "sortOrder": 1 },
+  { "id": "re-job-search", "titleKey": "job-search", "descriptionKey": "job-search-desc", "phase": "six-months-before", "sortOrder": 2 },
+  { "id": "re-notify-school", "titleKey": "notify-school", "descriptionKey": "notify-school-desc", "phase": "six-months-before", "sortOrder": 3 },
+  { "id": "re-connect-returnees", "titleKey": "connect-returnees", "descriptionKey": "connect-returnees-desc", "phase": "six-months-before", "resourceLink": "/reentry/returnees", "sortOrder": 4 },
+  { "id": "re-tax-filing", "titleKey": "tax-filing", "descriptionKey": "tax-filing-desc", "phase": "three-months-before", "sortOrder": 5 },
+  { "id": "re-shipping-plan", "titleKey": "shipping-plan", "descriptionKey": "shipping-plan-desc", "phase": "three-months-before", "sortOrder": 6 },
+  { "id": "re-lease-notice", "titleKey": "lease-notice", "descriptionKey": "lease-notice-desc", "phase": "three-months-before", "sortOrder": 7 },
+  { "id": "re-sell-belongings", "titleKey": "sell-belongings", "descriptionKey": "sell-belongings-desc", "phase": "three-months-before", "sortOrder": 8 },
+  { "id": "re-close-accounts", "titleKey": "close-accounts", "descriptionKey": "close-accounts-desc", "phase": "one-month-before", "sortOrder": 9 },
+  { "id": "re-cancel-services", "titleKey": "cancel-services", "descriptionKey": "cancel-services-desc", "phase": "one-month-before", "sortOrder": 10 },
+  { "id": "re-medical-records", "titleKey": "medical-records", "descriptionKey": "medical-records-desc", "phase": "one-month-before", "sortOrder": 11 },
+  { "id": "re-goodbye-events", "titleKey": "goodbye-events", "descriptionKey": "goodbye-events-desc", "phase": "one-month-before", "sortOrder": 12 },
+  { "id": "re-mail-forwarding", "titleKey": "mail-forwarding", "descriptionKey": "mail-forwarding-desc", "phase": "final-week", "sortOrder": 13 },
+  { "id": "re-final-packing", "titleKey": "final-packing", "descriptionKey": "final-packing-desc", "phase": "final-week", "sortOrder": 14 },
+  { "id": "re-flight-confirm", "titleKey": "flight-confirm", "descriptionKey": "flight-confirm-desc", "phase": "final-week", "sortOrder": 15 },
+  { "id": "re-keep-connections", "titleKey": "keep-connections", "descriptionKey": "keep-connections-desc", "phase": "final-week", "sortOrder": 16 }
+]

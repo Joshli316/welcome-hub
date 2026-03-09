@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "housing-basics",
+    "categoryId": "housing",
+    "title": "US Housing Basics Guide",
+    "summary": "Learn about the rental process, key terms, and tips to avoid common pitfalls.",
+    "content": [
+      { "type": "paragraph", "text": "Renting in the US is quite different from China. Understanding the basics can help you avoid many common issues." },
+      { "type": "heading", "text": "Housing Options", "level": 2 },
+      { "type": "comparison", "title": "Housing Type Comparison", "items": [
+        { "label": "Campus Dorms", "description": "Most convenient, includes furniture and internet. But pricier and smaller space. Good for first year." },
+        { "label": "Off-campus Apartment", "description": "Flexible pricing, more space. You'll need to find roommates, sign a lease, and set up utilities." },
+        { "label": "Shared House", "description": "Best value, but requires more coordination. Find roommates through school forums or WeChat groups." }
+      ]},
+      { "type": "heading", "text": "Rental Process", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "Set your budget and area", "description": "Consider distance to campus, bus routes, safety, and price." },
+        { "title": "Search online", "description": "Use Zillow, Apartments.com, school housing websites, or WeChat groups." },
+        { "title": "Visit in person", "description": "If you're already in the US, always visit before signing. Check facilities, neighborhood, and transportation." },
+        { "title": "Submit an application", "description": "Fill out the application form, provide ID and financial proof. International students may need a co-signer." },
+        { "title": "Sign the lease", "description": "Read the lease carefully. Pay attention to lease term, early termination fees, and deposit policies." },
+        { "title": "Move-in inspection", "description": "Document any existing damage when you move in. Take photos as evidence to avoid deposit disputes later." }
+      ]},
+      { "type": "warning", "text": "Always read the lease carefully before signing! Pay special attention to: early termination penalties, deposit refund conditions, and maintenance responsibilities. If you need help with the English contract, ask friends or your school's international student office." },
+      { "type": "tip", "text": "Many schools have dedicated off-campus housing websites and international student housing assistance programs. Start with school resources." }
+    ],
+    "lastUpdated": "2026-01-12",
+    "relatedSlugs": []
+  }
+]

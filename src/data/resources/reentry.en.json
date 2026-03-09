@@ -1,0 +1,61 @@
+[
+  {
+    "slug": "reverse-culture-shock",
+    "categoryId": "reentry",
+    "title": "What Is Reverse Culture Shock? How to Cope",
+    "summary": "Feeling out of place after returning home? That's normal. Learn about reverse culture shock and how to handle it.",
+    "content": [
+      { "type": "paragraph", "text": "Reverse culture shock is the feeling of disorientation when returning to your home country after living abroad. Many students are completely unprepared for it, because everyone assumes going home should be easy." },
+      { "type": "heading", "text": "Common Signs", "level": 2 },
+      { "type": "list", "items": [
+        "Feeling like a stranger in familiar places",
+        "Getting frustrated with habits you used to find normal",
+        "Feeling like friends and family don't understand your experience",
+        "Missing your life and friends in the US",
+        "Feeling lonely even when surrounded by people",
+        "Uncertainty about your future direction"
+      ] },
+      { "type": "tip", "text": "Reverse culture shock is usually strongest 1-3 months after returning, and gradually improves after 6 months. Just knowing this is a normal process is already the first step." },
+      { "type": "heading", "text": "Coping Strategies", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "Acknowledge your feelings", "description": "Don't deny the discomfort. Tell yourself 'this is normal' and give yourself time and space to adjust." },
+        { "title": "Find your people", "description": "Join a returnee community or group. Connecting with others who've had the same experience makes a huge difference." },
+        { "title": "Keep some habits from abroad", "description": "Maintain good habits from the US — exercise, reading, coffee time — as anchors during the transition." },
+        { "title": "Stay connected with US friends", "description": "Regular video calls and WeChat chats. These relationships don't have to end because of distance." },
+        { "title": "Be patient with family", "description": "Your family may not understand how you've changed. This takes time. Share your experiences and feelings proactively." },
+        { "title": "Seek professional help if needed", "description": "If adjustment difficulties last more than 6 months and affect daily life, consider talking to a counselor." }
+      ] },
+      { "type": "warning", "text": "Don't bottle up all the negative feelings. Finding someone you trust and talking it out is the single most important step in coping with reverse culture shock." }
+    ],
+    "lastUpdated": "2026-02-01",
+    "relatedSlugs": ["staying-connected"]
+  },
+  {
+    "slug": "staying-connected",
+    "categoryId": "reentry",
+    "title": "How to Stay Connected with Your US Community After Returning",
+    "summary": "Distance doesn't have to end friendships. Practical ways to maintain connections with friends, mentors, and faith communities in the US.",
+    "content": [
+      { "type": "paragraph", "text": "The relationships you built in the US are precious. The good news is that distance doesn't have to mean losing them. Here are practical ways to stay connected." },
+      { "type": "heading", "text": "Ways to Stay Connected", "level": 2 },
+      { "type": "list", "items": [
+        "Set up regular video call times (mind the time zones!)",
+        "Create a small WeChat group for daily sharing",
+        "Exchange greetings on important holidays — Thanksgiving, Chinese New Year, birthdays",
+        "Share life photos and status updates",
+        "If you have a faith community, maintain online prayer and sharing"
+      ] },
+      { "type": "tip", "text": "A monthly video call with your 2-3 closest US friends is more meaningful than shallow contact with everyone." },
+      { "type": "heading", "text": "Finding Community in China", "level": 2 },
+      { "type": "paragraph", "text": "While maintaining old connections, also actively build new community in China. Many cities have returnee groups, international churches, and various interest groups." },
+      { "type": "comparison", "title": "Where to Find Community", "items": [
+        { "label": "Returnee Groups", "description": "Many cities have returnee meetups and communities. Search WeChat for 'city name + 海归' to find them." },
+        { "label": "International Communities", "description": "Some cities have international communities and events, great for those who enjoy cross-cultural environments." },
+        { "label": "Alumni Associations", "description": "Your US university may have an alumni chapter in China — a ready-made social network." },
+        { "label": "Faith Communities", "description": "If you had a faith experience in the US, your US mentors can help connect you with communities in China." }
+      ] }
+    ],
+    "lastUpdated": "2026-02-01",
+    "relatedSlugs": ["reverse-culture-shock"]
+  }
+]

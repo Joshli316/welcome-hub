@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "get-phone-plan",
+    "categoryId": "phone",
+    "title": "美国手机卡办理指南",
+    "summary": "到达美国后如何选择运营商、办理手机卡、选择合适的套餐。",
+    "content": [
+      { "type": "paragraph", "text": "手机是你到达美国后最需要的工具之一。有了美国手机号，你可以接收验证码、使用导航、联系学校和新朋友。" },
+      { "type": "heading", "text": "预付费 vs 后付费", "level": 2 },
+      { "type": "comparison", "title": "套餐类型对比", "items": [
+        { "label": "预付费 (Prepaid)", "description": "无需信用检查，买卡即用。适合刚到的学生。月费 $30-50。" },
+        { "label": "后付费 (Postpaid)", "description": "需要 SSN 或信用检查。信号和服务更好，但需要签约。月费 $40-70。" }
+      ]},
+      { "type": "tip", "text": "建议先办预付费卡，等有了SSN和信用记录后再考虑转后付费。" },
+      { "type": "heading", "text": "推荐运营商", "level": 2 },
+      { "type": "comparison", "title": "运营商对比", "items": [
+        { "label": "T-Mobile", "description": "覆盖好，有国际漫游包，有些套餐包含免费中国通话。推荐首选。" },
+        { "label": "AT&T", "description": "覆盖广，信号稳定。预付费品牌 Cricket 性价比高。" },
+        { "label": "Mint Mobile", "description": "T-Mobile 网络，价格最便宜（$15/月起）。需要一次性购买3-12个月。" },
+        { "label": "中国电信美洲/CMLink", "description": "中美双号卡，可保留中国号码。适合需要经常接收国内验证码的同学。" }
+      ]},
+      { "type": "heading", "text": "办理步骤", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "选择运营商和套餐", "description": "根据你的预算和需求选择合适的运营商。" },
+        { "title": "去门店或在线购买", "description": "带上护照，去运营商门店购买SIM卡。也可以在线购买后邮寄。" },
+        { "title": "安装SIM卡", "description": "将新SIM卡插入手机，按照提示激活。" },
+        { "title": "设置手机", "description": "下载常用App：Google Maps、WhatsApp、学校App等。" }
+      ]},
+      { "type": "warning", "text": "如果你的手机是从中国带来的，请确认是否支持美国运营商的频段。大多数近几年的手机都支持，但建议提前在运营商网站上查询。" }
+    ],
+    "lastUpdated": "2026-01-10",
+    "relatedSlugs": []
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "guide-shanghai",
+    "city": "Shanghai",
+    "cityZh": "上海",
+    "description": "Shanghai has a vibrant returnee community with many resources for those seeking faith connections.",
+    "descriptionZh": "上海有活跃的海归社区，为寻找信仰连接的人提供了丰富的资源。",
+    "resources": [
+      { "name": "Shanghai Returnee Fellowship", "nameZh": "上海海归团契", "type": "community", "description": "Weekly gatherings for returnees, bilingual discussions on faith and life.", "descriptionZh": "海归每周聚会，中英双语讨论信仰与生活。", "contactInfo": "WeChat: SH_returnee_fellowship" },
+      { "name": "Pudong International Community", "nameZh": "浦东国际社区", "type": "church", "description": "English-speaking community welcoming returnees. Sunday gatherings and weekday small groups.", "descriptionZh": "欢迎海归的英语社区。周日聚会和平日小组。", "contactInfo": "WeChat: pudong_intl" },
+      { "name": "Faith & Business Network Shanghai", "nameZh": "上海信仰与商业网络", "type": "professional", "description": "Monthly breakfast meetings for professionals exploring the intersection of faith and work.", "descriptionZh": "每月早餐会，为探索信仰与工作交汇的专业人士而设。", "contactInfo": "WeChat: faithbiz_sh" }
+    ]
+  },
+  {
+    "id": "guide-beijing",
+    "city": "Beijing",
+    "cityZh": "北京",
+    "description": "Beijing's faith community is strong and well-connected, with particular strength in university areas.",
+    "descriptionZh": "北京的信仰社区强大且联系紧密，在大学区尤其活跃。",
+    "resources": [
+      { "name": "Haidian Returnee Group", "nameZh": "海淀海归小组", "type": "community", "description": "Small group near Zhongguancun area, popular with tech returnees.", "descriptionZh": "中关村附近的小组，科技行业海归很多。", "contactInfo": "WeChat: haidian_returnee" },
+      { "name": "Beijing International Fellowship", "nameZh": "北京国际团契", "type": "church", "description": "Large community with multiple language groups and a strong returnee ministry.", "descriptionZh": "大型社区，有多语言小组和成熟的海归事工。", "contactInfo": "WeChat: bj_intl_fellowship" }
+    ]
+  },
+  {
+    "id": "guide-shenzhen",
+    "city": "Shenzhen",
+    "cityZh": "深圳",
+    "description": "Shenzhen's young, entrepreneurial culture creates a unique environment for faith and work integration.",
+    "descriptionZh": "深圳年轻的创业文化为信仰与工作的融合创造了独特的环境。",
+    "resources": [
+      { "name": "Nanshan Returnee Circle", "nameZh": "南山海归圈", "type": "community", "description": "Casual meetups for returnees in the Nanshan tech hub area.", "descriptionZh": "南山科技中心区的海归轻松聚会。", "contactInfo": "WeChat: nanshan_circle" },
+      { "name": "Shenzhen Young Professionals", "nameZh": "深圳青年职业人", "type": "professional", "description": "Faith-oriented networking for young professionals in tech and finance.", "descriptionZh": "面向科技和金融行业年轻专业人士的信仰导向社交。", "contactInfo": "WeChat: sz_yp_faith" }
+    ]
+  }
+]

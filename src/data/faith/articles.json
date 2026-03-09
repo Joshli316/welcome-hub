@@ -1,0 +1,106 @@
+[
+  {
+    "slug": "faith-in-workplace",
+    "title": "Living Out Your Faith in a Chinese Workplace",
+    "titleZh": "在中国职场中活出信仰",
+    "summary": "Practical wisdom for integrating your faith with your professional life in China's fast-paced work environment.",
+    "summaryZh": "在中国快节奏的工作环境中，如何将信仰融入职业生活的实用智慧。",
+    "content": [
+      { "type": "paragraph", "text": "Returning to China with a faith you discovered or deepened abroad presents unique opportunities and challenges. The workplace is where you'll spend most of your waking hours — it's also where your faith can have the deepest impact." },
+      { "type": "heading", "text": "Be Excellent First", "level": 2 },
+      { "type": "paragraph", "text": "The most powerful testimony is excellence in your work. Before anyone asks about your faith, let them see your integrity, diligence, and care for others. In Chinese work culture, actions speak far louder than words." },
+      { "type": "heading", "text": "Navigate Wisely", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "Build trust through your work", "description": "Establish yourself as reliable and competent before having deeper conversations." },
+        { "title": "Let questions come to you", "description": "When colleagues notice something different about you — your honesty, your peace, your generosity — they'll ask. Be ready." },
+        { "title": "Find one or two allies", "description": "You don't need to convert the office. Find one or two colleagues who share your values and support each other." },
+        { "title": "Practice ethical boundaries", "description": "When asked to cut corners or compromise integrity, do so with grace but firmness. This is your witness." }
+      ] },
+      { "type": "tip", "text": "Join a faith-based professional fellowship in your city. Having a community of professionals who share your values provides support you can't get in the office." },
+      { "type": "heading", "text": "Common Workplace Challenges", "level": 2 },
+      { "type": "comparison", "title": "", "items": [
+        { "label": "996 Work Culture", "description": "Set healthy boundaries while showing dedication. Your physical and spiritual health matter. It's okay to leave at a reasonable hour." },
+        { "label": "Office Politics", "description": "Stay above gossip and manipulation. Be known as someone trustworthy. This is counter-cultural — and powerful." },
+        { "label": "Ethical Grey Areas", "description": "When asked to inflate numbers, hide information, or bend rules — find gracious ways to maintain integrity. It costs something, but it's worth it." },
+        { "label": "Social Drinking", "description": "Business dinners with heavy drinking are common. You can participate without compromising your values. Set limits kindly and consistently." }
+      ] },
+      { "type": "warning", "text": "Be wise about sharing your faith openly in professional settings. In China's current environment, discretion protects both you and the people you're sharing with. Focus on relationships, not proclamations." }
+    ],
+    "contentZh": [
+      { "type": "paragraph", "text": "带着在海外发现或加深的信仰回到中国，既有独特的机会也有挑战。职场是你花费最多清醒时间的地方——也是你的信仰可以产生最深影响的地方。" },
+      { "type": "heading", "text": "先做到卓越", "level": 2 },
+      { "type": "paragraph", "text": "最有力的见证就是工作上的卓越。在任何人问起你的信仰之前，让他们先看到你的正直、勤奋和对他人的关怀。在中国的工作文化中，行动远比言语有力。" },
+      { "type": "heading", "text": "智慧地行事", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "通过工作建立信任", "description": "先在可靠性和能力上证明自己，再有更深入的对话。" },
+        { "title": "让问题自然来到你面前", "description": "当同事注意到你身上不同的东西——你的诚实、你的平静、你的慷慨——他们会问的。做好准备。" },
+        { "title": "找到一两个同路人", "description": "你不需要改变整个办公室。找到一两个和你有共同价值观的同事，互相支持。" },
+        { "title": "践行道德底线", "description": "当被要求走捷径或妥协诚信时，用优雅但坚定的态度应对。这就是你的见证。" }
+      ] },
+      { "type": "tip", "text": "加入你所在城市的信仰职场团契。有一个分享你价值观的专业人士社区，提供了在办公室里得不到的支持。" },
+      { "type": "heading", "text": "常见职场挑战", "level": 2 },
+      { "type": "comparison", "title": "", "items": [
+        { "label": "996 工作文化", "description": "在展示敬业的同时设定健康的界限。你的身体和灵性健康很重要。在合理的时间下班是可以的。" },
+        { "label": "办公室政治", "description": "远离八卦和操纵。做一个值得信赖的人。这是反文化的——也是有力量的。" },
+        { "label": "道德灰色地带", "description": "当被要求夸大数据、隐瞒信息或弯曲规则时——找到优雅的方式保持正直。这有代价，但值得。" },
+        { "label": "社交饮酒", "description": "商务宴请中大量饮酒是常见的。你可以参与其中而不妥协你的价值观。温和而一致地设定界限。" }
+      ] },
+      { "type": "warning", "text": "在职业环境中公开分享信仰要谨慎。在中国当前的环境中，谨慎既保护你自己也保护你分享的对象。专注于关系，而不是宣告。" }
+    ],
+    "category": "workplace",
+    "lastUpdated": "2026-02-20",
+    "relatedSlugs": ["finding-community-china"]
+  },
+  {
+    "slug": "finding-community-china",
+    "title": "Finding Faith Community in China",
+    "titleZh": "在中国寻找信仰社区",
+    "summary": "A practical guide to finding and building faith community after returning to China, with wisdom for navigating the local context.",
+    "summaryZh": "回国后寻找和建立信仰社区的实用指南，以及在本地环境中智慧行事的建议。",
+    "content": [
+      { "type": "paragraph", "text": "One of the biggest concerns for returnees with faith is: 'Will I find community?' The answer is yes — but it looks different from what you experienced in the US." },
+      { "type": "heading", "text": "Where to Look", "level": 2 },
+      { "type": "comparison", "title": "", "items": [
+        { "label": "Ask Your US Mentors", "description": "The most reliable path. Your mentors, campus ministers, or church leaders in the US often have connections to communities in Chinese cities. Ask before you leave." },
+        { "label": "Returnee Networks", "description": "Many cities have established networks specifically for returnees. These groups understand your cross-cultural experience." },
+        { "label": "International Communities", "description": "Expat-oriented communities are openly accessible and can connect you to local networks over time." },
+        { "label": "Small Home Gatherings", "description": "The most common form of faith community in China. Small, relational, deep. Often found through personal connections." }
+      ] },
+      { "type": "heading", "text": "What to Expect", "level": 2 },
+      { "type": "list", "items": [
+        "Community will be smaller and more intimate than what you may be used to",
+        "Trust is built slowly — be patient with the process",
+        "Technology plays a bigger role (WeChat groups, online devotionals)",
+        "You may need to be more intentional about gathering",
+        "Your cross-cultural perspective is a gift to the community"
+      ] },
+      { "type": "tip", "text": "Don't wait for the perfect community to appear. Start with what you find — even two or three people meeting regularly is a powerful beginning." },
+      { "type": "heading", "text": "Being a Bridge", "level": 2 },
+      { "type": "paragraph", "text": "As a returnee, you're uniquely positioned to bridge cultures. You understand both the Chinese context and the broader global faith community. This makes you invaluable — not just as a participant, but as someone who can help others grow." }
+    ],
+    "contentZh": [
+      { "type": "paragraph", "text": "对有信仰的海归来说，最大的担忧之一是：「我能找到社区吗？」答案是肯定的——但它看起来和你在美国经历的不一样。" },
+      { "type": "heading", "text": "在哪里寻找", "level": 2 },
+      { "type": "comparison", "title": "", "items": [
+        { "label": "问你在美国的导师", "description": "最可靠的途径。你在美国的导师、校园牧师或教会领袖往往和中国城市的社区有联系。在离开前问他们。" },
+        { "label": "海归网络", "description": "许多城市有专门为海归建立的网络。这些群体理解你的跨文化经历。" },
+        { "label": "国际社区", "description": "面向外籍人士的社区是公开可访问的，随着时间的推移可以连接你到本地网络。" },
+        { "label": "小型家庭聚会", "description": "中国最常见的信仰社区形式。小型、关系型、深入。通常通过个人关系找到。" }
+      ] },
+      { "type": "heading", "text": "可以期待什么", "level": 2 },
+      { "type": "list", "items": [
+        "社区会比你习惯的更小、更亲密",
+        "信任是慢慢建立的——对这个过程要有耐心",
+        "科技扮演更大的角色（微信群、在线灵修）",
+        "你可能需要更主动地去聚会",
+        "你的跨文化视角是对社区的一份礼物"
+      ] },
+      { "type": "tip", "text": "不要等待完美的社区出现。从你能找到的开始——即使只有两三个人定期聚会也是一个有力的开始。" },
+      { "type": "heading", "text": "做一座桥", "level": 2 },
+      { "type": "paragraph", "text": "作为海归，你有独特的位置来桥接文化。你既理解中国的环境，也了解更广泛的全球信仰社区。这使你不仅是一个参与者，更是一个能帮助他人成长的人。" }
+    ],
+    "category": "community",
+    "lastUpdated": "2026-02-20",
+    "relatedSlugs": ["faith-in-workplace"]
+  }
+]

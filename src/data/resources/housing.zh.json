@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "housing-basics",
+    "categoryId": "housing",
+    "title": "美国租房入门指南",
+    "summary": "了解美国租房的基本流程、术语和注意事项，避免常见的坑。",
+    "content": [
+      { "type": "paragraph", "text": "在美国租房和国内有很多不同。了解基本流程和术语可以帮你避免很多问题。" },
+      { "type": "heading", "text": "租房选择", "level": 2 },
+      { "type": "comparison", "title": "住房类型对比", "items": [
+        { "label": "学校宿舍", "description": "最方便，包含家具和网络。但价格较贵，空间较小。适合第一年。" },
+        { "label": "校外公寓", "description": "价格灵活，空间更大。需要自己找室友、签约、设置水电网。" },
+        { "label": "合租House", "description": "最划算，但需要更多沟通和协调。通过学校论坛或微信群找室友。" }
+      ]},
+      { "type": "heading", "text": "租房流程", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "确定预算和区域", "description": "考虑离学校的距离、公交路线、安全性和价格。" },
+        { "title": "在线搜索", "description": "使用 Zillow、Apartments.com、学校住房网站或微信群找房。" },
+        { "title": "看房", "description": "如果已经在美国，一定要实地看房。注意检查设施、周边环境和交通。" },
+        { "title": "提交申请", "description": "填写申请表，提供身份证明和财务证明。国际学生可能需要额外担保。" },
+        { "title": "签约", "description": "仔细阅读租约，注意租期、退租条件、押金政策。" },
+        { "title": "入住检查", "description": "入住时记录房屋现有损坏，拍照存证，避免退租时被扣押金。" }
+      ]},
+      { "type": "warning", "text": "签约前一定要仔细阅读租约！特别注意：提前退租的罚金、押金退还条件、维修责任。如果看不懂英文合同，请找朋友或学校国际学生办公室帮忙。" },
+      { "type": "tip", "text": "很多学校有专门的校外住房资源网站，还有国际学生住房协助项目。先从学校资源开始找起。" }
+    ],
+    "lastUpdated": "2026-01-12",
+    "relatedSlugs": []
+  }
+]

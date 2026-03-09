@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "open-bank-account",
+    "categoryId": "banking",
+    "title": "如何开设美国银行账户",
+    "summary": "到达美国后第一周就应该开设银行账户。这篇指南帮你了解流程、所需文件和推荐银行。",
+    "content": [
+      { "type": "paragraph", "text": "开设银行账户是到达美国后最重要的事情之一。有了银行账户，你可以安全地存放资金、接收汇款、支付房租和日常消费。" },
+      { "type": "heading", "text": "什么时候开户？", "level": 2 },
+      { "type": "paragraph", "text": "建议在到达后的第一周内开设银行账户。越早开户，越方便处理各种财务事务。" },
+      { "type": "heading", "text": "需要准备什么？", "level": 2 },
+      { "type": "list", "items": ["护照（有效签证）", "I-20 表格", "学校录取通知书", "美国地址（可以用学校地址）", "手机号码（如果已经办理）"] },
+      { "type": "tip", "text": "有些银行允许在到达前在线预开户，提前在银行网站上查看是否有这个选项。" },
+      { "type": "heading", "text": "推荐银行比较", "level": 2 },
+      { "type": "comparison", "title": "常见银行对比", "items": [
+        { "label": "Chase", "description": "网点最多，手机App好用，学生账户免月费。推荐首选。" },
+        { "label": "Bank of America", "description": "网点多，与中国银行有合作，汇款方便。" },
+        { "label": "Wells Fargo", "description": "服务广泛，学生账户可选。但近年口碑一般。" },
+        { "label": "校园信用合作社", "description": "费用最低，但网点有限。适合长期在校园生活的学生。" }
+      ]},
+      { "type": "heading", "text": "开户步骤", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "选择银行", "description": "考虑离你最近的银行网点和ATM，以及是否有学生优惠。" },
+        { "title": "预约或直接去银行", "description": "大多数银行不需要预约，但预约可以减少等待时间。" },
+        { "title": "告诉柜员你要开学生账户", "description": "说明你是国际学生，他们会指导你完成所有步骤。" },
+        { "title": "提交文件", "description": "出示护照、I-20 和录取通知书。" },
+        { "title": "存入初始资金", "description": "通常需要存入至少 $25 来激活账户。" },
+        { "title": "设置网上银行", "description": "下载银行App，设置登录密码和通知。" }
+      ]},
+      { "type": "warning", "text": "不要把所有钱都存在一个地方。建议开设 Checking（支票账户）和 Savings（储蓄账户）两个账户。日常消费用 Checking，大额资金放 Savings。" },
+      { "type": "heading", "text": "关于借记卡和信用卡", "level": 2 },
+      { "type": "paragraph", "text": "开户后你会收到一张借记卡（Debit Card），可以用来购物和ATM取款。信用卡需要另外申请，建议先用几个月借记卡，了解美国消费习惯后再考虑申请信用卡。" },
+      { "type": "tip", "text": "建立信用记录对未来租房和办手机很重要。可以先申请一张学生信用卡或有担保的信用卡来开始建立信用。" }
+    ],
+    "lastUpdated": "2026-01-15",
+    "relatedSlugs": ["wire-transfer-guide"]
+  },
+  {
+    "slug": "wire-transfer-guide",
+    "categoryId": "banking",
+    "title": "从中国汇款到美国的方法",
+    "summary": "了解从中国向美国转账的各种方式、手续费比较和注意事项。",
+    "content": [
+      { "type": "paragraph", "text": "来到美国后，你可能需要从国内汇款来支付学费和生活费。这里介绍几种常见的汇款方式。" },
+      { "type": "heading", "text": "常见汇款方式", "level": 2 },
+      { "type": "comparison", "title": "汇款方式对比", "items": [
+        { "label": "银行电汇", "description": "最传统的方式。通过中国的银行直接汇到美国银行账户。手续费约 $15-45，到账需要 1-3 个工作日。" },
+        { "label": "支付宝/微信国际汇款", "description": "方便快捷，但单笔限额较低。适合小额汇款。" },
+        { "label": "Wise (原 TransferWise)", "description": "汇率好，手续费透明。推荐用于大额汇款。" },
+        { "label": "随身携带现金", "description": "入境美国可携带不超过 $10,000 现金无需申报。超过需要如实申报。" }
+      ]},
+      { "type": "warning", "text": "中国个人每年换汇额度为等值 5 万美元。如需更多资金，需要提前规划或通过学校渠道支付学费。" },
+      { "type": "tip", "text": "建议在汇率较好时分批汇款，而不是一次性大额转账。可以用汇率App监控汇率变化。" }
+    ],
+    "lastUpdated": "2026-01-15",
+    "relatedSlugs": ["open-bank-account"]
+  }
+]

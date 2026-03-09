@@ -1,0 +1,561 @@
+{
+  "nav": {
+    "home": "Home",
+    "resources": "Resources",
+    "checklist": "Checklist",
+    "connect": "Connect",
+    "groups": "Groups",
+    "reentry": "Re-entry",
+    "community": "Community",
+    "about": "About",
+    "faithAndWork": "Faith & Work"
+  },
+  "home": {
+    "hero": {
+      "title": "Welcome to the US",
+      "subtitle": "Your new neighbors have prepared practical resources and a warm community for you",
+      "cta": "View Arrival Checklist",
+      "ctaSecondary": "Browse Guides"
+    },
+    "resources": {
+      "title": "Practical Guides",
+      "subtitle": "From your first day to settling in, these guides help you navigate everything",
+      "viewAll": "View All Guides"
+    },
+    "events": {
+      "title": "Upcoming Events",
+      "subtitle": "Meet your new neighbors",
+      "viewAll": "View All Events",
+      "noEvents": "No upcoming events right now. Check back soon!"
+    }
+  },
+  "resources": {
+    "title": "Practical Guides",
+    "subtitle": "Organized by urgency to help you tackle the most pressing needs first",
+    "searchPlaceholder": "Search guides...",
+    "phases": {
+      "first-week": "First Week",
+      "first-month": "First Month",
+      "first-semester": "First Semester"
+    },
+    "lastUpdated": "Last updated",
+    "relatedGuides": "Related Guides",
+    "backToCategory": "Back to category",
+    "backToAll": "Back to all guides"
+  },
+  "categories": {
+    "airport": "Airport & Arrival",
+    "airport-desc": "Pickup, luggage, immigration process",
+    "housing": "Housing",
+    "housing-desc": "Finding, leasing, move-in essentials",
+    "phone": "Phone & Internet",
+    "phone-desc": "Getting a SIM card, plans, connectivity",
+    "banking": "Banking & Finance",
+    "banking-desc": "Opening accounts, credit cards, transfers",
+    "campus": "Campus & Immigration",
+    "campus-desc": "Registration, I-20, campus resources",
+    "transportation": "Transportation",
+    "transportation-desc": "Driver's license, transit, getting around",
+    "food": "Food & Groceries",
+    "food-desc": "Supermarkets, Chinese food, cooking guides",
+    "health": "Health & Safety",
+    "health-desc": "Insurance, medical care, emergencies",
+    "academics": "Academics",
+    "academics-desc": "Course selection, academic integrity, office hours",
+    "daily-life": "Daily Life",
+    "daily-life-desc": "Shopping, entertainment, social skills",
+    "legal": "Legal & Tax",
+    "legal-desc": "Tax filing, legal basics, driver's license"
+  },
+  "checklist": {
+    "title": "Arrival Checklist",
+    "subtitle": "Complete your settling-in journey step by step",
+    "progress": "{completed}/{total} completed",
+    "phases": {
+      "before-arrival": "Before Arrival",
+      "first-week": "First Week",
+      "first-month": "First Month",
+      "first-semester": "First Semester"
+    },
+    "viewGuide": "View Guide",
+    "resetAll": "Reset All",
+    "resetConfirm": "Are you sure you want to reset all completed items?"
+  },
+  "checklistItems": {
+    "passport-visa": "Confirm passport and visa are valid",
+    "passport-visa-desc": "Make sure your passport is valid for 6+ months and F-1 visa is approved",
+    "i20-docs": "Prepare I-20 and admission documents",
+    "i20-docs-desc": "Print I-20, admission letter, and proof of finances",
+    "housing-confirm": "Confirm housing arrangements",
+    "housing-confirm-desc": "Contact landlord or campus housing to confirm move-in date",
+    "airport-plan": "Arrange airport pickup",
+    "airport-plan-desc": "Contact school pickup service or arrange a ride with friends",
+    "phone-plan": "Get a phone plan",
+    "phone-plan-desc": "Choose a carrier and get a prepaid or postpaid SIM card",
+    "bank-account": "Open a bank account",
+    "bank-account-desc": "Bring passport, I-20, and admission letter to the bank",
+    "ssn-apply": "Apply for Social Security Number (SSN)",
+    "ssn-apply-desc": "If you have on-campus employment, you can apply for an SSN",
+    "campus-id": "Get your student ID",
+    "campus-id-desc": "Visit the campus ID office to get your student card",
+    "orientation": "Attend orientation",
+    "orientation-desc": "Join international student orientation to learn about campus resources",
+    "health-insurance": "Confirm health insurance",
+    "health-insurance-desc": "Verify school health insurance plan or purchase qualifying coverage",
+    "grocery-explore": "Explore nearby grocery stores",
+    "grocery-explore-desc": "Find the nearest supermarket and Asian grocery stores",
+    "transportation": "Learn transportation options",
+    "transportation-desc": "Figure out bus routes, campus shuttle, or consider buying a car/bike",
+    "tax-info": "Learn about tax requirements",
+    "tax-info-desc": "Understand F-1 student tax obligations and deadlines"
+  },
+  "community": {
+    "title": "Community Connections",
+    "subtitle": "Meet neighbors who care about you",
+    "events": {
+      "title": "Upcoming Events",
+      "signup": "Sign Up",
+      "details": "Details"
+    },
+    "hosts": {
+      "title": "Volunteer Partners",
+      "subtitle": "They're ready to help you settle in",
+      "filterByCity": "Filter by city",
+      "filterByService": "Filter by service",
+      "allCities": "All Cities",
+      "allServices": "All Services",
+      "contact": "Contact",
+      "services": {
+        "airport-pickup": "Airport Pickup",
+        "housing-help": "Housing Help",
+        "campus-tour": "Campus Tour",
+        "grocery-trip": "Grocery Trip",
+        "city-tour": "City Tour",
+        "conversation": "Conversation Partner"
+      }
+    },
+    "wechat": {
+      "title": "WeChat Groups",
+      "subtitle": "Join WeChat groups in your area to connect with fellow students",
+      "scanToJoin": "Scan to join"
+    },
+    "askQuestion": {
+      "title": "Have a question?",
+      "subtitle": "Feel free to ask anything — we're happy to help",
+      "button": "Ask a Question"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "mission": {
+      "title": "Our Mission",
+      "text": "We are a group of neighbors who care about international students. We believe every student who comes to the US deserves to be welcomed, cared for, and supported. Whether you need practical help or warm friendship, we're here for you."
+    },
+    "values": {
+      "title": "Our Values",
+      "neighbor": {
+        "title": "Neighborly Love",
+        "text": "You're not a stranger — you're our neighbor. We genuinely want you to feel at home here."
+      },
+      "practical": {
+        "title": "Practical Help",
+        "text": "From airport pickup to bank accounts, we provide the help you actually need."
+      },
+      "community": {
+        "title": "Real Community",
+        "text": "More than just information — we're real people who want to walk alongside you."
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "text": "Our volunteer team includes local residents, church partners, and former international students. Many of us have been through exactly what you're experiencing."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "email": "Email",
+      "wechat": "WeChat"
+    }
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "language": "中文",
+    "switchLang": "切换到中文",
+    "wechat": "WeChat",
+    "email": "Email",
+    "now": "Now",
+    "qrCode": "QR Code",
+    "logout": "Logout",
+    "noContentYet": "No content in this category yet. Check back soon!"
+  },
+  "footer": {
+    "tagline": "Welcoming every neighbor with love",
+    "resources": "Resources",
+    "community": "Community",
+    "about": "About Us",
+    "contact": "Contact Us"
+  },
+  "eventTypes": {
+    "social": "Social",
+    "workshop": "Workshop",
+    "trip": "Trip",
+    "meal": "Meal",
+    "other": "Other"
+  },
+  "connect": {
+    "title": "Find Peers",
+    "subtitle": "Meet fellow new students and find friends who share your interests",
+    "editProfile": "Edit Profile",
+    "contact": "Contact",
+    "noProfile": {
+      "title": "Create your profile to find matched peers",
+      "subtitle": "Fill in your info and we'll help you find students in the same city, school, and with similar interests",
+      "cta": "Create Profile"
+    },
+    "features": {
+      "findPeers": {
+        "title": "Find Students",
+        "description": "Browse profiles of other new students, filtered by interests and location",
+        "matchEnabled": "Matching enabled"
+      },
+      "smallGroups": {
+        "title": "Small Groups",
+        "description": "Join study groups, hobby groups, or social groups to build deeper friendships"
+      }
+    },
+    "profile": {
+      "createTitle": "Create Your Profile",
+      "editTitle": "Edit Your Profile",
+      "formSubtitle": "Fill in your info to help other students get to know you",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "university": "University",
+      "universityPlaceholder": "Your university name",
+      "city": "City",
+      "cityPlaceholder": "Your city",
+      "major": "Major",
+      "majorPlaceholder": "Your major",
+      "degreeLevel": "Degree Level",
+      "arrivalSemester": "Arrival Semester",
+      "interests": "Interests",
+      "selectUpTo": "Select up to {max}",
+      "languages": "Languages",
+      "languagesHint": "Comma-separated, e.g., 中文, English",
+      "bio": "About You",
+      "bioPlaceholder": "Tell other students a bit about yourself",
+      "contactMethod": "Contact Method",
+      "contactValue": "Contact ID",
+      "wechatPlaceholder": "Your WeChat ID",
+      "emailPlaceholder": "Your email",
+      "createProfile": "Create Profile",
+      "updateProfile": "Update Profile",
+      "deleteProfile": "Delete Profile",
+      "deleteConfirm": "Are you sure you want to delete your profile?"
+    },
+    "interests": {
+      "cooking": "Cooking",
+      "sports": "Sports",
+      "music": "Music",
+      "movies": "Movies",
+      "gaming": "Gaming",
+      "hiking": "Hiking",
+      "photography": "Photography",
+      "reading": "Reading",
+      "travel": "Travel",
+      "tech": "Tech",
+      "art": "Art",
+      "faith": "Faith Exploration",
+      "business": "Business",
+      "fitness": "Fitness",
+      "food-exploration": "Food Exploration",
+      "language-exchange": "Language Exchange"
+    },
+    "degrees": {
+      "undergrad": "Undergraduate",
+      "masters": "Master's",
+      "phd": "PhD",
+      "visiting": "Visiting Scholar",
+      "language": "Language Program"
+    },
+    "browse": {
+      "title": "Find Students",
+      "subtitle": "Browse other new students — create a profile to see match scores",
+      "allCities": "All Cities",
+      "allUniversities": "All Universities",
+      "profilePrompt": "Create your profile to see compatibility scores with each student!",
+      "createProfile": "Create Profile",
+      "noResults": "No matches found. Try adjusting your filters."
+    }
+  },
+  "groups": {
+    "title": "Small Groups",
+    "subtitle": "Join a group of like-minded people and build real friendships",
+    "allCities": "All Cities",
+    "allTypes": "All Types",
+    "members": "members",
+    "full": "Full",
+    "openForSignup": "Open",
+    "noResults": "No matching groups found. Try adjusting your filters.",
+    "backToAll": "Back to all groups",
+    "schedule": "Schedule",
+    "location": "Location",
+    "host": "Host",
+    "joinGroup": "Join This Group",
+    "fullMessage": "This group is currently full. Contact the host to join the waitlist.",
+    "contactHost": "Contact host",
+    "types": {
+      "study": "Study",
+      "social": "Social",
+      "hobby": "Hobby",
+      "faith": "Faith Exploration",
+      "professional": "Professional",
+      "support": "Support"
+    }
+  },
+  "reentry": {
+    "title": "Re-entry Planning",
+    "subtitle": "Whether you're graduating soon or just starting to think about returning, here are the resources and support you need",
+    "latestStories": "Latest Stories",
+    "viewAllStories": "View All Stories",
+    "features": {
+      "checklist": {
+        "title": "Departure Checklist",
+        "description": "From 6 months out to your final week, step-by-step departure preparation"
+      },
+      "resources": {
+        "title": "Re-entry Guides",
+        "description": "Reverse culture shock, job hunting, shipping belongings, and more"
+      },
+      "returnees": {
+        "title": "Returnee Mentors",
+        "description": "Connect with alumni who've already returned for firsthand advice"
+      },
+      "stories": {
+        "title": "Returnee Stories",
+        "description": "Hear from people who've been through it — real, honest sharing"
+      }
+    },
+    "checklist": {
+      "title": "Departure Checklist",
+      "subtitle": "From 6 months out to your final week, make sure you don't miss anything important",
+      "progress": "{completed}/{total} completed",
+      "resetAll": "Reset All",
+      "resetConfirm": "Are you sure you want to reset all completed items?",
+      "phases": {
+        "six-months-before": "6 Months Before",
+        "three-months-before": "3 Months Before",
+        "one-month-before": "1 Month Before",
+        "final-week": "Final Week"
+      }
+    },
+    "checklistItems": {
+      "research-timeline": "Create a return timeline",
+      "research-timeline-desc": "Set a rough departure date and plan milestones for each preparation task",
+      "job-search": "Start exploring the job market in China",
+      "job-search-desc": "Research fall/spring hiring seasons, sign up for platforms (Boss直聘, 脉脉, Nowcoder, etc.)",
+      "notify-school": "Notify your school's international office",
+      "notify-school-desc": "Understand OPT/visa-related return procedures and required documents",
+      "connect-returnees": "Connect with returnee mentors",
+      "connect-returnees-desc": "Talk to alumni who've already returned for firsthand experience and advice",
+      "tax-filing": "Complete tax filing",
+      "tax-filing-desc": "Make sure current-year taxes are filed, understand tax obligations after leaving the US",
+      "shipping-plan": "Plan how to ship your belongings",
+      "shipping-plan-desc": "Compare sea freight vs. air freight prices and timelines, book shipping services",
+      "lease-notice": "Give landlord notice",
+      "lease-notice-desc": "Notify landlord per lease terms, understand deposit refund process",
+      "sell-belongings": "Sell or donate items you won't bring",
+      "sell-belongings-desc": "Use school forums, WeChat groups, or Facebook Marketplace to sell unwanted items",
+      "close-accounts": "Close or maintain bank accounts",
+      "close-accounts-desc": "Decide whether to keep a US bank account (recommended), close unnecessary ones",
+      "cancel-services": "Cancel subscriptions and services",
+      "cancel-services-desc": "Cancel phone plans, insurance, streaming subscriptions, etc.",
+      "medical-records": "Get medical records",
+      "medical-records-desc": "Request copies of medical and dental records, update prescriptions",
+      "goodbye-events": "Plan farewell gatherings",
+      "goodbye-events-desc": "Say goodbye to friends, mentors, and community members. Exchange long-term contact info",
+      "mail-forwarding": "Set up mail forwarding",
+      "mail-forwarding-desc": "Set up USPS mail forwarding so important mail doesn't get lost",
+      "final-packing": "Final packing",
+      "final-packing-desc": "Confirm luggage weight meets airline limits, keep important documents in carry-on",
+      "flight-confirm": "Confirm flight details",
+      "flight-confirm-desc": "Confirm flight time, baggage allowance, arrange transportation to airport",
+      "keep-connections": "Create a plan to stay connected",
+      "keep-connections-desc": "Set up regular video calls with closest friends, exchange WeChat and other contact info"
+    },
+    "resources": {
+      "title": "Re-entry Guides",
+      "subtitle": "Prepare mentally and practically for your return",
+      "backToReentry": "Back to Re-entry",
+      "backToResources": "Back to all guides",
+      "lastUpdated": "Last updated",
+      "relatedGuides": "Related Guides"
+    },
+    "returnees": {
+      "title": "Returnee Mentors",
+      "subtitle": "They've already walked the path you're about to take, and they're ready to share",
+      "contact": "Contact",
+      "allCities": "All Cities",
+      "allTopics": "All Topics",
+      "noResults": "No matches found. Try adjusting your filters."
+    },
+    "topics": {
+      "job-hunting": "Job Hunting",
+      "reverse-culture-shock": "Reverse Culture Shock",
+      "networking": "Networking",
+      "tech-industry": "Tech Industry",
+      "shipping-belongings": "Shipping Belongings",
+      "finance-career": "Finance Career",
+      "emotional-adjustment": "Emotional Adjustment",
+      "education-career": "Education Career",
+      "faith-community": "Faith Community",
+      "keeping-connections": "Staying Connected"
+    },
+    "stories": {
+      "title": "Returnee Stories",
+      "subtitle": "Real voices from people who've already walked this path",
+      "backToReentry": "Back to Re-entry",
+      "backToStories": "Back to all stories"
+    }
+  },
+  "faith": {
+    "title": "Faith & Work",
+    "subtitle": "Resources for integrating faith with your professional and personal life after returning to China",
+    "latestTestimonies": "Latest Testimonies",
+    "viewAllTestimonies": "View All Testimonies",
+    "lastUpdated": "Last updated",
+    "relatedArticles": "Related Articles",
+    "backToArticles": "Back to all articles",
+    "backToTestimonies": "Back to all testimonies",
+    "moreQuestions": "more questions",
+    "relatedArticle": "Related article",
+    "features": {
+      "articles": {
+        "title": "Articles & Guides",
+        "description": "Practical wisdom for living out your faith in China's workplace and culture"
+      },
+      "testimonies": {
+        "title": "Testimonies",
+        "description": "Real stories from returnees navigating faith and work in China"
+      },
+      "discussions": {
+        "title": "Discussion Topics",
+        "description": "Thoughtful questions for small group conversations about meaning, identity, and purpose"
+      },
+      "cityGuide": {
+        "title": "City Guide",
+        "description": "Find faith communities and resources in major Chinese cities"
+      }
+    },
+    "resourceTypes": {
+      "community": "Community",
+      "church": "Church",
+      "professional": "Professional",
+      "social": "Social"
+    }
+  },
+  "dashboard": {
+    "title": "Ministry Dashboard",
+    "loginSubtitle": "Enter your PIN to access the dashboard",
+    "pinPlaceholder": "Enter PIN",
+    "wrongPin": "Incorrect PIN. Please try again.",
+    "login": "Login",
+    "defaultPinHint": "Default PIN: 1234",
+    "backToSite": "Back to main site",
+    "nav": {
+      "overview": "Overview",
+      "contacts": "Contacts",
+      "events": "Events",
+      "analytics": "Analytics"
+    },
+    "stats": {
+      "totalContacts": "Total Contacts",
+      "needsFollowUp": "Needs Follow-up",
+      "recentNotes": "Recent Notes",
+      "last7Days": "Last 7 days",
+      "upcomingEvents": "Upcoming Events"
+    },
+    "pipeline": {
+      "title": "Student Journey Pipeline"
+    },
+    "activity": {
+      "title": "Recent Activity",
+      "empty": "No recent activity. Add contacts and notes to see activity here.",
+      "noEvents": "No upcoming events."
+    },
+    "contacts": {
+      "add": "Add Contact",
+      "edit": "Edit",
+      "delete": "Delete",
+      "deleteConfirm": "Are you sure you want to delete this contact? This cannot be undone.",
+      "searchPlaceholder": "Search by name, city, or university...",
+      "allStages": "All Stages",
+      "allTypes": "All Types",
+      "lastContact": "Last Contact",
+      "notes": "Notes",
+      "empty": "No contacts found. Add your first contact to get started.",
+      "showing": "Showing {count} of {total} contacts",
+      "contactInfo": "Contact Info",
+      "noContactInfo": "No contact information added yet.",
+      "notFound": "Contact not found.",
+      "createdAt": "Created"
+    },
+    "types": {
+      "student": "Student",
+      "returnee": "Returnee",
+      "volunteer": "Volunteer",
+      "other": "Other"
+    },
+    "tags": {
+      "new-believer": "New Believer",
+      "seeking": "Seeking",
+      "connected": "Connected",
+      "needs-follow-up": "Needs Follow-up",
+      "leader-potential": "Leader Potential",
+      "mentor": "Mentor",
+      "inactive": "Inactive",
+      "high-priority": "High Priority"
+    },
+    "form": {
+      "name": "Name",
+      "type": "Type",
+      "stage": "Stage",
+      "city": "City",
+      "university": "University",
+      "email": "Email",
+      "wechat": "WeChat",
+      "tags": "Tags",
+      "create": "Add Contact",
+      "update": "Save Changes",
+      "cancel": "Cancel"
+    },
+    "notes": {
+      "title": "Interaction Notes",
+      "add": "Add Note",
+      "type": "Type",
+      "date": "Date",
+      "content": "Note",
+      "placeholder": "What happened? What was discussed?",
+      "empty": "No notes yet. Add a note to track your interactions.",
+      "deleteConfirm": "Delete this note?"
+    },
+    "events": {
+      "upcoming": "Upcoming Events",
+      "past": "Past Events",
+      "signupLink": "Signup link"
+    },
+    "analytics": {
+      "byType": "Contacts by Type",
+      "topTags": "Top Tags",
+      "noTags": "No tags applied yet.",
+      "interactionTrend": "Interaction Trend (6 months)",
+      "needsAttention": "Needs Attention",
+      "needsAttentionDesc": "Contacts with no interaction in the last 30 days",
+      "allGood": "All contacts have been reached recently!",
+      "lastContact": "Last contact: {date}",
+      "neverContacted": "Never contacted",
+      "more": "more"
+    }
+  }
+}

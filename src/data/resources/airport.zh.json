@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "arrival-guide",
+    "categoryId": "airport",
+    "title": "机场到达全攻略",
+    "summary": "从下飞机到入境的完整流程，包括海关、行李和接机安排。",
+    "content": [
+      { "type": "paragraph", "text": "第一次到达美国的机场可能会让人紧张，但其实流程很简单。这篇指南帮你提前了解每一步。" },
+      { "type": "heading", "text": "入境流程", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "下飞机，跟随指示牌", "description": "跟着 'Arrivals' 或 'Immigration' 的指示牌走到入境检查区域。" },
+        { "title": "排队等候入境检查", "description": "排在 'Non-US Citizens' 或 'Visitors' 的队列。准备好护照、I-20 和 I-94（通常电子版）。" },
+        { "title": "入境官面谈", "description": "回答简单问题：来美目的（学习）、就读学校、停留时间。保持礼貌和自信。" },
+        { "title": "领取行李", "description": "在行李转盘找到你的航班号，等候行李。如果行李丢失，去 Baggage Claim 柜台报告。" },
+        { "title": "通过海关", "description": "如果没有需要申报的物品，走绿色通道。带了超过 $10,000 现金或食品需要申报。" },
+        { "title": "到达接机区域", "description": "出关后到达 Arrivals 大厅，找到你的接机人或交通方式。" }
+      ]},
+      { "type": "warning", "text": "不要携带肉类、水果、种子等食品入境。被查到会面临罚款。如果不确定，在飞机上填写海关申报单时如实申报。" },
+      { "type": "tip", "text": "在手机上截图保存重要信息：接机人电话、住房地址、学校国际学生办公室电话。即使没有网络也能查看。" }
+    ],
+    "lastUpdated": "2026-01-08",
+    "relatedSlugs": []
+  }
+]

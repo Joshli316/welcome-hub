@@ -1,0 +1,561 @@
+{
+  "nav": {
+    "home": "首页",
+    "resources": "实用指南",
+    "checklist": "到达清单",
+    "connect": "找同伴",
+    "groups": "小组",
+    "reentry": "回国准备",
+    "community": "社区连接",
+    "about": "关于我们",
+    "faithAndWork": "信仰与职场"
+  },
+  "home": {
+    "hero": {
+      "title": "欢迎来到美国",
+      "subtitle": "你的新邻居们为你准备了实用资源和温暖的社区",
+      "cta": "查看到达清单",
+      "ctaSecondary": "浏览实用指南"
+    },
+    "resources": {
+      "title": "实用指南",
+      "subtitle": "从到达第一天到适应新生活，这些指南帮你搞定一切",
+      "viewAll": "查看全部指南"
+    },
+    "events": {
+      "title": "近期活动",
+      "subtitle": "认识你的新邻居们",
+      "viewAll": "查看全部活动",
+      "noEvents": "暂无近期活动，请稍后查看"
+    }
+  },
+  "resources": {
+    "title": "实用指南",
+    "subtitle": "按照到达时间顺序，帮你解决最紧急的需求",
+    "searchPlaceholder": "搜索指南...",
+    "phases": {
+      "first-week": "第一周",
+      "first-month": "第一个月",
+      "first-semester": "第一学期"
+    },
+    "lastUpdated": "最后更新",
+    "relatedGuides": "相关指南",
+    "backToCategory": "返回分类",
+    "backToAll": "返回全部指南"
+  },
+  "categories": {
+    "airport": "机场与到达",
+    "airport-desc": "接机、行李、入境流程",
+    "housing": "住房",
+    "housing-desc": "找房、签约、入住必知",
+    "phone": "手机与网络",
+    "phone-desc": "办手机卡、选套餐、上网",
+    "banking": "银行与金融",
+    "banking-desc": "开户、信用卡、汇款",
+    "campus": "校园与身份",
+    "campus-desc": "注册、I-20、校园资源",
+    "transportation": "交通出行",
+    "transportation-desc": "驾照、公交、出行方式",
+    "food": "饮食与购物",
+    "food-desc": "超市、中餐、做饭指南",
+    "health": "健康与安全",
+    "health-desc": "保险、就医、紧急情况",
+    "academics": "学业生活",
+    "academics-desc": "选课、学术诚信、教授沟通",
+    "daily-life": "日常生活",
+    "daily-life-desc": "购物、娱乐、社交技巧",
+    "legal": "法律与税务",
+    "legal-desc": "报税、法律常识、驾照"
+  },
+  "checklist": {
+    "title": "到达清单",
+    "subtitle": "一步一步完成你的安顿之旅",
+    "progress": "已完成 {completed}/{total} 项",
+    "phases": {
+      "before-arrival": "出发前",
+      "first-week": "第一周",
+      "first-month": "第一个月",
+      "first-semester": "第一学期"
+    },
+    "viewGuide": "查看指南",
+    "resetAll": "重置全部",
+    "resetConfirm": "确定要重置所有已完成的项目吗？"
+  },
+  "checklistItems": {
+    "passport-visa": "确认护照和签证有效",
+    "passport-visa-desc": "确保护照有效期超过6个月，F-1签证已获批",
+    "i20-docs": "准备 I-20 和录取文件",
+    "i20-docs-desc": "打印 I-20、录取通知书、财力证明",
+    "housing-confirm": "确认住房安排",
+    "housing-confirm-desc": "联系房东或学校宿舍确认入住日期",
+    "airport-plan": "安排接机",
+    "airport-plan-desc": "联系学校接机服务或朋友接机",
+    "phone-plan": "办理手机卡",
+    "phone-plan-desc": "选择运营商，购买预付费或后付费手机卡",
+    "bank-account": "开设银行账户",
+    "bank-account-desc": "携带护照、I-20 和学校录取通知书去银行",
+    "ssn-apply": "申请社会安全号码 (SSN)",
+    "ssn-apply-desc": "如果有校内工作，可以申请 SSN",
+    "campus-id": "领取学生证",
+    "campus-id-desc": "到学校 ID 办公室办理学生证",
+    "orientation": "参加新生培训",
+    "orientation-desc": "参加国际学生迎新活动，了解校园资源",
+    "health-insurance": "确认健康保险",
+    "health-insurance-desc": "确认学校健康保险计划或购买符合要求的保险",
+    "grocery-explore": "探索周边超市",
+    "grocery-explore-desc": "找到最近的超市和亚洲超市",
+    "transportation": "了解交通方式",
+    "transportation-desc": "了解公交、校车路线或考虑买车/骑车",
+    "tax-info": "了解报税要求",
+    "tax-info-desc": "了解 F-1 学生的报税义务和截止日期"
+  },
+  "community": {
+    "title": "社区连接",
+    "subtitle": "认识关心你的邻居们",
+    "events": {
+      "title": "近期活动",
+      "signup": "报名参加",
+      "details": "了解详情"
+    },
+    "hosts": {
+      "title": "志愿者伙伴",
+      "subtitle": "他们愿意帮助你适应新生活",
+      "filterByCity": "按城市筛选",
+      "filterByService": "按服务筛选",
+      "allCities": "全部城市",
+      "allServices": "全部服务",
+      "contact": "联系",
+      "services": {
+        "airport-pickup": "接机",
+        "housing-help": "住房帮助",
+        "campus-tour": "校园导览",
+        "grocery-trip": "超市购物",
+        "city-tour": "城市游览",
+        "conversation": "语言交流"
+      }
+    },
+    "wechat": {
+      "title": "微信群",
+      "subtitle": "加入你所在地区的微信群，和同学们交流",
+      "scanToJoin": "扫码加入"
+    },
+    "askQuestion": {
+      "title": "有问题？",
+      "subtitle": "任何问题都可以问，我们很乐意帮忙",
+      "button": "提问"
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "mission": {
+      "title": "我们的使命",
+      "text": "我们是一群关心国际学生的邻居。我们相信，每一位来到美国的学生都应该被欢迎、被关心、被支持。无论你需要实际的帮助还是温暖的友谊，我们都在这里。"
+    },
+    "values": {
+      "title": "我们的价值观",
+      "neighbor": {
+        "title": "邻居之爱",
+        "text": "你不是外人，你是我们的邻居。我们真心希望你在这里有家的感觉。"
+      },
+      "practical": {
+        "title": "实际帮助",
+        "text": "从接机到办银行卡，我们提供你真正需要的帮助。"
+      },
+      "community": {
+        "title": "真实社区",
+        "text": "不只是信息，我们是一群真实的人，愿意走进彼此的生活。"
+      }
+    },
+    "team": {
+      "title": "我们的团队",
+      "text": "我们的志愿者团队由当地居民、教会伙伴和曾经的国际学生组成。我们中许多人也经历过你正在经历的一切。"
+    },
+    "contact": {
+      "title": "联系我们",
+      "email": "邮箱",
+      "wechat": "微信"
+    }
+  },
+  "common": {
+    "learnMore": "了解更多",
+    "viewAll": "查看全部",
+    "loading": "加载中...",
+    "error": "出错了",
+    "language": "English",
+    "switchLang": "Switch to English",
+    "wechat": "微信",
+    "email": "邮箱",
+    "now": "现在",
+    "qrCode": "二维码",
+    "logout": "退出",
+    "noContentYet": "该分类下暂无内容，请稍后查看。"
+  },
+  "footer": {
+    "tagline": "用爱心欢迎每一位邻居",
+    "resources": "实用指南",
+    "community": "社区连接",
+    "about": "关于我们",
+    "contact": "联系我们"
+  },
+  "eventTypes": {
+    "social": "社交活动",
+    "workshop": "工作坊",
+    "trip": "出游",
+    "meal": "聚餐",
+    "other": "其他"
+  },
+  "connect": {
+    "title": "找同伴",
+    "subtitle": "认识和你一样的新同学，找到志同道合的朋友",
+    "editProfile": "编辑资料",
+    "contact": "联系",
+    "noProfile": {
+      "title": "创建你的资料，找到匹配的同学",
+      "subtitle": "填写你的信息，我们会帮你找到同城市、同学校、兴趣相近的同学",
+      "cta": "创建资料"
+    },
+    "features": {
+      "findPeers": {
+        "title": "找同学",
+        "description": "浏览其他新同学的资料，按兴趣和位置找到匹配的朋友",
+        "matchEnabled": "匹配已开启"
+      },
+      "smallGroups": {
+        "title": "小组活动",
+        "description": "加入学习小组、兴趣小组或社交小组，在小群体中建立深度友谊"
+      }
+    },
+    "profile": {
+      "createTitle": "创建你的资料",
+      "editTitle": "编辑你的资料",
+      "formSubtitle": "填写你的信息，帮助其他同学认识你",
+      "name": "姓名",
+      "namePlaceholder": "你的名字",
+      "university": "学校",
+      "universityPlaceholder": "你的大学名称",
+      "city": "城市",
+      "cityPlaceholder": "你所在的城市",
+      "major": "专业",
+      "majorPlaceholder": "你的专业",
+      "degreeLevel": "学位",
+      "arrivalSemester": "入学学期",
+      "interests": "兴趣爱好",
+      "selectUpTo": "最多选 {max} 个",
+      "languages": "语言",
+      "languagesHint": "用逗号分隔，例如：中文, English",
+      "bio": "自我介绍",
+      "bioPlaceholder": "简单介绍一下自己，让其他同学认识你",
+      "contactMethod": "联系方式",
+      "contactValue": "联系方式ID",
+      "wechatPlaceholder": "你的微信号",
+      "emailPlaceholder": "你的邮箱",
+      "createProfile": "创建资料",
+      "updateProfile": "更新资料",
+      "deleteProfile": "删除资料",
+      "deleteConfirm": "确定要删除你的资料吗？"
+    },
+    "interests": {
+      "cooking": "做饭",
+      "sports": "运动",
+      "music": "音乐",
+      "movies": "电影",
+      "gaming": "游戏",
+      "hiking": "徒步",
+      "photography": "摄影",
+      "reading": "阅读",
+      "travel": "旅行",
+      "tech": "科技",
+      "art": "艺术",
+      "faith": "信仰探索",
+      "business": "创业/商业",
+      "fitness": "健身",
+      "food-exploration": "探索美食",
+      "language-exchange": "语言交换"
+    },
+    "degrees": {
+      "undergrad": "本科",
+      "masters": "硕士",
+      "phd": "博士",
+      "visiting": "访问学者",
+      "language": "语言项目"
+    },
+    "browse": {
+      "title": "找同学",
+      "subtitle": "浏览其他新同学，创建资料后可以看到匹配度",
+      "allCities": "全部城市",
+      "allUniversities": "全部学校",
+      "profilePrompt": "创建你的资料，查看与每位同学的匹配度！",
+      "createProfile": "创建资料",
+      "noResults": "暂无匹配结果，试试调整筛选条件"
+    }
+  },
+  "groups": {
+    "title": "小组活动",
+    "subtitle": "加入志同道合的小组，在小群体中建立真实的友谊",
+    "allCities": "全部城市",
+    "allTypes": "全部类型",
+    "members": "人",
+    "full": "已满",
+    "openForSignup": "开放报名",
+    "noResults": "暂无匹配的小组，试试调整筛选条件",
+    "backToAll": "返回全部小组",
+    "schedule": "时间",
+    "location": "地点",
+    "host": "负责人",
+    "joinGroup": "加入小组",
+    "fullMessage": "这个小组目前已满，你可以联系负责人加入等候名单。",
+    "contactHost": "联系负责人",
+    "types": {
+      "study": "学习",
+      "social": "社交",
+      "hobby": "兴趣",
+      "faith": "信仰探索",
+      "professional": "职业发展",
+      "support": "互助"
+    }
+  },
+  "reentry": {
+    "title": "回国准备",
+    "subtitle": "不管你是即将毕业还是开始考虑回国，这里有你需要的一切资源和支持",
+    "latestStories": "最新故事",
+    "viewAllStories": "查看全部故事",
+    "features": {
+      "checklist": {
+        "title": "离境清单",
+        "description": "从提前半年到最后一周，一步步完成你的回国准备"
+      },
+      "resources": {
+        "title": "回国指南",
+        "description": "逆向文化冲击、求职、运送行李等实用指南"
+      },
+      "returnees": {
+        "title": "回国导师",
+        "description": "认识已经回国的学长学姐，获取一手经验"
+      },
+      "stories": {
+        "title": "回国故事",
+        "description": "听听已经回国的人怎么说——真实、坦诚的分享"
+      }
+    },
+    "checklist": {
+      "title": "离境清单",
+      "subtitle": "从提前半年到最后一周，确保你不会遗漏任何重要事项",
+      "progress": "已完成 {completed}/{total} 项",
+      "resetAll": "重置全部",
+      "resetConfirm": "确定要重置所有已完成的项目吗？",
+      "phases": {
+        "six-months-before": "提前6个月",
+        "three-months-before": "提前3个月",
+        "one-month-before": "提前1个月",
+        "final-week": "最后一周"
+      }
+    },
+    "checklistItems": {
+      "research-timeline": "制定回国时间表",
+      "research-timeline-desc": "确定大致的离开日期，开始规划各项准备工作的时间节点",
+      "job-search": "开始关注国内就业市场",
+      "job-search-desc": "研究秋招/春招时间线，注册求职平台（Boss直聘、脉脉、牛客网等）",
+      "notify-school": "通知学校国际学生办公室",
+      "notify-school-desc": "了解OPT/签证相关的回国流程和所需文件",
+      "connect-returnees": "联系回国导师",
+      "connect-returnees-desc": "和已经回国的学长学姐交流，获取一手经验和建议",
+      "tax-filing": "完成税务申报",
+      "tax-filing-desc": "确保完成当年的税务申报，了解离开美国后的税务义务",
+      "shipping-plan": "制定行李运送计划",
+      "shipping-plan-desc": "比较海运和空运的价格和时间，预约运送服务",
+      "lease-notice": "通知房东退租",
+      "lease-notice-desc": "按照租约要求提前通知房东，了解押金退还流程",
+      "sell-belongings": "处理不带走的物品",
+      "sell-belongings-desc": "在学校论坛、微信群或Facebook Marketplace出售不需要的物品",
+      "close-accounts": "关闭或保留银行账户",
+      "close-accounts-desc": "决定是否保留美国银行账户（推荐保留至少一个），关闭不需要的账户",
+      "cancel-services": "取消订阅和服务",
+      "cancel-services-desc": "取消手机套餐、保险、订阅服务等",
+      "medical-records": "获取医疗记录",
+      "medical-records-desc": "向医生和牙医索取医疗记录副本，更新处方药信息",
+      "goodbye-events": "安排告别活动",
+      "goodbye-events-desc": "和朋友、导师、社区成员道别，交换长期联系方式",
+      "mail-forwarding": "设置邮件转寄",
+      "mail-forwarding-desc": "通过USPS设置邮件转寄，确保重要邮件不会丢失",
+      "final-packing": "最终打包",
+      "final-packing-desc": "确认行李重量符合航空公司要求，重要文件随身携带",
+      "flight-confirm": "确认航班信息",
+      "flight-confirm-desc": "确认航班时间、行李额度，安排去机场的交通",
+      "keep-connections": "建立长期保持联系的计划",
+      "keep-connections-desc": "和最亲近的朋友约定定期视频通话，交换微信和其他联系方式"
+    },
+    "resources": {
+      "title": "回国指南",
+      "subtitle": "帮助你做好回国的心理和实际准备",
+      "backToReentry": "返回回国准备",
+      "backToResources": "返回全部指南",
+      "lastUpdated": "最后更新",
+      "relatedGuides": "相关指南"
+    },
+    "returnees": {
+      "title": "回国导师",
+      "subtitle": "他们已经走过了你即将走的路，愿意分享经验和建议",
+      "contact": "联系",
+      "allCities": "全部城市",
+      "allTopics": "全部话题",
+      "noResults": "暂无匹配结果，试试调整筛选条件"
+    },
+    "topics": {
+      "job-hunting": "求职",
+      "reverse-culture-shock": "逆向文化冲击",
+      "networking": "人脉社交",
+      "tech-industry": "科技行业",
+      "shipping-belongings": "运送行李",
+      "finance-career": "金融行业",
+      "emotional-adjustment": "情绪调适",
+      "education-career": "教育行业",
+      "faith-community": "信仰社区",
+      "keeping-connections": "保持联系"
+    },
+    "stories": {
+      "title": "回国故事",
+      "subtitle": "真实的声音，来自已经走过这段路的人",
+      "backToReentry": "返回回国准备",
+      "backToStories": "返回全部故事"
+    }
+  },
+  "faith": {
+    "title": "信仰与职场",
+    "subtitle": "帮助你在回国后将信仰融入职业和个人生活的资源",
+    "latestTestimonies": "最新见证",
+    "viewAllTestimonies": "查看全部见证",
+    "lastUpdated": "最后更新",
+    "relatedArticles": "相关文章",
+    "backToArticles": "返回全部文章",
+    "backToTestimonies": "返回全部见证",
+    "moreQuestions": "更多问题",
+    "relatedArticle": "相关文章",
+    "features": {
+      "articles": {
+        "title": "文章与指南",
+        "description": "在中国职场和文化中活出信仰的实用智慧"
+      },
+      "testimonies": {
+        "title": "见证故事",
+        "description": "海归们在中国经历信仰与工作的真实故事"
+      },
+      "discussions": {
+        "title": "讨论话题",
+        "description": "关于意义、身份和使命的深度小组对话问题"
+      },
+      "cityGuide": {
+        "title": "城市指南",
+        "description": "在中国主要城市寻找信仰社区和资源"
+      }
+    },
+    "resourceTypes": {
+      "community": "社区",
+      "church": "教会",
+      "professional": "职场",
+      "social": "社交"
+    }
+  },
+  "dashboard": {
+    "title": "事工管理面板",
+    "loginSubtitle": "输入 PIN 码访问管理面板",
+    "pinPlaceholder": "输入 PIN 码",
+    "wrongPin": "PIN 码错误，请重试。",
+    "login": "登录",
+    "defaultPinHint": "默认 PIN: 1234",
+    "backToSite": "返回主站",
+    "nav": {
+      "overview": "概览",
+      "contacts": "联系人",
+      "events": "活动",
+      "analytics": "数据分析"
+    },
+    "stats": {
+      "totalContacts": "总联系人",
+      "needsFollowUp": "待跟进",
+      "recentNotes": "近期记录",
+      "last7Days": "最近7天",
+      "upcomingEvents": "即将到来的活动"
+    },
+    "pipeline": {
+      "title": "学生旅程管线"
+    },
+    "activity": {
+      "title": "最近动态",
+      "empty": "暂无动态。添加联系人和记录后可在此查看。",
+      "noEvents": "暂无即将到来的活动。"
+    },
+    "contacts": {
+      "add": "添加联系人",
+      "edit": "编辑",
+      "delete": "删除",
+      "deleteConfirm": "确定要删除此联系人吗？此操作不可撤销。",
+      "searchPlaceholder": "按姓名、城市或学校搜索...",
+      "allStages": "全部阶段",
+      "allTypes": "全部类型",
+      "lastContact": "最后联系",
+      "notes": "记录",
+      "empty": "暂无联系人。添加第一个联系人开始使用。",
+      "showing": "显示 {count}/{total} 位联系人",
+      "contactInfo": "联系方式",
+      "noContactInfo": "暂未添加联系方式。",
+      "notFound": "未找到联系人。",
+      "createdAt": "创建时间"
+    },
+    "types": {
+      "student": "学生",
+      "returnee": "海归",
+      "volunteer": "志愿者",
+      "other": "其他"
+    },
+    "tags": {
+      "new-believer": "新信徒",
+      "seeking": "慕道中",
+      "connected": "已连接",
+      "needs-follow-up": "待跟进",
+      "leader-potential": "领袖潜力",
+      "mentor": "导师",
+      "inactive": "不活跃",
+      "high-priority": "高优先级"
+    },
+    "form": {
+      "name": "姓名",
+      "type": "类型",
+      "stage": "阶段",
+      "city": "城市",
+      "university": "学校",
+      "email": "邮箱",
+      "wechat": "微信",
+      "tags": "标签",
+      "create": "添加联系人",
+      "update": "保存修改",
+      "cancel": "取消"
+    },
+    "notes": {
+      "title": "互动记录",
+      "add": "添加记录",
+      "type": "类型",
+      "date": "日期",
+      "content": "内容",
+      "placeholder": "发生了什么？讨论了什么？",
+      "empty": "暂无记录。添加记录来跟踪你的互动。",
+      "deleteConfirm": "删除这条记录？"
+    },
+    "events": {
+      "upcoming": "即将到来的活动",
+      "past": "过去的活动",
+      "signupLink": "报名链接"
+    },
+    "analytics": {
+      "byType": "按类型分布",
+      "topTags": "热门标签",
+      "noTags": "暂未使用标签。",
+      "interactionTrend": "互动趋势（6个月）",
+      "needsAttention": "需要关注",
+      "needsAttentionDesc": "30天内没有互动的联系人",
+      "allGood": "所有联系人最近都已联系过！",
+      "lastContact": "最后联系: {date}",
+      "neverContacted": "从未联系",
+      "more": "更多"
+    }
+  }
+}

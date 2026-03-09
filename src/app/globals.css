@@ -1,26 +1,73 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Warm, welcoming palette */
+  --color-primary-50: #fef7ed;
+  --color-primary-100: #fdecd4;
+  --color-primary-200: #fad5a8;
+  --color-primary-300: #f6b871;
+  --color-primary-400: #f19338;
+  --color-primary-500: #ee7b14;
+  --color-primary-600: #df620a;
+  --color-primary-700: #b9490b;
+  --color-primary-800: #933a10;
+  --color-primary-900: #773110;
+
+  --color-warm-50: #fdf8f0;
+  --color-warm-100: #f9eddb;
+  --color-warm-200: #f2d8b5;
+  --color-warm-300: #e9bd86;
+  --color-warm-400: #df9c54;
+  --color-warm-500: #d78333;
+  --color-warm-600: #c96c28;
+  --color-warm-700: #a75423;
+  --color-warm-800: #864423;
+  --color-warm-900: #6d391f;
+
+  --color-sage-50: #f4f7f4;
+  --color-sage-100: #e5ebe4;
+  --color-sage-200: #ccd8cb;
+  --color-sage-300: #a6bca4;
+  --color-sage-400: #7d9b7a;
+  --color-sage-500: #5d7f5a;
+  --color-sage-600: #496646;
+  --color-sage-700: #3b5239;
+  --color-sage-800: #31432f;
+  --color-sage-900: #293828;
+
+  --color-sky-50: #eff8ff;
+  --color-sky-100: #dbeffe;
+  --color-sky-200: #bfe3fe;
+  --color-sky-300: #93d2fd;
+  --color-sky-400: #60b9fa;
+  --color-sky-500: #3b9df6;
+  --color-sky-600: #257eeb;
+  --color-sky-700: #1d67d8;
+  --color-sky-800: #1e54af;
+  --color-sky-900: #1e498a;
+
+  --color-background: #fffcf8;
+  --color-foreground: #2d2418;
+  --color-muted: #7a7067;
+  --color-border: #e8e0d6;
+
+  --font-sans: 'Inter', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Base styles */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Chinese text optimization */
+:lang(zh) {
+  font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', var(--font-sans);
+  line-height: 1.8;
 }

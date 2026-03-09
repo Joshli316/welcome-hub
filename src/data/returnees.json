@@ -1,0 +1,62 @@
+[
+  {
+    "id": "returnee-mei",
+    "name": "Mei Lin",
+    "currentCity": "上海",
+    "previousUniversity": "State University",
+    "previousCity": "Springfield",
+    "graduationYear": "2025",
+    "major": "Marketing",
+    "currentRole": "品牌经理 @ 字节跳动",
+    "bio": "Graduated from State University with an MBA. Now working in brand marketing at ByteDance in Shanghai. Happy to share about job hunting in China and adjusting back.",
+    "bioZh": "State University MBA毕业。现在在上海字节跳动做品牌营销。很乐意分享在中国找工作和重新适应的经验。",
+    "topics": ["job-hunting", "reverse-culture-shock", "networking"],
+    "contactMethod": "wechat",
+    "contactValue": "mei_lin_sh"
+  },
+  {
+    "id": "returnee-kevin",
+    "name": "Kevin Wu",
+    "currentCity": "北京",
+    "previousUniversity": "Tech University",
+    "previousCity": "Riverside",
+    "graduationYear": "2024",
+    "major": "Computer Science",
+    "currentRole": "软件工程师 @ 腾讯",
+    "bio": "CS PhD from Tech University, now a software engineer at Tencent Beijing. Can help with tech industry job search in China and navigating the transition.",
+    "bioZh": "Tech University CS博士毕业，现在在北京腾讯做软件工程师。可以帮助了解中国科技行业求职和过渡期的问题。",
+    "topics": ["job-hunting", "tech-industry", "shipping-belongings"],
+    "contactMethod": "wechat",
+    "contactValue": "kevin_wu_bj"
+  },
+  {
+    "id": "returnee-grace",
+    "name": "Grace Chen",
+    "currentCity": "深圳",
+    "previousUniversity": "State University",
+    "previousCity": "Springfield",
+    "graduationYear": "2025",
+    "major": "Finance",
+    "currentRole": "投资分析师 @ 招商银行",
+    "bio": "Finance major, now an investment analyst in Shenzhen. The biggest surprise was how much I had changed during my time abroad. Happy to talk about readjusting.",
+    "bioZh": "金融专业，现在在深圳招商银行做投资分析师。最大的惊讶是发现自己在国外变化了多少。很愿意聊聊重新适应的话题。",
+    "topics": ["reverse-culture-shock", "finance-career", "emotional-adjustment"],
+    "contactMethod": "email",
+    "contactValue": "grace.chen@example.com"
+  },
+  {
+    "id": "returnee-jason",
+    "name": "Jason Li",
+    "currentCity": "杭州",
+    "previousUniversity": "State University",
+    "previousCity": "Springfield",
+    "graduationYear": "2024",
+    "major": "Education",
+    "currentRole": "国际学校教师",
+    "bio": "Taught ESL in the US for 2 years, now teaching at an international school in Hangzhou. I can share about education careers, faith community in China, and keeping connections.",
+    "bioZh": "在美国教了2年ESL，现在在杭州一所国际学校教书。可以分享教育行业、国内信仰社区和保持联系的经验。",
+    "topics": ["education-career", "faith-community", "keeping-connections"],
+    "contactMethod": "wechat",
+    "contactValue": "jason_li_hz"
+  }
+]

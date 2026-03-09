@@ -1,0 +1,15 @@
+[
+  { "id": "passport-visa", "titleKey": "passport-visa", "descriptionKey": "passport-visa-desc", "phase": "before-arrival", "sortOrder": 1 },
+  { "id": "i20-docs", "titleKey": "i20-docs", "descriptionKey": "i20-docs-desc", "phase": "before-arrival", "sortOrder": 2 },
+  { "id": "housing-confirm", "titleKey": "housing-confirm", "descriptionKey": "housing-confirm-desc", "phase": "before-arrival", "resourceLink": "/resources/housing", "sortOrder": 3 },
+  { "id": "airport-plan", "titleKey": "airport-plan", "descriptionKey": "airport-plan-desc", "phase": "first-week", "resourceLink": "/resources/airport", "sortOrder": 4 },
+  { "id": "phone-plan", "titleKey": "phone-plan", "descriptionKey": "phone-plan-desc", "phase": "first-week", "resourceLink": "/resources/phone", "sortOrder": 5 },
+  { "id": "bank-account", "titleKey": "bank-account", "descriptionKey": "bank-account-desc", "phase": "first-week", "resourceLink": "/resources/banking", "sortOrder": 6 },
+  { "id": "campus-id", "titleKey": "campus-id", "descriptionKey": "campus-id-desc", "phase": "first-week", "resourceLink": "/resources/campus", "sortOrder": 7 },
+  { "id": "orientation", "titleKey": "orientation", "descriptionKey": "orientation-desc", "phase": "first-week", "sortOrder": 8 },
+  { "id": "ssn-apply", "titleKey": "ssn-apply", "descriptionKey": "ssn-apply-desc", "phase": "first-month", "sortOrder": 9 },
+  { "id": "health-insurance", "titleKey": "health-insurance", "descriptionKey": "health-insurance-desc", "phase": "first-month", "resourceLink": "/resources/health", "sortOrder": 10 },
+  { "id": "grocery-explore", "titleKey": "grocery-explore", "descriptionKey": "grocery-explore-desc", "phase": "first-month", "resourceLink": "/resources/food", "sortOrder": 11 },
+  { "id": "transportation", "titleKey": "transportation", "descriptionKey": "transportation-desc", "phase": "first-month", "resourceLink": "/resources/transportation", "sortOrder": 12 },
+  { "id": "tax-info", "titleKey": "tax-info", "descriptionKey": "tax-info-desc", "phase": "first-semester", "resourceLink": "/resources/legal", "sortOrder": 13 }
+]

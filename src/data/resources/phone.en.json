@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "get-phone-plan",
+    "categoryId": "phone",
+    "title": "US Phone Plan Guide",
+    "summary": "How to choose a carrier, get a SIM card, and pick the right plan after arriving in the US.",
+    "content": [
+      { "type": "paragraph", "text": "A phone is one of the most essential tools after arriving in the US. With a US phone number, you can receive verification codes, use navigation, and contact your school and new friends." },
+      { "type": "heading", "text": "Prepaid vs Postpaid", "level": 2 },
+      { "type": "comparison", "title": "Plan Type Comparison", "items": [
+        { "label": "Prepaid", "description": "No credit check needed, ready to use immediately. Great for new arrivals. $30-50/month." },
+        { "label": "Postpaid", "description": "Requires SSN or credit check. Better signal and service, but requires a contract. $40-70/month." }
+      ]},
+      { "type": "tip", "text": "We recommend starting with a prepaid plan, then switching to postpaid once you have an SSN and credit history." },
+      { "type": "heading", "text": "Recommended Carriers", "level": 2 },
+      { "type": "comparison", "title": "Carrier Comparison", "items": [
+        { "label": "T-Mobile", "description": "Good coverage, international roaming packages, some plans include free calls to China. Top recommendation." },
+        { "label": "AT&T", "description": "Wide coverage, reliable signal. Prepaid brand Cricket is great value." },
+        { "label": "Mint Mobile", "description": "Uses T-Mobile network, cheapest option (from $15/month). Must buy 3-12 months upfront." },
+        { "label": "China Telecom Americas/CMLink", "description": "Dual US-China number, keeps your Chinese number active. Great for receiving Chinese verification codes." }
+      ]},
+      { "type": "heading", "text": "How to Get Set Up", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "Choose carrier and plan", "description": "Pick based on your budget and needs." },
+        { "title": "Visit a store or buy online", "description": "Bring your passport to a carrier store to buy a SIM card. You can also order online." },
+        { "title": "Install the SIM card", "description": "Insert the new SIM card into your phone and follow activation instructions." },
+        { "title": "Set up your phone", "description": "Download essential apps: Google Maps, WhatsApp, your school's app, etc." }
+      ]},
+      { "type": "warning", "text": "If your phone is from China, make sure it supports US carrier bands. Most recent phones do, but check on the carrier's website beforehand." }
+    ],
+    "lastUpdated": "2026-01-10",
+    "relatedSlugs": []
+  }
+]

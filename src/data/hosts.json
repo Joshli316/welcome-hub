@@ -1,0 +1,50 @@
+[
+  {
+    "id": "sarah-chen",
+    "name": "Sarah Chen",
+    "university": "State University",
+    "city": "Springfield",
+    "languages": ["English", "中文"],
+    "bio": "Former international student from Taiwan. I've been through everything you're going through and would love to help!",
+    "bioZh": "来自台湾的前国际学生。我经历过你正在经历的一切，很乐意帮助你！",
+    "services": ["airport-pickup", "housing-help", "grocery-trip"],
+    "contactMethod": "wechat",
+    "contactValue": "sarah_chen_2026"
+  },
+  {
+    "id": "david-miller",
+    "name": "David Miller",
+    "university": "State University",
+    "city": "Springfield",
+    "languages": ["English"],
+    "bio": "Local resident and teacher. I enjoy meeting people from different cultures and helping newcomers feel at home.",
+    "bioZh": "当地居民和教师。我喜欢认识来自不同文化的人，帮助新来的朋友感到温馨。",
+    "services": ["campus-tour", "conversation", "city-tour"],
+    "contactMethod": "email",
+    "contactValue": "david.miller@example.com"
+  },
+  {
+    "id": "lisa-wang",
+    "name": "Lisa Wang",
+    "university": "Tech University",
+    "city": "Riverside",
+    "languages": ["English", "中文"],
+    "bio": "PhD student in Computer Science. Happy to share tips about grad school life and navigating the US.",
+    "bioZh": "计算机科学博士生。很高兴分享研究生生活和美国生活的经验。",
+    "services": ["airport-pickup", "campus-tour", "housing-help"],
+    "contactMethod": "wechat",
+    "contactValue": "lisa_wang_cs"
+  },
+  {
+    "id": "james-thompson",
+    "name": "James Thompson",
+    "university": "State University",
+    "city": "Springfield",
+    "languages": ["English", "中文(基础)"],
+    "bio": "Community volunteer for 5 years. I love cooking and often host dinner for international students.",
+    "bioZh": "社区志愿者5年。我喜欢做饭，经常为国际学生举办晚餐聚会。",
+    "services": ["grocery-trip", "city-tour", "conversation"],
+    "contactMethod": "email",
+    "contactValue": "james.t@example.com"
+  }
+]
