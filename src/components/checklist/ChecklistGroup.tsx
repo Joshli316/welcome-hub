@@ -18,10 +18,10 @@ export default function ChecklistGroup({ phase, items, isChecked, onToggle }: Ch
   return (
     <div className="mb-10">
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-xl">{t(phase)}</h2>
-        <span className="text-[13px] text-muted tabular-nums">{completedInGroup}/{items.length}</span>
+        <h2 className="text-2xl">{t(phase)}</h2>
+        <span className="text-sm text-muted font-medium tabular-nums">{completedInGroup}/{items.length}</span>
       </div>
-      <div className="space-y-1 border border-border rounded-lg overflow-hidden bg-white">
+      <div className="space-y-0.5 border border-border/80 rounded-2xl overflow-hidden bg-white shadow-card">
         {items.map(item => (
           <ChecklistItem
             key={item.id}

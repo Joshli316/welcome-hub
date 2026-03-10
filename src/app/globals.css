@@ -1,28 +1,28 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Refined warm palette — terracotta, not construction orange */
-  --color-primary-50: #fdf6f0;
-  --color-primary-100: #fae8d8;
-  --color-primary-200: #f4cfaf;
-  --color-primary-300: #ecb07d;
-  --color-primary-400: #e2904e;
-  --color-primary-500: #d4763a;
-  --color-primary-600: #c0612e;
-  --color-primary-700: #9e4c28;
-  --color-primary-800: #7e3e26;
-  --color-primary-900: #683422;
+  /* Premium warm palette — refined gold & bronze */
+  --color-primary-50: #fdf8f3;
+  --color-primary-100: #f9edd9;
+  --color-primary-200: #f2d9b0;
+  --color-primary-300: #e8be7e;
+  --color-primary-400: #dca24e;
+  --color-primary-500: #c88a32;
+  --color-primary-600: #b07428;
+  --color-primary-700: #925e22;
+  --color-primary-800: #784d22;
+  --color-primary-900: #64401f;
 
-  --color-warm-50: #fcf9f5;
-  --color-warm-100: #f7f0e6;
-  --color-warm-200: #efe0cd;
-  --color-warm-300: #e3c9a8;
-  --color-warm-400: #d4ab7d;
-  --color-warm-500: #c6905c;
-  --color-warm-600: #b67a4a;
-  --color-warm-700: #97613d;
-  --color-warm-800: #7a5036;
-  --color-warm-900: #65432e;
+  --color-warm-50: #faf8f5;
+  --color-warm-100: #f3ede3;
+  --color-warm-200: #e8dcc8;
+  --color-warm-300: #d9c4a3;
+  --color-warm-400: #c8a87a;
+  --color-warm-500: #b8905c;
+  --color-warm-600: #a67a4a;
+  --color-warm-700: #8b633d;
+  --color-warm-800: #725236;
+  --color-warm-900: #5f452e;
 
   --color-sage-50: #f5f7f4;
   --color-sage-100: #e6ece5;
@@ -46,10 +46,34 @@
   --color-sky-800: #2155ac;
   --color-sky-900: #204988;
 
-  --color-background: #fdfbf7;
-  --color-foreground: #1a1612;
-  --color-muted: #6b645c;
-  --color-border: #e5ded5;
+  --color-violet-50: #f5f3ff;
+  --color-violet-100: #ede9fe;
+  --color-violet-200: #ddd6fe;
+  --color-violet-300: #c4b5fd;
+  --color-violet-400: #a78bfa;
+  --color-violet-500: #8b5cf6;
+  --color-violet-600: #7c3aed;
+  --color-violet-700: #6d28d9;
+
+  --color-rose-50: #fff1f2;
+  --color-rose-100: #ffe4e6;
+  --color-rose-200: #fecdd3;
+  --color-rose-300: #fda4af;
+  --color-rose-400: #fb7185;
+  --color-rose-500: #f43f5e;
+  --color-rose-600: #e11d48;
+
+  --color-amber-50: #fffbeb;
+  --color-amber-100: #fef3c7;
+  --color-amber-200: #fde68a;
+  --color-amber-300: #fcd34d;
+  --color-amber-400: #fbbf24;
+  --color-amber-500: #f59e0b;
+
+  --color-background: #faf8f5;
+  --color-foreground: #1a1714;
+  --color-muted: #78716c;
+  --color-border: #e7e0d6;
 
   --font-sans: var(--font-inter), var(--font-noto-sc), system-ui, -apple-system, sans-serif;
 }
@@ -60,72 +84,211 @@ body {
   color: var(--color-foreground);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* Chinese text optimization — wider line height for CJK characters */
 :lang(zh) {
   line-height: 1.8;
 }
 
-/* ── Display font for headings ──
-   Noto Serif SC covers both English and Chinese,
-   so one variable handles all headings. */
+/* ── Fix #2: Bold headings for authority ── */
 h1, h2 {
   font-family: var(--font-display), 'Songti SC', Georgia, serif;
-  font-weight: 400;
-  letter-spacing: -0.01em;
+  font-weight: 700;
+  letter-spacing: -0.025em;
 }
 
-/* ── Interactions ── */
+h3 {
+  letter-spacing: -0.015em;
+}
+
+/* ── Refined interactions ── */
 button,
 [role="button"] {
-  transition: transform 80ms ease, opacity 0.15s ease, background-color 0.15s ease;
+  transition: transform 120ms ease, opacity 0.2s ease, background-color 0.2s ease, box-shadow 0.3s ease;
 }
 button:active,
 [role="button"]:active {
-  transform: scale(0.97);
+  transform: scale(0.98);
 }
 
-/* Form fields */
 input, textarea, select {
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 input:focus, textarea:focus, select:focus {
   outline: none;
   border-color: var(--color-primary-400);
-  box-shadow: 0 0 0 3px rgba(212, 118, 58, 0.12);
+  box-shadow: 0 0 0 4px rgba(200, 138, 50, 0.12);
 }
 
-/* ── Fade-in animation ── */
+/* ── Animations ── */
 @keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+  animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-.animate-fade-up {
-  animation: fade-up 0.5s ease-out both;
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.92); }
+  to   { opacity: 1; transform: scale(1); }
+}
+.animate-scale-in {
+  animation: scale-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes orbit {
+  0%   { transform: translate(0, 0) scale(1); }
+  25%  { transform: translate(20px, -15px) scale(1.05); }
+  50%  { transform: translate(-10px, -25px) scale(0.95); }
+  75%  { transform: translate(-20px, -10px) scale(1.02); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+.animate-orbit {
+  animation: orbit 15s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50%      { opacity: 0.6; transform: scale(1.08); }
+}
+.animate-pulse-glow {
+  animation: pulse-glow 5s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ── Fix #1: Gradient text reserved for hero only ── */
+.text-gradient-light {
+  background: linear-gradient(135deg, #fef3c7, #fde68a, #fcd34d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Glass effects ── */
+.glass {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(20px) saturate(1.8);
+  -webkit-backdrop-filter: blur(20px) saturate(1.8);
+}
+
+.glass-dark {
+  background: rgba(42, 37, 32, 0.8);
+  backdrop-filter: blur(20px) saturate(1.5);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
+}
+
+/* ── Premium shadow system ── */
+.shadow-card {
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    0 4px 12px rgba(0, 0, 0, 0.05),
+    0 0 0 1px rgba(0, 0, 0, 0.02);
+}
+
+.shadow-card-hover {
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.08),
+    0 20px 48px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(200, 138, 50, 0.08);
+}
+
+.shadow-elevated {
+  box-shadow:
+    0 16px 32px rgba(0, 0, 0, 0.1),
+    0 32px 64px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-glow-primary {
+  box-shadow:
+    0 4px 16px rgba(200, 138, 50, 0.2),
+    0 8px 32px rgba(200, 138, 50, 0.12);
+}
+
+.shadow-glow-sage {
+  box-shadow:
+    0 4px 12px rgba(76, 103, 74, 0.15),
+    0 12px 32px rgba(76, 103, 74, 0.1);
 }
 
 /* Staggered children */
 .stagger > *:nth-child(1) { animation-delay: 0ms; }
-.stagger > *:nth-child(2) { animation-delay: 60ms; }
-.stagger > *:nth-child(3) { animation-delay: 120ms; }
-.stagger > *:nth-child(4) { animation-delay: 180ms; }
-.stagger > *:nth-child(5) { animation-delay: 240ms; }
-.stagger > *:nth-child(6) { animation-delay: 300ms; }
+.stagger > *:nth-child(2) { animation-delay: 100ms; }
+.stagger > *:nth-child(3) { animation-delay: 200ms; }
+.stagger > *:nth-child(4) { animation-delay: 300ms; }
+.stagger > *:nth-child(5) { animation-delay: 400ms; }
+.stagger > *:nth-child(6) { animation-delay: 500ms; }
 
-/* ── Selection ── */
 ::selection {
-  background: rgba(212, 118, 58, 0.15);
+  background: rgba(200, 138, 50, 0.2);
   color: inherit;
+}
+
+/* ── Thin section divider ── */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-border), transparent);
+}
+
+/* ── Dark section ── */
+.section-dark {
+  background: linear-gradient(135deg, #2a2520, #332e28);
+  color: #ede8e0;
+}
+.section-dark h1,
+.section-dark h2,
+.section-dark h3 {
+  color: #f5f0ea;
+}
+.section-dark .text-muted {
+  color: #b8b0a5;
+}
+
+/* ── Gold shimmer line — hero bottom + footer top only ── */
+.gold-line {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-primary-400), var(--color-amber-300), var(--color-primary-400), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 4s linear infinite;
+}
+
+/* ── Fix #10: Micro-interactions ── */
+
+/* Link hover underline animation */
+.link-hover {
+  position: relative;
+  text-decoration: none;
+}
+.link-hover::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+.link-hover:hover::after {
+  width: 100%;
+}
+
+/* Image hover zoom */
+.img-hover {
+  overflow: hidden;
+}
+.img-hover img {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.img-hover:hover img {
+  transform: scale(1.03);
 }

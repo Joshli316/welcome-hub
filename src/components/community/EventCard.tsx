@@ -29,14 +29,14 @@ export default function EventCard({ event }: EventCardProps) {
   const location = localized(event, 'location', locale);
 
   return (
-    <Card className="flex flex-col h-full animate-fade-up">
-      <div className="flex items-center gap-2 mb-3">
+    <Card className="flex flex-col h-full animate-fade-up group hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
+      <div className="flex items-center gap-2.5 mb-3">
         <Badge variant={typeBadgeVariant[event.type]}>{tTypes(event.type)}</Badge>
-        <span className="text-xs text-muted">{formatDate(event.date, locale)}</span>
+        <span className="text-base text-muted">{formatDate(event.date, locale)}</span>
       </div>
-      <h3 className="font-semibold text-[15px] mb-1.5">{title}</h3>
-      <p className="text-[13px] text-muted mb-3 flex-1 leading-relaxed">{description}</p>
-      <div className="text-xs text-muted space-y-0.5 mb-4">
+      <h3 className="font-bold text-xl mb-1.5">{title}</h3>
+      <p className="text-base text-muted mb-3 flex-1 leading-relaxed">{description}</p>
+      <div className="text-base text-muted space-y-1 mb-3">
         <p><span aria-hidden="true">📍</span> {location}</p>
         <p><span aria-hidden="true">🕐</span> {event.time}</p>
       </div>
@@ -46,7 +46,7 @@ export default function EventCard({ event }: EventCardProps) {
           href={safeExternalUrl(event.signupUrl)!}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-[13px] font-medium text-primary-600 hover:text-primary-700 transition-colors"
+          className="inline-flex items-center gap-1.5 text-base font-bold text-primary-600 hover:text-primary-700 hover:gap-2.5 transition-all link-hover"
         >
           {t('signup')} &rarr;
         </a>

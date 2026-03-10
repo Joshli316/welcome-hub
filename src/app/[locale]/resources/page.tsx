@@ -15,20 +15,27 @@ export default function ResourcesPage() {
   const phases = ['first-week', 'first-month', 'first-semester'] as const;
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
-      <PageHeader title={t('title')} subtitle={t('subtitle')} />
+    <div>
+      {/* Page banner for visual continuity with dark header */}
+      <div className="bg-gradient-to-b from-warm-100/60 to-background pt-10 pb-2">
+        <div className="max-w-6xl mx-auto px-4">
+          <PageHeader title={t('title')} subtitle={t('subtitle')} />
+        </div>
+      </div>
 
-      {phases.map(phase => {
-        const cats = getCategoriesByPhase(phase);
-        return (
-          <div key={phase} className="mb-12">
-            <h2 className="text-xl font-bold mb-4 pb-2 border-b border-border">
-              {t(`phases.${phase}`)}
-            </h2>
-            <ResourceGrid categories={cats} />
-          </div>
-        );
-      })}
+      <div className="max-w-6xl mx-auto px-4 pb-12">
+        {phases.map(phase => {
+          const cats = getCategoriesByPhase(phase);
+          return (
+            <div key={phase} className="mb-12">
+              <h2 className="text-2xl font-bold mb-5 pb-3 border-b border-border/40">
+                {t(`phases.${phase}`)}
+              </h2>
+              <ResourceGrid categories={cats} />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

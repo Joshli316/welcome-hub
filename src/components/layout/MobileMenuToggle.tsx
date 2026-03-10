@@ -17,7 +17,7 @@ export default function MobileMenuToggle({ links }: MobileMenuToggleProps) {
     <>
       <button
         onClick={() => setOpen(!open)}
-        className="p-2.5 -mr-2 rounded-md hover:bg-warm-100 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+        className="p-2.5 -mr-2 rounded-md text-white/60 hover:text-white hover:bg-white/10 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
         aria-label="Toggle menu"
         aria-expanded={open}
       >

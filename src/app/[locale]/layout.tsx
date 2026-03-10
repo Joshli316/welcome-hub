@@ -44,7 +44,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${inter.variable} ${notoSansSC.variable} ${notoSerifSC.variable}`}>
-      <body className="antialiased min-h-screen flex flex-col text-[15px] leading-relaxed">
+      <body className="antialiased min-h-screen flex flex-col text-lg leading-relaxed">
         <NextIntlClientProvider messages={messages}>
           <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:bg-foreground focus:text-background focus:rounded-lg focus:text-sm focus:font-medium">
             Skip to content

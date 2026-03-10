@@ -13,10 +13,10 @@ export default function ChecklistProgress({ completed, total }: ChecklistProgres
   return (
     <div className="mb-8">
       <div className="flex items-center justify-between mb-2">
-        <p className="text-sm font-medium text-muted">
+        <p className="text-base font-semibold text-muted">
           {t('progress', { completed, total })}
         </p>
-        <span className="text-sm font-bold text-primary-600">{percentage}%</span>
+        <span className="text-lg font-bold text-primary-600">{percentage}%</span>
       </div>
       <ProgressBar value={percentage} />
     </div>
