@@ -5,6 +5,7 @@ import { getChecklistItems, checklistPhases } from '@/lib/data/checklist';
 import { useChecklist } from '@/hooks/useChecklist';
 import ChecklistGroup from '@/components/checklist/ChecklistGroup';
 import ChecklistProgress from '@/components/checklist/ChecklistProgress';
+import PageHeader from '@/components/ui/PageHeader';
 
 export default function ChecklistPage() {
   const t = useTranslations('checklist');
@@ -13,10 +14,7 @@ export default function ChecklistPage() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold mb-2">{t('title')}</h1>
-        <p className="text-muted">{t('subtitle')}</p>
-      </div>
+      <PageHeader title={t('title')} subtitle={t('subtitle')} />
 
       <ChecklistProgress completed={completedCount} total={items.length} />
 

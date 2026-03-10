@@ -30,8 +30,9 @@ export default function NoteForm({ onSubmit, onCancel, locale }: NoteFormProps) 
     <form onSubmit={handleSubmit} className="space-y-3 bg-warm-50 rounded-lg p-4">
       <div className="grid grid-cols-2 gap-3">
         <div>
-          <label className="block text-xs font-medium mb-1">{t('notes.type')}</label>
+          <label htmlFor="note-type" className="block text-xs font-medium mb-1">{t('notes.type')}</label>
           <select
+            id="note-type"
             value={type}
             onChange={e => setType(e.target.value as InteractionNote['type'])}
             className="w-full px-3 py-2 border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary-300"
@@ -42,8 +43,9 @@ export default function NoteForm({ onSubmit, onCancel, locale }: NoteFormProps) 
           </select>
         </div>
         <div>
-          <label className="block text-xs font-medium mb-1">{t('notes.date')}</label>
+          <label htmlFor="note-date" className="block text-xs font-medium mb-1">{t('notes.date')}</label>
           <input
+            id="note-date"
             type="date"
             value={date}
             onChange={e => setDate(e.target.value)}
@@ -53,8 +55,9 @@ export default function NoteForm({ onSubmit, onCancel, locale }: NoteFormProps) 
       </div>
 
       <div>
-        <label className="block text-xs font-medium mb-1">{t('notes.content')}</label>
+        <label htmlFor="note-content" className="block text-xs font-medium mb-1">{t('notes.content')}</label>
         <textarea
+          id="note-content"
           value={content}
           onChange={e => setContent(e.target.value)}
           rows={3}

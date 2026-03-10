@@ -1,0 +1,136 @@
+[
+  {
+    "slug": "health-insurance-guide",
+    "categoryId": "health",
+    "title": "Understanding Health Insurance in the US",
+    "summary": "US healthcare is expensive without insurance. Here's how student health insurance works, what it covers, and how to use it.",
+    "content": [
+      { "type": "paragraph", "text": "Healthcare in the US is very different from China. There's no universal coverage — you must have insurance, or a single doctor visit can cost hundreds of dollars. The good news: most schools require and provide student health insurance." },
+      { "type": "heading", "text": "School-provided insurance (SHIP)", "level": 2 },
+      { "type": "paragraph", "text": "Most universities automatically enroll international students in a Student Health Insurance Plan (SHIP). The cost is typically $1,500-3,500 per year, added to your tuition bill." },
+      { "type": "list", "items": [
+        "Covers doctor visits, hospital stays, prescriptions, mental health, and emergencies",
+        "Usually includes the campus Student Health Center at no extra cost",
+        "May have a network — check which doctors and hospitals are 'in-network' for lower costs",
+        "Covers preventive care (annual checkups, flu shots) at no additional charge"
+      ] },
+      { "type": "tip", "text": "Read your insurance plan's summary document carefully. Know your deductible (how much you pay before insurance kicks in), copay (fixed amount per visit), and out-of-pocket maximum (most you'll pay in a year)." },
+      { "type": "heading", "text": "Key insurance terms explained", "level": 2 },
+      { "type": "comparison", "title": "Insurance Vocabulary", "items": [
+        { "label": "Premium (保费)", "description": "The amount you pay for insurance coverage, usually per semester or year. Often included in tuition." },
+        { "label": "Deductible (免赔额)", "description": "The amount you pay out-of-pocket before insurance starts covering costs. Example: $250 deductible means you pay the first $250 of medical bills yourself." },
+        { "label": "Copay (挂号费)", "description": "A fixed amount you pay per visit. Example: $20 copay for a doctor visit, $10 for a prescription." },
+        { "label": "In-network (网络内)", "description": "Doctors and hospitals that have agreements with your insurance. Always cheaper. Going out-of-network can cost 2-3x more." },
+        { "label": "Out-of-pocket max (年度上限)", "description": "The most you'll pay in a year. After reaching this amount, insurance covers 100%. This protects you from catastrophic costs." }
+      ] },
+      { "type": "heading", "text": "Can you waive school insurance?", "level": 2 },
+      { "type": "paragraph", "text": "Some schools allow you to waive SHIP if you have equivalent coverage (e.g., from an employer or a plan from China). The waiver process is strict — your alternative plan must meet the school's minimum requirements for coverage, network, and deductible levels." },
+      { "type": "warning", "text": "Do NOT go without health insurance in the US. A single ER visit can cost $3,000-10,000+. An ambulance ride alone costs $1,000-2,500. Insurance is not optional — it's essential protection." },
+      { "type": "heading", "text": "Insurance from China — does it work?", "level": 2 },
+      { "type": "paragraph", "text": "Some Chinese insurance companies offer overseas student plans. These can be cheaper but come with limitations:" },
+      { "type": "list", "items": [
+        "May not meet your school's waiver requirements",
+        "Reimbursement process can be slow (you pay upfront, submit claims later)",
+        "Network restrictions — may only cover certain hospitals",
+        "Language barrier when filing claims",
+        "Check if your school accepts it before purchasing"
+      ] }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["seeing-a-doctor", "mental-health-resources"]
+  },
+  {
+    "slug": "seeing-a-doctor",
+    "categoryId": "health",
+    "title": "How to See a Doctor in the US",
+    "summary": "Where to go when you're sick or injured — from campus health centers to urgent care and the ER. Plus how to fill prescriptions.",
+    "content": [
+      { "type": "paragraph", "text": "In the US, you don't just walk into a hospital when you're sick. There are different levels of care for different situations, and going to the right place saves you time and money." },
+      { "type": "heading", "text": "Where to go based on your situation", "level": 2 },
+      { "type": "comparison", "title": "Care Options", "items": [
+        { "label": "Campus Health Center", "description": "First stop for most issues — cold, flu, sore throat, minor injuries, vaccinations. Usually free or very low cost with student insurance. No appointment needed at many schools." },
+        { "label": "Urgent Care Clinic", "description": "For issues that need same-day attention but aren't emergencies — sprains, minor cuts needing stitches, bad infections, persistent fever. Walk in, no appointment. $30-75 copay typical." },
+        { "label": "Primary Care Doctor", "description": "For ongoing health needs and annual checkups. You'll need to schedule an appointment (sometimes weeks out). Your insurance may require you to choose a primary care provider." },
+        { "label": "Emergency Room (ER)", "description": "Only for true emergencies — chest pain, difficulty breathing, severe bleeding, head injuries, broken bones. Open 24/7 but very expensive ($500-2,000+ copay even with insurance)." },
+        { "label": "Telehealth", "description": "Video call with a doctor from your phone. Many insurance plans include this for free. Great for simple issues — cold symptoms, rashes, prescription refills. Try your insurance app first." }
+      ] },
+      { "type": "warning", "text": "Call 911 for life-threatening emergencies (chest pain, can't breathe, severe bleeding, stroke symptoms). Don't worry about cost in a real emergency — your health comes first. Insurance will cover most of it." },
+      { "type": "heading", "text": "What to bring to a doctor visit", "level": 2 },
+      { "type": "list", "items": [
+        "Insurance card (physical or digital in your insurance app)",
+        "Photo ID (passport or student ID)",
+        "List of any medications you're currently taking",
+        "Description of your symptoms — when they started, how severe, what makes them better/worse",
+        "Your vaccination records if this is your first visit"
+      ] },
+      { "type": "heading", "text": "How prescriptions work", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "Doctor writes a prescription", "description": "The doctor sends it electronically to a pharmacy of your choice." },
+        { "title": "Pick up at a pharmacy", "description": "CVS, Walgreens, and Walmart pharmacies are everywhere. Campus pharmacies are also convenient. Bring your insurance card." },
+        { "title": "Pay your copay", "description": "With insurance, most prescriptions cost $5-30. Without insurance, the same medication might cost $50-300+." },
+        { "title": "Refills", "description": "For ongoing medications, you can request refills through the pharmacy's app or by calling them. Some prescriptions auto-refill." }
+      ] },
+      { "type": "tip", "text": "If a prescription is expensive, ask the pharmacist about generic alternatives — they're chemically identical but much cheaper. Also check GoodRx (app or website) for discount coupons that work even with insurance." },
+      { "type": "heading", "text": "Dental and vision care", "level": 2 },
+      { "type": "paragraph", "text": "Most student health insurance does NOT include dental or vision coverage. These are usually separate plans. Options:" },
+      { "type": "list", "items": [
+        "University dental clinic — many dental schools offer discounted care from supervised students",
+        "Community health centers — sliding-scale fees based on income",
+        "Dental discount plans — not insurance, but can save 20-50% on procedures",
+        "Vision: Zenni Optical or EyeBuyDirect for affordable glasses online after getting your prescription"
+      ] }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["health-insurance-guide", "mental-health-resources"]
+  },
+  {
+    "slug": "mental-health-resources",
+    "categoryId": "health",
+    "title": "Mental Health and Emotional Wellbeing",
+    "summary": "Culture shock, loneliness, and academic pressure are real. Here's where to find support — most of it is free through your school.",
+    "content": [
+      { "type": "paragraph", "text": "Moving to a new country is one of the most stressful life changes a person can experience. It's completely normal to feel lonely, anxious, overwhelmed, or homesick — especially in the first few months. You're not weak for struggling, and you're not alone." },
+      { "type": "heading", "text": "Common challenges international students face", "level": 2 },
+      { "type": "list", "items": [
+        "Culture shock — everything feels unfamiliar and exhausting",
+        "Language fatigue — thinking in a second language all day is draining",
+        "Loneliness and homesickness — especially during holidays",
+        "Academic pressure — different teaching styles, language barrier in class",
+        "Identity questions — who am I in this new context?",
+        "Sleep problems, loss of appetite, or difficulty concentrating"
+      ] },
+      { "type": "paragraph", "text": "These feelings usually peak around 1-3 months after arrival and gradually improve. But if they persist or worsen, reaching out for help is a sign of strength, not weakness." },
+      { "type": "heading", "text": "Free resources through your school", "level": 2 },
+      { "type": "list", "items": [
+        "Counseling Center — free short-term therapy (usually 8-12 sessions per year). Many centers have counselors who speak Chinese or specialize in international student issues.",
+        "Crisis hotline — your school likely has a 24/7 number for urgent mental health situations. Save it in your phone.",
+        "Support groups — many schools run groups specifically for international students, grief, anxiety, or adjusting to college.",
+        "Peer mentoring — upperclassmen who've been through the same transition and can relate."
+      ] },
+      { "type": "tip", "text": "You don't need to be in crisis to see a counselor. Many students go simply to talk through adjustment challenges, academic stress, or relationship issues. Think of it like going to the gym for your mind." },
+      { "type": "heading", "text": "Other support resources", "level": 2 },
+      { "type": "comparison", "title": "Where to Get Help", "items": [
+        { "label": "988 Suicide & Crisis Lifeline", "description": "Call or text 988, available 24/7. Free, confidential support in English and Spanish. Mandarin interpreters available on request." },
+        { "label": "Crisis Text Line", "description": "Text HOME to 741741 for free crisis counseling via text message. Available 24/7." },
+        { "label": "Campus counseling center", "description": "Free for enrolled students. Usually located in the student services building. Walk-in hours available at most schools." },
+        { "label": "Community and faith organizations", "description": "Many churches and community groups offer free counseling or support groups. A warm community can make a huge difference." },
+        { "label": "Online therapy (BetterHelp, Talkspace)", "description": "Paid services ($60-90/week) but convenient. Some offer student discounts. Good if you prefer a Chinese-speaking therapist not available on campus." }
+      ] },
+      { "type": "heading", "text": "Everyday wellbeing practices", "level": 2 },
+      { "type": "paragraph", "text": "Small daily habits make a big difference for mental health:" },
+      { "type": "list", "items": [
+        "Stay connected — schedule regular video calls with family and friends back home",
+        "Build a routine — consistent sleep, meals, and study times reduce anxiety",
+        "Move your body — even a 20-minute walk helps. Use the campus gym (it's free!)",
+        "Find your people — join a student org, study group, or community. One close friend makes everything easier.",
+        "Limit social media comparison — everyone's highlight reel looks better than your behind-the-scenes",
+        "Give yourself grace — adjusting takes time. Celebrate small wins."
+      ] },
+      { "type": "warning", "text": "If you or someone you know is in immediate danger, call 911. If you're having thoughts of self-harm, call 988 or go to your nearest emergency room. These services are confidential and will not affect your visa status." },
+      { "type": "heading", "text": "A note on cultural stigma", "level": 2 },
+      { "type": "paragraph", "text": "In many Asian cultures, seeking mental health help carries stigma. But in the US, therapy is widely used and respected. Over 40% of American college students use counseling services. Taking care of your mental health is just as important as taking care of your physical health — and your school's counselors understand the unique pressures international students face." }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["health-insurance-guide", "seeing-a-doctor"]
+  }
+]

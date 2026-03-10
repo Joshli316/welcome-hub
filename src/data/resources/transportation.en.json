@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "drivers-license",
+    "categoryId": "transportation",
+    "title": "How to Get a US Driver's License",
+    "summary": "A step-by-step guide to getting your driver's license as an international student, including documents needed, the written test, and the road test.",
+    "content": [
+      { "type": "paragraph", "text": "Having a driver's license in the US is useful even if you don't plan to drive regularly — it serves as a primary form of ID. The process varies by state, but the general steps are similar." },
+      { "type": "heading", "text": "Do you need a driver's license?", "level": 2 },
+      { "type": "paragraph", "text": "If you live in a city with good public transit (New York, Chicago, Boston), you may not need one right away. But in most college towns and suburban areas, a car is practically essential for groceries, errands, and getting around." },
+      { "type": "tip", "text": "Even if you don't drive, consider getting a state ID card — it's issued at the same DMV office, requires similar documents, and works as official photo ID everywhere." },
+      { "type": "heading", "text": "Documents you'll need", "level": 2 },
+      { "type": "list", "items": [
+        "Passport with valid F-1 visa",
+        "I-20 with valid travel signature",
+        "I-94 arrival record (print from i94.cbp.dhs.gov)",
+        "Proof of state residency (lease, utility bill, or bank statement)",
+        "Social Security Number — OR — letter from SSA saying you're ineligible (some states accept this)",
+        "School enrollment verification letter (some states require this)"
+      ] },
+      { "type": "warning", "text": "Requirements vary significantly by state. Check your state's DMV website before going. Some states (like California) accept foreign licenses for a period, while others require you to get a local license immediately." },
+      { "type": "heading", "text": "Step-by-step process", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "Study for the written test", "description": "Download your state's driver's handbook (free PDF on the DMV website). Many states offer the test in Chinese — ask when you book your appointment." },
+        { "title": "Visit the DMV", "description": "Make an appointment online if possible — walk-ins can mean 2-3 hour waits. Bring ALL your documents." },
+        { "title": "Pass the written test", "description": "Usually 25-40 multiple choice questions about road rules, signs, and safety. You need about 80% to pass." },
+        { "title": "Get your learner's permit", "description": "After passing the written test, you'll receive a learner's permit. You can now practice driving with a licensed driver in the car." },
+        { "title": "Practice driving", "description": "Practice in parking lots first, then quiet streets, then highways. Many schools have student driving clubs or you can hire a driving instructor ($40-60/hour)." },
+        { "title": "Schedule and pass the road test", "description": "You'll drive with an examiner for 15-20 minutes. They'll test parking, turning, lane changes, and following traffic rules. Stay calm and check your mirrors often." },
+        { "title": "Receive your license", "description": "Some states give you a temporary paper license the same day. Your permanent card arrives by mail in 1-3 weeks." }
+      ] },
+      { "type": "tip", "text": "Free practice tests are available online for every state. Search '[your state] DMV practice test' and take it several times before your appointment. The real test questions are very similar." }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["buying-a-car", "getting-around-without-car"]
+  },
+  {
+    "slug": "getting-around-without-car",
+    "categoryId": "transportation",
+    "title": "Getting Around Without a Car",
+    "summary": "Public transit, ride-sharing, biking, and other ways to get around campus and your city without owning a car.",
+    "content": [
+      { "type": "paragraph", "text": "Many international students don't have a car during their first semester — and that's completely normal. Here are all the ways to get around." },
+      { "type": "heading", "text": "Campus shuttles and buses", "level": 2 },
+      { "type": "paragraph", "text": "Most universities run free shuttle buses that connect campus, student housing, shopping areas, and nearby apartment complexes. Check your school's transportation website for routes and schedules." },
+      { "type": "tip", "text": "Download your school's shuttle app (if available) or Google Maps — both show real-time bus locations and arrival times." },
+      { "type": "heading", "text": "Public transit", "level": 2 },
+      { "type": "paragraph", "text": "Many college towns have city bus systems, and your student ID often gets you free or discounted rides. In larger cities, subways and light rail are efficient options." },
+      { "type": "list", "items": [
+        "Check if your student fees include a transit pass — many schools bundle this",
+        "Google Maps, Apple Maps, and Transit app all show public transit routes",
+        "Bus schedules may be reduced on weekends and holidays",
+        "Most systems accept contactless payment (tap your phone or card)"
+      ] },
+      { "type": "heading", "text": "Ride-sharing apps", "level": 2 },
+      { "type": "comparison", "title": "Ride-Sharing Options", "items": [
+        { "label": "Uber", "description": "Most widely available. Download the app, link a payment method, and request a ride. Prices vary by demand — check before confirming." },
+        { "label": "Lyft", "description": "Similar to Uber, sometimes cheaper. Worth having both apps to compare prices." },
+        { "label": "Uber/Lyft shared rides", "description": "Share with other riders going the same direction for 30-50% savings. Takes longer but much cheaper." }
+      ] },
+      { "type": "tip", "text": "Many Chinese students organize group rides to airports, Costco, or shopping centers via WeChat groups. This is a great way to save money and make friends!" },
+      { "type": "heading", "text": "Biking", "level": 2 },
+      { "type": "paragraph", "text": "Biking is popular on many campuses. Options include buying a used bike ($50-150 on Facebook Marketplace or campus bulletin boards), campus bike-share programs, or electric scooter rentals." },
+      { "type": "list", "items": [
+        "Always use a U-lock — cable locks are easily cut",
+        "Register your bike with campus police (free) in case of theft",
+        "Many campuses have free bike repair stations",
+        "Wear a helmet — it's the law in some states and always a good idea"
+      ] },
+      { "type": "heading", "text": "Walking", "level": 2 },
+      { "type": "paragraph", "text": "If you live on or near campus, walking is the simplest option. Most campus facilities are within a 15-minute walk. Invest in good walking shoes and a rain jacket." },
+      { "type": "warning", "text": "Always use crosswalks and follow pedestrian signals. Jaywalking can result in fines in some cities. At night, stick to well-lit paths and use your school's safety escort service if available." }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["drivers-license", "buying-a-car"]
+  },
+  {
+    "slug": "buying-a-car",
+    "categoryId": "transportation",
+    "title": "Buying Your First Car in the US",
+    "summary": "A practical guide to buying a used car as an international student — what to look for, how to avoid scams, and understanding insurance.",
+    "content": [
+      { "type": "paragraph", "text": "If you're in an area where a car is necessary, buying a reliable used car is often the best value. New cars lose 20-30% of their value in the first year, so a 2-4 year old used car gives you the best balance of reliability and price." },
+      { "type": "heading", "text": "Budget planning", "level": 2 },
+      { "type": "paragraph", "text": "The purchase price is just the beginning. Factor in these ongoing costs:" },
+      { "type": "list", "items": [
+        "Car insurance: $100-300/month (higher for new drivers and under 25)",
+        "Gas: $100-200/month depending on driving habits",
+        "Maintenance: oil changes, tires, brakes — budget $100/month",
+        "Registration and annual inspection: $50-200/year depending on state",
+        "Parking permit: varies by school and city"
+      ] },
+      { "type": "heading", "text": "Where to buy", "level": 2 },
+      { "type": "comparison", "title": "Where to Find Cars", "items": [
+        { "label": "Dealership (used)", "description": "More expensive but offers warranties and financing. Good for peace of mind. Certified Pre-Owned (CPO) cars come with manufacturer-backed warranties." },
+        { "label": "Private seller", "description": "Usually cheaper. Check Facebook Marketplace, Craigslist, and school bulletin boards. Higher risk — always inspect the car and check its history." },
+        { "label": "Graduating student sales", "description": "International students often sell their cars before leaving. Great deals but move fast — watch WeChat groups and school forums in April-May." },
+        { "label": "Online (Carvana, CarMax)", "description": "Convenient, transparent pricing, delivery to your door. CarMax offers a 30-day return policy." }
+      ] },
+      { "type": "heading", "text": "Before you buy — inspection checklist", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "Check the vehicle history", "description": "Run the VIN number on Carfax or AutoCheck ($40, or free at many dealerships). Look for accidents, flood damage, and odometer rollbacks." },
+        { "title": "Get a pre-purchase inspection", "description": "Pay a mechanic $100-150 to inspect the car before buying. This can save you thousands. Any honest seller will agree to this." },
+        { "title": "Test drive thoroughly", "description": "Drive on highways and local roads. Test brakes, acceleration, A/C, and listen for unusual sounds. Bring a friend who knows cars if possible." },
+        { "title": "Check the title", "description": "Make sure the title is 'clean' (not salvage or rebuilt). The seller's name should match the title." }
+      ] },
+      { "type": "warning", "text": "Never wire money or pay in full before seeing the car in person. Common scams include fake listings, title washing, and odometer fraud. If a deal seems too good to be true, it probably is." },
+      { "type": "heading", "text": "Car insurance — required by law", "level": 2 },
+      { "type": "paragraph", "text": "You must have car insurance before driving. As a new driver without US driving history, rates will be higher, but there are ways to save:" },
+      { "type": "list", "items": [
+        "Get quotes from at least 3-4 companies (GEICO, Progressive, State Farm, Allstate)",
+        "Ask about student discounts and good grades discounts",
+        "Higher deductible = lower monthly payment (but more out-of-pocket if you crash)",
+        "Some insurers accept your Chinese driving history for a discount",
+        "Bundling with renters insurance often saves 10-15%"
+      ] },
+      { "type": "tip", "text": "Ask fellow Chinese students in your area which insurance company they use. Often they can share referral codes for discounts, and you'll benefit from their experience with claims." }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["drivers-license", "getting-around-without-car"]
+  }
+]

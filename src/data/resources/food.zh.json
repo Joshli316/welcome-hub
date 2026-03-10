@@ -1,0 +1,147 @@
+[
+  {
+    "slug": "grocery-stores-guide",
+    "categoryId": "food",
+    "title": "美国超市指南：去哪里买菜",
+    "summary": "美国主流超市、亚洲超市和网上买菜全攻略，帮你找到需要的一切食材。",
+    "content": [
+      { "type": "paragraph", "text": "在美国买菜和在国内差别很大。超市更大、布局不同，有些熟悉的食材在普通超市很难找到。这篇指南帮你搞定所有购物需求。" },
+      { "type": "heading", "text": "主要超市连锁", "level": 2 },
+      { "type": "comparison", "title": "常见超市对比", "items": [
+        { "label": "Walmart", "description": "基本食品价格最低，品类齐全，还有生活用品。质量参差不齐，但覆盖面最广。" },
+        { "label": "Kroger / Safeway / Publix", "description": "各地区的主流连锁超市，质量不错，每周有打折。免费办会员卡——价格差很多。" },
+        { "label": "Trader Joe's", "description": "店面小巧，自有品牌产品有特色，预制餐实惠。冷冻食品区很受学生欢迎。" },
+        { "label": "Whole Foods", "description": "品质高，主打有机，价格也高。Amazon Prime会员有折扣。适合买特殊食材。" },
+        { "label": "Costco", "description": "批量购买——需要$65/年会员费。肉类、蔬果和日用品性价比极高。最好有车，和朋友一起分。" },
+        { "label": "Aldi", "description": "价格实惠，品种较少但质量不错。自带购物袋，推车需要投25美分硬币。" }
+      ] },
+      { "type": "tip", "text": "下载各超市的App查看电子优惠券和每周特价。同一商品不同超市价格可能差30-50%，稍微做下攻略能省很多钱。" },
+      { "type": "heading", "text": "亚洲超市", "level": 2 },
+      { "type": "paragraph", "text": "做中餐需要的食材，最好去亚洲超市找。酱油、豆瓣酱、老干妈、新鲜豆腐、中国蔬菜、面条、饺子等应有尽有。" },
+      { "type": "list", "items": [
+        "H Mart — 韩国人开的，但中国食材也很多。在美国分布很广。",
+        "99 Ranch Market（大华超市）— 最大的中国超市连锁。主要在加州、德州和东海岸。",
+        "GW Supermarket（大中华超市）— 在美东中大西洋地区较多。",
+        "Patel Brothers — 印度超市，但大米、香料和豆类价格很便宜。",
+        "本地亚洲小超市 — 在Google Maps搜'Asian grocery'或'Chinese supermarket'。"
+      ] },
+      { "type": "tip", "text": "如果附近没有亚洲超市，亚米网（Yamibuy）和Weee!可以网购亚洲食品，配送到美国大部分地址。很多都是国内熟悉的品牌。" },
+      { "type": "heading", "text": "网上买菜", "level": 2 },
+      { "type": "list", "items": [
+        "Instacart — 从Costco、Kroger、Aldi等超市代购配送。没车的时候特别方便。",
+        "Amazon Fresh / Whole Foods配送 — Prime会员$35以上免运费。",
+        "Walmart Grocery — 网上下单，到店免费取货，也可以配送。",
+        "Weee! — 亚洲食品配送，新用户经常有免运费活动。"
+      ] },
+      { "type": "heading", "text": "省钱窍门", "level": 2 },
+      { "type": "list", "items": [
+        "买超市自有品牌（generic）——通常便宜20-40%，质量差不多",
+        "看每周特价传单，便宜时多囤一些",
+        "买当季蔬果——便宜得多而且更新鲜",
+        "冷冻蔬菜和新鲜的一样有营养，价格便宜很多",
+        "和室友或朋友合办Costco会员，一起分大包装"
+      ] }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["cooking-essentials", "eating-out-guide"]
+  },
+  {
+    "slug": "cooking-essentials",
+    "categoryId": "food",
+    "title": "厨房从零开始：留学生做饭必备",
+    "summary": "在美国搭建第一个厨房——必备厨具、常备食材、哪里买便宜的锅碗瓢盆。",
+    "content": [
+      { "type": "paragraph", "text": "自己做饭是省钱和吃好的最佳方式。在家做一顿饭平均花$3-5，在外面吃则需要$12-20。这篇指南帮你从零搭建厨房。" },
+      { "type": "heading", "text": "必备厨具", "level": 2 },
+      { "type": "list", "items": [
+        "电饭煲 — 最重要的电器。象印（Zojirushi）或Instant Pot很好；Walmart的平价款（$20-30）也够用。",
+        "一口好的不粘锅（10-12寸）— 炒菜、煎蛋、什么都能做。",
+        "一口中号带盖汤锅 — 煮汤、下面条、煮菜。",
+        "菜板和一把厨刀 — 不用买刀具套装，一把8寸主厨刀能解决95%的需求。",
+        "基本工具：锅铲、汤勺、夹子、开罐器、量杯。",
+        "炒锅（如果是煤气灶的话）— 亚洲超市$20-30的碳钢炒锅就行。电炉火力不够，炒锅效果不理想。"
+      ] },
+      { "type": "heading", "text": "哪里买便宜的厨房用品", "level": 2 },
+      { "type": "comparison", "title": "购买渠道", "items": [
+        { "label": "Walmart / Target", "description": "基础款最全——锅、锅铲、收纳盒。Walmart的Mainstays和Target的Room Essentials系列最便宜。" },
+        { "label": "TJ Maxx / Marshalls / HomeGoods", "description": "品牌厨具深度折扣。经常能找到5-7折的好东西。" },
+        { "label": "Facebook Marketplace / 校园群组", "description": "毕业生经常低价卖全套厨房用品。4-5月是捡漏的最佳时机。" },
+        { "label": "Dollar Tree", "description": "厨房小工具、收纳盒、清洁用品意外地好用。全部$1.25。" },
+        { "label": "Amazon", "description": "方便买特殊物品。看好评论。适合买电饭煲和电热水壶。" }
+      ] },
+      { "type": "heading", "text": "常备食材清单", "level": 2 },
+      { "type": "paragraph", "text": "备好这些基础食材，随时都能做出一餐：" },
+      { "type": "list", "items": [
+        "大米（茉莉香米或中粒米）— 买大袋的，每斤便宜很多",
+        "食用油（植物油或菜籽油）",
+        "生抽、老抽、蚝油",
+        "老干妈 — 亚洲超市和Amazon都能买到",
+        "盐、黑胡椒、大蒜、姜",
+        "鸡蛋 — 百搭、便宜的蛋白质来源",
+        "干面条或方便面，用来快速解决一餐",
+        "冷冻饺子 — 在亚洲超市多囤一些"
+      ] },
+      { "type": "tip", "text": "第一次采购会花比较多钱，因为所有东西都要从头买。之后每周买菜一个人大约$40-70，前提是大部分在家做。" },
+      { "type": "heading", "text": "新手入门菜谱", "level": 2 },
+      { "type": "paragraph", "text": "如果你是厨房新手，从这几道简单菜开始：" },
+      { "type": "list", "items": [
+        "蛋炒饭 — 剩饭+鸡蛋+酱油+随便什么蔬菜",
+        "番茄炒蛋 — 3种食材，10分钟，家的味道",
+        "方便面升级版 — 加个鸡蛋、冷冻蔬菜、滴几滴香油",
+        "一锅意面 — 意面+罐装番茄酱+手边有的蔬菜",
+        "烤盘鸡肉蔬菜 — 全部铺在烤盘上，400°F烤25分钟搞定"
+      ] },
+      { "type": "tip", "text": "在小红书搜'留学生快手菜'——有成千上万道适合在美国用当地食材做的简单菜谱。" }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["grocery-stores-guide", "eating-out-guide"]
+  },
+  {
+    "slug": "eating-out-guide",
+    "categoryId": "food",
+    "title": "在美国吃饭：小费、点餐和找好吃的",
+    "summary": "美国餐厅怎么点餐、小费怎么给、校园食堂和平价餐厅推荐。",
+    "content": [
+      { "type": "paragraph", "text": "在美国外出就餐有很多不成文的规矩，刚来可能会觉得困惑。这篇指南涵盖从快餐到正式餐厅的所有你需要知道的事。" },
+      { "type": "heading", "text": "小费 — 最重要的事", "level": 2 },
+      { "type": "paragraph", "text": "在美国，给小费不是可选的。餐厅服务员的主要收入来自小费而非底薪。不给小费会被认为非常不礼貌。" },
+      { "type": "list", "items": [
+        "正式餐厅：税前账单的18-20%",
+        "自助餐：10-15%",
+        "外卖自取：可给可不给，给10%算客气",
+        "咖啡店：$1-2或不给都可以",
+        "快餐（麦当劳、Chick-fil-A等）：不需要给小费",
+        "外卖配送（DoorDash、Uber Eats）：15-20%或至少$3-5"
+      ] },
+      { "type": "warning", "text": "菜单上的价格不是你最终要付的价格。还要加上约8-10%的税和18-20%的小费。一顿$15的饭实际花费约$19-20。一定要把这些算进预算。" },
+      { "type": "heading", "text": "点餐流程", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "等位（正式餐厅）", "description": "不要自己找位子坐——在门口等服务员带你入座。快餐类餐厅（Chipotle、Panera）则在柜台点餐。" },
+        { "title": "先点饮料", "description": "服务员会先问你喝什么。水永远是免费的——说'Water, please'就行，不用不好意思。" },
+        { "title": "点菜", "description": "对菜单有疑问完全可以问。'What do you recommend?'（你推荐什么？）是很常见也很受欢迎的问题。" },
+        { "title": "要账单", "description": "服务员不会主动拿账单，需要你说'Can I get the check, please?'或在空中做写字的手势。这是正常的——他们不是在忽视你。" },
+        { "title": "付款和给小费", "description": "可以刷卡（最常见）或付现金。刷卡的话，在小票上写好小费金额，加上总额，签名。" }
+      ] },
+      { "type": "heading", "text": "平价就餐选择", "level": 2 },
+      { "type": "comparison", "title": "省钱吃饭选项", "items": [
+        { "label": "校园食堂", "description": "如果有meal plan就充分利用！很多学校的食堂是自助餐形式。没有meal plan也可以单次付费（$8-12）。" },
+        { "label": "快餐连锁", "description": "Chipotle、Panda Express、Chick-fil-A——一顿饱饭$8-12。很多有学生优惠或App折扣。" },
+        { "label": "Happy Hour特价", "description": "很多餐厅在非高峰时段（通常下午3-6点）有折扣。用便宜的价格尝试高档餐厅的好机会。" },
+        { "label": "食品车（Food Trucks）", "description": "校园附近常有。通常$7-10一份正餐。种类丰富，品质不错。" },
+        { "label": "教会和社区聚餐", "description": "很多教会和社区组织提供免费或随意捐款的聚餐。既能吃到家常菜，又能认识当地人。" }
+      ] },
+      { "type": "heading", "text": "找中餐", "level": 2 },
+      { "type": "paragraph", "text": "想念家乡味道是很正常的。在美国找好吃中餐的方法：" },
+      { "type": "list", "items": [
+        "在小红书搜索你所在城市的中餐推荐",
+        "看Google Maps评论——筛选'Chinese'，找有中文评论的店",
+        "问其他中国同学——微信群里经常有餐厅推荐",
+        "如果你的城市有中国城（Chinatown），去那里找",
+        "别看装修——很多最好吃的中餐馆看起来其貌不扬"
+      ] },
+      { "type": "tip", "text": "很多美式中餐馆（Panda Express、P.F. Chang's）的口味和国内很不一样。想吃正宗的，找菜单上有中文、服务员说中文的餐馆。" }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["grocery-stores-guide", "cooking-essentials"]
+  }
+]

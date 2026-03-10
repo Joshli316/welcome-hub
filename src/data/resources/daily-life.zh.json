@@ -1,0 +1,148 @@
+[
+  {
+    "slug": "shopping-guide",
+    "categoryId": "daily-life",
+    "title": "在美国买东西：去哪里买、怎么省钱",
+    "summary": "从家具到衣服到电子产品——去哪里找最好的折扣，退货怎么退，省钱小窍门。",
+    "content": [
+      { "type": "paragraph", "text": "在美国购物和在国内差别很大。没有淘宝可以次日达，但一旦你知道去哪里买，能找到很多好deal——尤其对预算有限的学生来说。" },
+      { "type": "heading", "text": "各类商品去哪里买", "level": 2 },
+      { "type": "comparison", "title": "分类购物指南", "items": [
+        { "label": "家具家居", "description": "IKEA（便宜、自己组装）、Walmart、Target、Facebook Marketplace（毕业生的二手家具——4-5月最划算）。" },
+        { "label": "衣服", "description": "TJ Maxx/Marshalls（品牌衣服5-7折）、Old Navy、优衣库、H&M买基本款。二手店（Goodwill、Salvation Army）能找到超值好货。" },
+        { "label": "电子产品", "description": "Best Buy、Amazon、Apple（有学生价）。Micro Center买电脑配件。等Black Friday/Prime Day打折最划算。" },
+        { "label": "日用品", "description": "Dollar Tree（$1.25买基础用品）、Walmart、Target。第一天别买太多——住一阵就知道真正需要什么了。" },
+        { "label": "课本", "description": "千万别在校园书店买新书。查看：图书馆馆藏（免费）、Chegg/Amazon租借、旧版本、PDF版本，或从学长学姐那里买二手。" }
+      ] },
+      { "type": "heading", "text": "网购必备", "level": 2 },
+      { "type": "list", "items": [
+        "Amazon Prime——学生免费试用6个月，之后半价。两天免费送达、视频流媒体等。",
+        "Amazon Warehouse——开箱退货商品7-8折。通常和全新一样。",
+        "Facebook Marketplace——买二手家具、自行车、电子产品的最佳平台。",
+        "Craigslist——和Marketplace类似但更老。注意安全，在公共场所交易。",
+        "Honey浏览器插件——结账时自动搜索和使用优惠码。"
+      ] },
+      { "type": "heading", "text": "退货——美国购物最好的地方", "level": 2 },
+      { "type": "paragraph", "text": "美国的退货政策比中国宽松得多。大多数商店30-90天内凭小票退货，不需要理由。" },
+      { "type": "list", "items": [
+        "Costco——几乎无限期退货（电子产品除外：90天）",
+        "Amazon——大多数商品30天，免费退货运费",
+        "Target/Walmart——90天凭小票退",
+        "衣服——不确定就先别摘吊牌。大多数商店接受穿过一次的退货。",
+        "保留所有小票（或用商店App自动保存电子小票）"
+      ] },
+      { "type": "tip", "text": "如果你买了东西后2周内降价了，很多商店会退差价。这叫'price adjustment'——带上小票或打客服电话就行。" },
+      { "type": "heading", "text": "省钱秘籍", "level": 2 },
+      { "type": "list", "items": [
+        "学生折扣——一定要问！Apple、Spotify、Amazon Prime、软件、博物馆、电影院和很多商店都有10-20%的.edu邮箱优惠。",
+        "返现App——Rakuten在数百家商店提供1-10%返现。用邮箱注册就行。",
+        "Buy Nothing群——Facebook上邻居免费赠送物品的群组。搜'Buy Nothing [你的城市]'。",
+        "季节性打折——Black Friday（11月）、Prime Day（7月）、返校季（8月）和换季清仓。",
+        "价格匹配——Target和Best Buy会匹配竞争对手的价格。手机上给他们看更低的价格就行。"
+      ] }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["social-skills", "entertainment-guide"]
+  },
+  {
+    "slug": "social-skills",
+    "categoryId": "daily-life",
+    "title": "美国社交潜规则：没人教但人人默认你知道",
+    "summary": "闲聊、个人空间、交朋友——那些没人明说但每个人都在遵守的社交规则。",
+    "content": [
+      { "type": "paragraph", "text": "在美国生活最难的不是语言——是那些不成文的社交规则。在中国完全正常的行为在这里可能显得奇怪，反之亦然。这篇指南覆盖了帮你更自在的社交常识。" },
+      { "type": "heading", "text": "闲聊（Small Talk）——美国人的社交艺术", "level": 2 },
+      { "type": "paragraph", "text": "美国人特别喜欢闲聊。这不是没意义的——它是关系的起点。你每天会听到无数次'How are you?'。标准回答是'Good, how are you?'——不用真的汇报健康状况。" },
+      { "type": "list", "items": [
+        "'How are you?' = 打招呼，不是真的在问。回答：'Good, thanks! You?'",
+        "安全的闲聊话题：天气、课程、体育、周末计划、美食",
+        "避免问：工资、年龄、体重、政治立场或宗教信仰（除非对方先提起）",
+        "夸奖很常见也很随意——'I like your jacket!'回答'Thanks!'就好",
+        "说'I'm good, thanks'结束对话是完全OK的——美国人不觉得这不礼貌"
+      ] },
+      { "type": "heading", "text": "个人空间和肢体接触", "level": 2 },
+      { "type": "list", "items": [
+        "美国人对话时保持一臂距离——更近会让人不舒服",
+        "握手是标准的见面礼——握紧一些、短暂、有眼神接触",
+        "朋友之间常常拥抱，但第一次见面不会。跟着对方的节奏来。",
+        "不太熟的人不要碰头、肩膀或背",
+        "排队时和前面的人保持至少60厘米的距离"
+      ] },
+      { "type": "heading", "text": "怎么交美国朋友", "level": 2 },
+      { "type": "paragraph", "text": "很多留学生说美国人'热情但很难深交'。这是怎么回事，怎么应对：" },
+      { "type": "comparison", "title": "交友方式差异", "items": [
+        { "label": "表面上的友善", "description": "美国人对陌生人很热情，这可能被误解为友谊。但随意的友善（打招呼、课上聊天）不等于深度友谊。这是正常的，不是虚伪。" },
+        { "label": "约定文化", "description": "美国人靠'约'来交友——通过计划好的活动，不是随时串门。主动说：'这周一起喝咖啡？'或'周四一起自习吧。'" },
+        { "label": "说到做到很重要", "description": "'We should hang out sometime'通常只是客气话。真正有兴趣的人会提出具体的时间和地点。你可以是那个主动的人！" },
+        { "label": "一起做事", "description": "交朋友最快的方式：参加社团、校内运动、学习小组或志愿服务。反复的接触自然会产生真正的友谊。" }
+      ] },
+      { "type": "tip", "text": "不要只和中国同学一起玩。虽然舒适但会限制你的体验。争取多元化——几个中国朋友提供文化归属感，几个美国/国际朋友用来练英语和文化交流。" },
+      { "type": "heading", "text": "常见社交场景", "level": 2 },
+      { "type": "list", "items": [
+        "Potluck（百乐餐）——每人带一道菜分享。带你会做的菜或买现成的零食都行。",
+        "BYOB——'自带饮料/酒'。如果被邀请去派对，带上你想喝的。",
+        "AA制——在餐厅，美国人通常平分账单或各付各的。用Venmo或Zelle转账很方便。",
+        "守时——上课和工作：准时或提前。派对：晚到15-30分钟其实是正常的。",
+        "说不——婉拒邀请是可以的。'Thanks for the invite, but I can't make it this time'完全礼貌。"
+      ] },
+      { "type": "warning", "text": "酒精法律很严格。法定饮酒年龄是21岁（不是18岁）。使用假证是刑事犯罪。未满21岁会被要求出示证件然后拒绝——哪里都一样，没有例外。" }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["shopping-guide", "entertainment-guide"]
+  },
+  {
+    "slug": "entertainment-guide",
+    "categoryId": "daily-life",
+    "title": "娱乐、必备App和保持联络",
+    "summary": "留学必备App、怎么和国内保持联系、娱乐选择、管理你在美国的数字生活。",
+    "content": [
+      { "type": "paragraph", "text": "在美国搭建数字生活意味着下载新App、找到中国服务的替代品、搞清楚怎么和家人保持联系。这是你需要知道的一切。" },
+      { "type": "heading", "text": "日常必备App", "level": 2 },
+      { "type": "comparison", "title": "必装App", "items": [
+        { "label": "Google Maps", "description": "导航、公交路线、餐厅评价、营业时间。在美国最有用的App，没有之一。" },
+        { "label": "Venmo / Zelle", "description": "美国人互相转账的工具。AA制、给室友付房租、和别人买卖东西。相当于美国版微信支付。" },
+        { "label": "Uber / Lyft", "description": "打车App。没车的时候必不可少。" },
+        { "label": "DoorDash / Uber Eats", "description": "外卖配送。加上手续费和小费比较贵，但恶劣天气或深夜很有用。" },
+        { "label": "GroupMe / Discord", "description": "美国学生用这些进行课程群聊和社团沟通。迎新时你会被拉进一些。" }
+      ] },
+      { "type": "heading", "text": "和国内保持联系", "level": 2 },
+      { "type": "list", "items": [
+        "微信——和家人朋友联系还是必不可少的。在美国正常使用。",
+        "VPN——访问某些中国网站和App（B站、部分银行App）需要。常用的有：Astrill、ExpressVPN、Surfshark。",
+        "视频通话——微信视频、FaceTime或Zoom。考虑12-16小时时差，固定一个通话时间。",
+        "小红书——找留学生攻略、当地中餐推荐和生活内容的好地方。",
+        "中国流媒体——B站、爱奇艺、优酷在美国能用（部分内容可能有地域限制，用中国VPN可以解决）。"
+      ] },
+      { "type": "tip", "text": "和中国的时差是12-16小时（看你在美国哪个时区）。比较好的重叠时间：你的早上8-10点是国内晚上8-10点。和家人定一个每周固定的视频时间。" },
+      { "type": "heading", "text": "娱乐和休闲", "level": 2 },
+      { "type": "list", "items": [
+        "流媒体——Netflix、Hulu、Disney+、HBO Max。学生有套餐优惠。Spotify/Apple Music学生价$5.99/月。",
+        "校园活动——免费音乐会、电影之夜、比赛日、文化节。每周看一下学校活动日历。",
+        "户外活动——徒步、骑车、公园都是免费的。美国有很棒的国家公园和州立公园。很多对学生免费。",
+        "图书馆——不只是借书：免费的电影、博物馆通行证，甚至免费流媒体服务。去办一张当地公共图书馆卡（免费的！）。",
+        "体育——大学体育是校园文化的重要组成。橄榄球和篮球比赛是很好的社交活动（凭学生证通常免费）。",
+        "博物馆和景点——很多有学生价或每月免费日。"
+      ] },
+      { "type": "heading", "text": "管理订阅", "level": 2 },
+      { "type": "paragraph", "text": "在美国各种订阅费很快就累积起来。注意你在付什么：" },
+      { "type": "list", "items": [
+        "有学生价的一定要用学生价",
+        "和朋友共享家庭套餐——Spotify、YouTube Premium、Apple Music允许5-6个用户",
+        "免费试用——设提醒在收费前取消",
+        "学校可能免费提供：纽约时报、华尔街日报、LinkedIn Learning、Headspace",
+        "注册用学校邮箱（.edu）——通常自动解锁学生价"
+      ] },
+      { "type": "heading", "text": "收发快递", "level": 2 },
+      { "type": "list", "items": [
+        "Amazon送货到大多数地址；校园收发室也接收包裹",
+        "USPS、UPS和FedEx是三大快递。Amazon有自己的配送。",
+        "需要邮箱？学校收发室通常免费分配。",
+        "寄包裹回中国：USPS小件最便宜，DHL/FedEx最快。小箱子大约$30-60。",
+        "从中国收包裹：普通邮寄2-4周，快递5-10天。海关可能增加延迟。"
+      ] },
+      { "type": "tip", "text": "如果担心包裹被偷，可以用Amazon Locker。包裹会被送到附近的安全储物柜（通常在Whole Foods或便利店），你用密码取货。" }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["shopping-guide", "social-skills"]
+  }
+]

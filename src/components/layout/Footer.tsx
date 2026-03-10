@@ -7,60 +7,30 @@ export default function Footer() {
   const tNav = useTranslations('nav');
 
   return (
-    <footer className="border-t border-border bg-warm-50 mt-16">
-      <div className="max-w-6xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+    <footer className="border-t border-border">
+      <div className="max-w-6xl mx-auto px-4 py-16">
+        <div className="flex flex-col md:flex-row md:justify-between gap-10">
           {/* Brand */}
-          <div>
-            <div className="flex items-center gap-2 font-bold text-lg text-primary-700 mb-3">
-              <span className="text-2xl">🏡</span>
+          <div className="max-w-sm">
+            <Link href={`/${locale}`} className="text-primary-600 font-semibold text-[15px] mb-2 inline-block hover:opacity-75 transition-opacity">
               {locale === 'zh' ? '欢迎之家' : 'Welcome Hub'}
-            </div>
-            <p className="text-sm text-muted">{t('tagline')}</p>
+            </Link>
+            <p className="text-sm text-muted leading-relaxed">{t('tagline')}</p>
           </div>
 
-          {/* Quick links */}
-          <div>
-            <h3 className="font-semibold mb-3 text-sm">{tNav('resources')}</h3>
-            <div className="flex flex-col gap-2">
-              <Link href={`/${locale}/resources`} className="text-sm text-muted hover:text-foreground transition-colors">
-                {tNav('resources')}
-              </Link>
-              <Link href={`/${locale}/checklist`} className="text-sm text-muted hover:text-foreground transition-colors">
-                {tNav('checklist')}
-              </Link>
-              <Link href={`/${locale}/connect`} className="text-sm text-muted hover:text-foreground transition-colors">
-                {tNav('connect')}
-              </Link>
-              <Link href={`/${locale}/groups`} className="text-sm text-muted hover:text-foreground transition-colors">
-                {tNav('groups')}
-              </Link>
-              <Link href={`/${locale}/reentry`} className="text-sm text-muted hover:text-foreground transition-colors">
-                {tNav('reentry')}
-              </Link>
-              <Link href={`/${locale}/faith-and-work`} className="text-sm text-muted hover:text-foreground transition-colors">
-                {tNav('faithAndWork')}
-              </Link>
-              <Link href={`/${locale}/community`} className="text-sm text-muted hover:text-foreground transition-colors">
-                {tNav('community')}
-              </Link>
-            </div>
-          </div>
-
-          {/* About */}
-          <div>
-            <h3 className="font-semibold mb-3 text-sm">{tNav('about')}</h3>
-            <div className="flex flex-col gap-2">
-              <Link href={`/${locale}/about`} className="text-sm text-muted hover:text-foreground transition-colors">
-                {tNav('about')}
-              </Link>
-              <p className="text-sm text-muted">welcome@example.com</p>
-            </div>
-          </div>
+          {/* Nav */}
+          <nav className="flex flex-wrap gap-x-8 gap-y-3 text-[13px]">
+            <Link href={`/${locale}/resources`} className="text-muted hover:text-foreground transition-colors">{tNav('resources')}</Link>
+            <Link href={`/${locale}/checklist`} className="text-muted hover:text-foreground transition-colors">{tNav('checklist')}</Link>
+            <Link href={`/${locale}/connect`} className="text-muted hover:text-foreground transition-colors">{tNav('connect')}</Link>
+            <Link href={`/${locale}/groups`} className="text-muted hover:text-foreground transition-colors">{tNav('groups')}</Link>
+            <Link href={`/${locale}/community`} className="text-muted hover:text-foreground transition-colors">{tNav('community')}</Link>
+            <Link href={`/${locale}/about`} className="text-muted hover:text-foreground transition-colors">{tNav('about')}</Link>
+          </nav>
         </div>
 
-        <div className="mt-8 pt-6 border-t border-border flex items-center justify-between text-xs text-muted">
-          <span>&copy; {new Date().getFullYear()} Welcome Hub. Made with love.</span>
+        <div className="mt-12 pt-6 border-t border-border/50 flex items-center justify-between text-xs text-muted/60">
+          <span>&copy; {new Date().getFullYear()} Welcome Hub</span>
           <Link href={`/${locale}/dashboard`} className="hover:text-foreground transition-colors">
             {locale === 'zh' ? '管理面板' : 'Dashboard'}
           </Link>

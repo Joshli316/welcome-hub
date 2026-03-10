@@ -33,6 +33,34 @@ const resourceFiles: Record<string, Record<string, () => Promise<ResourceArticle
     zh: () => import('@/data/resources/airport.zh.json').then(m => m.default as ResourceArticle[]),
     en: () => import('@/data/resources/airport.en.json').then(m => m.default as ResourceArticle[]),
   },
+  campus: {
+    zh: () => import('@/data/resources/campus.zh.json').then(m => m.default as ResourceArticle[]),
+    en: () => import('@/data/resources/campus.en.json').then(m => m.default as ResourceArticle[]),
+  },
+  transportation: {
+    zh: () => import('@/data/resources/transportation.zh.json').then(m => m.default as ResourceArticle[]),
+    en: () => import('@/data/resources/transportation.en.json').then(m => m.default as ResourceArticle[]),
+  },
+  food: {
+    zh: () => import('@/data/resources/food.zh.json').then(m => m.default as ResourceArticle[]),
+    en: () => import('@/data/resources/food.en.json').then(m => m.default as ResourceArticle[]),
+  },
+  health: {
+    zh: () => import('@/data/resources/health.zh.json').then(m => m.default as ResourceArticle[]),
+    en: () => import('@/data/resources/health.en.json').then(m => m.default as ResourceArticle[]),
+  },
+  academics: {
+    zh: () => import('@/data/resources/academics.zh.json').then(m => m.default as ResourceArticle[]),
+    en: () => import('@/data/resources/academics.en.json').then(m => m.default as ResourceArticle[]),
+  },
+  'daily-life': {
+    zh: () => import('@/data/resources/daily-life.zh.json').then(m => m.default as ResourceArticle[]),
+    en: () => import('@/data/resources/daily-life.en.json').then(m => m.default as ResourceArticle[]),
+  },
+  legal: {
+    zh: () => import('@/data/resources/legal.zh.json').then(m => m.default as ResourceArticle[]),
+    en: () => import('@/data/resources/legal.en.json').then(m => m.default as ResourceArticle[]),
+  },
 };
 
 export function getCategories(): ResourceCategory[] {

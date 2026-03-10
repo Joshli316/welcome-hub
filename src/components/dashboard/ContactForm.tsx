@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Contact, StudentStage, contactTags, stageLabels } from '@/types/dashboard';
+import { isValidEmail } from '@/lib/utils/sanitize';
 
 interface ContactFormProps {
   onSubmit: (contact: Omit<Contact, 'id' | 'createdAt' | 'notes'>) => void;
@@ -23,8 +24,24 @@ export default function ContactForm({ onSubmit, onCancel, initial, locale }: Con
   const [stage, setStage] = useState<StudentStage>(initial?.stage ?? 'pre-arrival');
   const [selectedTags, setSelectedTags] = useState<string[]>(initial?.tags ?? []);
 
+  const [validationError, setValidationError] = useState('');
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setValidationError('');
+
+    // Validate email format if provided
+    if (email && !isValidEmail(email)) {
+      setValidationError('Please enter a valid email address.');
+      return;
+    }
+
+    // Length guards
+    if (name.length > 100 || city.length > 100 || university.length > 100) {
+      setValidationError('One or more fields exceed the maximum length.');
+      return;
+    }
+
     onSubmit({
       name,
       type,
@@ -50,12 +67,14 @@ export default function ContactForm({ onSubmit, onCancel, initial, locale }: Con
     <form onSubmit={handleSubmit} className="space-y-4">
       {/* Name */}
       <div>
-        <label className="block text-sm font-medium mb-1">{t('form.name')}</label>
+        <label htmlFor="contact-name" className="block text-sm font-medium mb-1">{t('form.name')}</label>
         <input
+          id="contact-name"
           type="text"
           value={name}
           onChange={e => setName(e.target.value)}
           required
+          maxLength={100}
           className="w-full px-3 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-300"
         />
       </div>
@@ -63,8 +82,9 @@ export default function ContactForm({ onSubmit, onCancel, initial, locale }: Con
       {/* Type + Stage row */}
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm font-medium mb-1">{t('form.type')}</label>
+          <label htmlFor="contact-type" className="block text-sm font-medium mb-1">{t('form.type')}</label>
           <select
+            id="contact-type"
             value={type}
             onChange={e => setType(e.target.value as Contact['type'])}
             className="w-full px-3 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-300"
@@ -76,8 +96,9 @@ export default function ContactForm({ onSubmit, onCancel, initial, locale }: Con
           </select>
         </div>
         <div>
-          <label className="block text-sm font-medium mb-1">{t('form.stage')}</label>
+          <label htmlFor="contact-stage" className="block text-sm font-medium mb-1">{t('form.stage')}</label>
           <select
+            id="contact-stage"
             value={stage}
             onChange={e => setStage(e.target.value as StudentStage)}
             className="w-full px-3 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-300"
@@ -92,8 +113,9 @@ export default function ContactForm({ onSubmit, onCancel, initial, locale }: Con
       {/* City + University row */}
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm font-medium mb-1">{t('form.city')}</label>
+          <label htmlFor="contact-city" className="block text-sm font-medium mb-1">{t('form.city')}</label>
           <input
+            id="contact-city"
             type="text"
             value={city}
             onChange={e => setCity(e.target.value)}
@@ -101,8 +123,9 @@ export default function ContactForm({ onSubmit, onCancel, initial, locale }: Con
           />
         </div>
         <div>
-          <label className="block text-sm font-medium mb-1">{t('form.university')}</label>
+          <label htmlFor="contact-university" className="block text-sm font-medium mb-1">{t('form.university')}</label>
           <input
+            id="contact-university"
             type="text"
             value={university}
             onChange={e => setUniversity(e.target.value)}
@@ -114,8 +137,9 @@ export default function ContactForm({ onSubmit, onCancel, initial, locale }: Con
       {/* Contact info row */}
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm font-medium mb-1">{t('form.email')}</label>
+          <label htmlFor="contact-email" className="block text-sm font-medium mb-1">{t('form.email')}</label>
           <input
+            id="contact-email"
             type="email"
             value={email}
             onChange={e => setEmail(e.target.value)}
@@ -123,8 +147,9 @@ export default function ContactForm({ onSubmit, onCancel, initial, locale }: Con
           />
         </div>
         <div>
-          <label className="block text-sm font-medium mb-1">{t('form.wechat')}</label>
+          <label htmlFor="contact-wechat" className="block text-sm font-medium mb-1">{t('form.wechat')}</label>
           <input
+            id="contact-wechat"
             type="text"
             value={wechat}
             onChange={e => setWechat(e.target.value)}
@@ -153,6 +178,10 @@ export default function ContactForm({ onSubmit, onCancel, initial, locale }: Con
           ))}
         </div>
       </div>
+
+      {validationError && (
+        <p role="alert" className="text-red-500 text-sm">{validationError}</p>
+      )}
 
       {/* Buttons */}
       <div className="flex gap-3 pt-2">

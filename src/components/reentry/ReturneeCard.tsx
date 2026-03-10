@@ -1,7 +1,9 @@
 import { ReturneeProfile } from '@/types/returnee';
 import Card from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
+import { localized } from '@/lib/utils/localize';
 import { useLocale, useTranslations } from 'next-intl';
+import { safeMailto } from '@/lib/utils/sanitize';
 
 interface ReturneeCardProps {
   returnee: ReturneeProfile;
@@ -11,7 +13,7 @@ export default function ReturneeCard({ returnee }: ReturneeCardProps) {
   const locale = useLocale();
   const t = useTranslations('reentry.returnees');
   const tTopics = useTranslations('reentry.topics');
-  const bio = locale === 'zh' ? returnee.bioZh : returnee.bio;
+  const bio = localized(returnee, 'bio', locale);
 
   const tCommon = useTranslations('common');
   const contactLabel = returnee.contactMethod === 'wechat'
@@ -31,10 +33,10 @@ export default function ReturneeCard({ returnee }: ReturneeCardProps) {
       </div>
 
       <p className="text-xs text-muted mb-1">
-        📍 {tCommon('now')}: {returnee.currentCity}
+        <span aria-hidden="true">📍</span> {tCommon('now')}: {returnee.currentCity}
       </p>
       <p className="text-xs text-muted mb-3">
-        🎓 {returnee.previousUniversity} · {returnee.major} · {returnee.graduationYear}
+        <span aria-hidden="true">🎓</span> {returnee.previousUniversity} · {returnee.major} · {returnee.graduationYear}
       </p>
 
       <p className="text-sm text-foreground mb-3 flex-1">{bio}</p>
@@ -45,9 +47,10 @@ export default function ReturneeCard({ returnee }: ReturneeCardProps) {
         ))}
       </div>
 
-      {returnee.contactMethod === 'email' ? (
+      {/* safeMailto guards against email header injection */}
+      {returnee.contactMethod === 'email' && safeMailto(returnee.contactValue) ? (
         <a
-          href={`mailto:${returnee.contactValue}`}
+          href={safeMailto(returnee.contactValue)!}
           className="text-center px-4 py-2 bg-warm-500 text-white rounded-lg text-sm font-medium hover:bg-warm-600 transition-colors"
         >
           {t('contact')}

@@ -2,6 +2,7 @@ import { CityGuide, CityResource } from '@/types/faith';
 import Card from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 import { useLocale, useTranslations } from 'next-intl';
+import { localized } from '@/lib/utils/localize';
 
 interface CityGuideCardProps {
   guide: CityGuide;
@@ -19,8 +20,8 @@ const typeVariant: Record<CityResource['type'], 'default' | 'primary' | 'sage' |
 export default function CityGuideCard({ guide }: CityGuideCardProps) {
   const locale = useLocale();
   const t = useTranslations('faith');
-  const city = locale === 'zh' ? guide.cityZh : guide.city;
-  const description = locale === 'zh' ? guide.descriptionZh : guide.description;
+  const city = localized(guide, 'city', locale);
+  const description = localized(guide, 'description', locale);
 
   return (
     <Card className="h-full">
@@ -29,8 +30,8 @@ export default function CityGuideCard({ guide }: CityGuideCardProps) {
 
       <div className="space-y-4">
         {guide.resources.map((resource, i) => {
-          const name = locale === 'zh' ? resource.nameZh : resource.name;
-          const desc = locale === 'zh' ? resource.descriptionZh : resource.description;
+          const name = localized(resource, 'name', locale);
+          const desc = localized(resource, 'description', locale);
 
           return (
             <div key={i} className="border-t border-border pt-4 first:border-0 first:pt-0">

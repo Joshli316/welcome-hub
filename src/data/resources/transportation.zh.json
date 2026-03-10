@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "drivers-license",
+    "categoryId": "transportation",
+    "title": "如何考取美国驾照",
+    "summary": "国际学生考驾照的完整流程：所需材料、笔试和路考详细指南。",
+    "content": [
+      { "type": "paragraph", "text": "在美国拥有驾照非常实用，即使你不经常开车——它也是最常用的身份证件。各州流程略有不同，但基本步骤相似。" },
+      { "type": "heading", "text": "你需要驾照吗？", "level": 2 },
+      { "type": "paragraph", "text": "如果你住在公共交通发达的城市（纽约、芝加哥、波士顿），可能不急需。但在大多数大学城和郊区，买菜、办事基本都需要开车。" },
+      { "type": "tip", "text": "即使不开车，也可以考虑办一张州ID卡（State ID）——在同一个DMV办公室办理，材料类似，可以作为正式的身份证件使用。" },
+      { "type": "heading", "text": "需要准备的材料", "level": 2 },
+      { "type": "list", "items": [
+        "护照和有效F-1签证",
+        "I-20（需有效旅行签名）",
+        "I-94入境记录（在i94.cbp.dhs.gov打印）",
+        "州内居住证明（租约、水电账单或银行对账单）",
+        "社会安全号码（SSN）——或SSA开具的不符合资格证明信（部分州接受）",
+        "学校注册证明信（部分州要求）"
+      ] },
+      { "type": "warning", "text": "各州要求差异很大，去之前务必查看你所在州的DMV网站。有些州（如加州）允许使用中国驾照一段时间，有些则要求立即考当地驾照。" },
+      { "type": "heading", "text": "考驾照步骤", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "准备笔试", "description": "下载你所在州的驾驶手册（DMV网站免费PDF）。很多州提供中文考试——预约时可以询问。" },
+        { "title": "去DMV", "description": "尽量网上预约——没有预约可能要等2-3小时。带齐所有材料。" },
+        { "title": "通过笔试", "description": "通常25-40道选择题，涉及交通规则、标志和安全知识。一般需要80%正确率通过。" },
+        { "title": "获得学习驾照（Learner's Permit）", "description": "通过笔试后获得学习驾照，可以在有驾照的人陪同下练习开车。" },
+        { "title": "练习开车", "description": "先在停车场练习，然后安静的街道，再上高速。可以找驾校教练（$40-60/小时），也可以找有经验的朋友带你练。" },
+        { "title": "预约并通过路考", "description": "考官会和你开15-20分钟，测试停车、转弯、变道和遵守交通规则。保持冷静，多看后视镜。" },
+        { "title": "领取驾照", "description": "有些州当天给临时纸质驾照，正式卡片1-3周邮寄到家。" }
+      ] },
+      { "type": "tip", "text": "网上有各州的免费模拟考试，搜索'[你的州] DMV practice test'，多做几遍再去考。真题和模拟题非常接近。" }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["buying-a-car", "getting-around-without-car"]
+  },
+  {
+    "slug": "getting-around-without-car",
+    "categoryId": "transportation",
+    "title": "没有车怎么出行",
+    "summary": "公共交通、打车软件、骑车和其他不用买车也能出行的方式。",
+    "content": [
+      { "type": "paragraph", "text": "很多留学生第一学期都没有车——这完全正常。以下是各种出行方式。" },
+      { "type": "heading", "text": "校园班车和公交", "level": 2 },
+      { "type": "paragraph", "text": "大多数大学都有免费校园班车，连接校园、学生公寓、购物区和附近的公寓区。在学校交通网站查看路线和时刻表。" },
+      { "type": "tip", "text": "下载学校的班车App（如果有的话）或使用Google Maps——都能显示实时公交位置和到站时间。" },
+      { "type": "heading", "text": "公共交通", "level": 2 },
+      { "type": "paragraph", "text": "很多大学城有城市公交系统，凭学生证通常可以免费或打折乘坐。大城市的地铁和轻轨也是高效的选择。" },
+      { "type": "list", "items": [
+        "查看学费是否已包含公交卡——很多学校会打包在内",
+        "Google Maps、Apple Maps和Transit App都能查公交路线",
+        "周末和节假日班次可能减少",
+        "大多数系统支持手机或银行卡感应支付"
+      ] },
+      { "type": "heading", "text": "打车软件", "level": 2 },
+      { "type": "comparison", "title": "打车软件对比", "items": [
+        { "label": "Uber", "description": "覆盖最广。下载App，绑定支付方式，即可叫车。价格随需求变化——确认前先看价格。" },
+        { "label": "Lyft", "description": "和Uber类似，有时更便宜。建议两个App都装，比较价格。" },
+        { "label": "Uber/Lyft拼车", "description": "和同方向的乘客拼车，节省30-50%。时间长一些但便宜很多。" }
+      ] },
+      { "type": "tip", "text": "很多中国同学会在微信群里组织拼车去机场、Costco或购物中心。既省钱又能交朋友！" },
+      { "type": "heading", "text": "骑车", "level": 2 },
+      { "type": "paragraph", "text": "很多校园骑车很方便。可以买二手自行车（Facebook Marketplace或校园公告栏$50-150）、使用校园共享单车或租电动滑板车。" },
+      { "type": "list", "items": [
+        "一定要用U型锁——钢缆锁很容易被剪断",
+        "在校园警察处免费登记自行车（防盗）",
+        "很多校园有免费自行车维修站",
+        "戴头盔——有些州法律要求，而且总是个好习惯"
+      ] },
+      { "type": "heading", "text": "步行", "level": 2 },
+      { "type": "paragraph", "text": "如果住在校园内或附近，步行是最简单的方式。大多数校园设施步行15分钟以内可达。买一双好走的鞋和一件防雨外套。" },
+      { "type": "warning", "text": "一定要走人行横道、遵守行人信号灯。有些城市对横穿马路（jaywalking）会罚款。晚上走有灯光的路，必要时使用学校的安全护送服务。" }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["drivers-license", "buying-a-car"]
+  },
+  {
+    "slug": "buying-a-car",
+    "categoryId": "transportation",
+    "title": "在美国买第一辆车",
+    "summary": "留学生买二手车实用指南——怎么挑、怎么防骗、怎么买保险。",
+    "content": [
+      { "type": "paragraph", "text": "如果你所在的地方必须开车，买一辆可靠的二手车通常是最划算的选择。新车第一年就贬值20-30%，所以2-4年的二手车性价比最高。" },
+      { "type": "heading", "text": "预算规划", "level": 2 },
+      { "type": "paragraph", "text": "买车价格只是开始，还需要考虑以下持续费用：" },
+      { "type": "list", "items": [
+        "车险：$100-300/月（新手和25岁以下更贵）",
+        "油费：$100-200/月，取决于开车频率",
+        "保养：换油、轮胎、刹车——每月预留$100",
+        "注册和年检：$50-200/年，各州不同",
+        "停车证：因学校和城市而异"
+      ] },
+      { "type": "heading", "text": "去哪里买车", "level": 2 },
+      { "type": "comparison", "title": "买车渠道对比", "items": [
+        { "label": "二手车行", "description": "价格稍高但有保修和贷款选项。买着放心。认证二手车（CPO）有厂家保修。" },
+        { "label": "私人卖家", "description": "通常更便宜。可以在Facebook Marketplace、Craigslist和学校公告栏找。风险较高——一定要验车和查历史。" },
+        { "label": "毕业学生转让", "description": "留学生毕业前经常卖车，价格实惠但抢手。4-5月多关注微信群和学校论坛。" },
+        { "label": "线上平台（Carvana、CarMax）", "description": "方便、价格透明、送车上门。CarMax有30天退车政策。" }
+      ] },
+      { "type": "heading", "text": "买车前的检查清单", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "查车辆历史", "description": "在Carfax或AutoCheck上输入VIN号查询（$40，很多车行免费提供）。查看事故记录、水泡车和里程表篡改。" },
+        { "title": "做购前检测", "description": "花$100-150请修车师傅检查。这可以帮你避免几千美元的损失。靠谱的卖家不会拒绝。" },
+        { "title": "充分试驾", "description": "在高速和本地道路都开一圈。测试刹车、加速、空调，留意异常声响。如果可能，带一个懂车的朋友。" },
+        { "title": "检查车辆产权（Title）", "description": "确保产权是'clean'的（不是salvage或rebuilt）。卖家名字应与产权上的一致。" }
+      ] },
+      { "type": "warning", "text": "绝对不要在看到实车之前转账或全额付款。常见骗局包括虚假车源、产权洗白和里程表造假。如果价格好得不真实，那很可能就是假的。" },
+      { "type": "heading", "text": "车险——法律要求必须买", "level": 2 },
+      { "type": "paragraph", "text": "开车前必须有车险。作为没有美国驾驶记录的新手，保费会比较高，但有一些省钱的方法：" },
+      { "type": "list", "items": [
+        "至少找3-4家公司报价（GEICO、Progressive、State Farm、Allstate）",
+        "询问学生优惠和好成绩折扣",
+        "自付额（deductible）越高，月费越低（但出事自己掏的钱更多）",
+        "有些保险公司承认中国驾驶经历，可以打折",
+        "和租房保险一起买通常能省10-15%"
+      ] },
+      { "type": "tip", "text": "问问你身边的中国同学用的哪家保险公司。他们通常能分享推荐码帮你打折，也能告诉你理赔方面的经验。" }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["drivers-license", "getting-around-without-car"]
+  }
+]

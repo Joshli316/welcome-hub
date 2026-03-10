@@ -16,12 +16,12 @@ export default function ChecklistGroup({ phase, items, isChecked, onToggle }: Ch
   const completedInGroup = items.filter(item => isChecked(item.id)).length;
 
   return (
-    <div className="mb-8">
-      <div className="flex items-center justify-between mb-3">
-        <h2 className="text-lg font-bold">{t(phase)}</h2>
-        <span className="text-sm text-muted">{completedInGroup}/{items.length}</span>
+    <div className="mb-10">
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-xl">{t(phase)}</h2>
+        <span className="text-[13px] text-muted tabular-nums">{completedInGroup}/{items.length}</span>
       </div>
-      <div className="space-y-2">
+      <div className="space-y-1 border border-border rounded-lg overflow-hidden bg-white">
         {items.map(item => (
           <ChecklistItem
             key={item.id}

@@ -1,10 +1,17 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { getTestimonies } from '@/lib/data/faith';
 import Card from '@/components/ui/Card';
 import TestimonyCard from '@/components/faith/TestimonyCard';
+import PageHeader from '@/components/ui/PageHeader';
 
-// Faith & Work hub page — entry point for Phase 4 features
+export const metadata: Metadata = {
+  title: 'Faith & Work 信仰与职场',
+  description: 'Articles, testimonies, discussion topics, and city guides for integrating faith with professional life after returning to China.',
+};
+
+// Faith & Work hub — entry point for Phase 4 features
 export default function FaithAndWorkPage() {
   const locale = useLocale();
   const t = useTranslations('faith');
@@ -12,38 +19,34 @@ export default function FaithAndWorkPage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
-      {/* Header */}
-      <div className="mb-10">
-        <h1 className="text-3xl font-bold mb-2">{t('title')}</h1>
-        <p className="text-muted text-lg">{t('subtitle')}</p>
-      </div>
+      <PageHeader title={t('title')} subtitle={t('subtitle')} large />
 
       {/* Feature cards — 4 sections of faith & work */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
         <Link href={`/${locale}/faith-and-work/articles`}>
           <Card hover className="h-full text-center py-6">
-            <div className="text-3xl mb-2">📖</div>
+            <div className="text-3xl mb-2" aria-hidden="true">📖</div>
             <h3 className="font-semibold mb-1">{t('features.articles.title')}</h3>
             <p className="text-sm text-muted">{t('features.articles.description')}</p>
           </Card>
         </Link>
         <Link href={`/${locale}/faith-and-work/testimonies`}>
           <Card hover className="h-full text-center py-6">
-            <div className="text-3xl mb-2">💬</div>
+            <div className="text-3xl mb-2" aria-hidden="true">💬</div>
             <h3 className="font-semibold mb-1">{t('features.testimonies.title')}</h3>
             <p className="text-sm text-muted">{t('features.testimonies.description')}</p>
           </Card>
         </Link>
         <Link href={`/${locale}/faith-and-work/discussions`}>
           <Card hover className="h-full text-center py-6">
-            <div className="text-3xl mb-2">🗣️</div>
+            <div className="text-3xl mb-2" aria-hidden="true">🗣️</div>
             <h3 className="font-semibold mb-1">{t('features.discussions.title')}</h3>
             <p className="text-sm text-muted">{t('features.discussions.description')}</p>
           </Card>
         </Link>
         <Link href={`/${locale}/faith-and-work/city-guide`}>
           <Card hover className="h-full text-center py-6">
-            <div className="text-3xl mb-2">🗺️</div>
+            <div className="text-3xl mb-2" aria-hidden="true">🗺️</div>
             <h3 className="font-semibold mb-1">{t('features.cityGuide.title')}</h3>
             <p className="text-sm text-muted">{t('features.cityGuide.description')}</p>
           </Card>

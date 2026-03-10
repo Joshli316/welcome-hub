@@ -1,7 +1,9 @@
 import { VolunteerHost } from '@/types/host';
 import Card from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
+import { localized } from '@/lib/utils/localize';
 import { useLocale, useTranslations } from 'next-intl';
+import { safeMailto } from '@/lib/utils/sanitize';
 
 interface HostCardProps {
   host: VolunteerHost;
@@ -10,7 +12,7 @@ interface HostCardProps {
 export default function HostCard({ host }: HostCardProps) {
   const locale = useLocale();
   const t = useTranslations('community.hosts');
-  const bio = locale === 'zh' ? host.bioZh : host.bio;
+  const bio = localized(host, 'bio', locale);
 
   const tCommon = useTranslations('common');
   const contactLabel = host.contactMethod === 'wechat'
@@ -24,7 +26,7 @@ export default function HostCard({ host }: HostCardProps) {
         {host.name.charAt(0)}
       </div>
       <h3 className="font-semibold text-lg">{host.name}</h3>
-      <p className="text-xs text-muted mb-2">📍 {host.city} · {host.university}</p>
+      <p className="text-xs text-muted mb-2"><span aria-hidden="true">📍</span> {host.city} · {host.university}</p>
       <p className="text-sm text-muted mb-3 flex-1">{bio}</p>
 
       {/* Services */}
@@ -38,13 +40,13 @@ export default function HostCard({ host }: HostCardProps) {
 
       {/* Languages */}
       <p className="text-xs text-muted mb-3">
-        🗣 {host.languages.join(', ')}
+        <span aria-hidden="true">🗣</span> {host.languages.join(', ')}
       </p>
 
-      {/* Contact */}
-      {host.contactMethod === 'email' ? (
+      {/* Contact — safeMailto guards against email header injection */}
+      {host.contactMethod === 'email' && safeMailto(host.contactValue) ? (
         <a
-          href={`mailto:${host.contactValue}`}
+          href={safeMailto(host.contactValue)!}
           className="text-center px-4 py-2 bg-sage-500 text-white rounded-lg text-sm font-medium hover:bg-sage-600 transition-colors"
         >
           {t('contact')}

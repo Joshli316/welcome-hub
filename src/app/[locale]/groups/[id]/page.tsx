@@ -59,21 +59,21 @@ export default async function GroupDetailPage({
       <Card className="mb-8">
         <div className="space-y-4">
           <div className="flex items-start gap-3">
-            <span className="text-lg mt-0.5">🕐</span>
+            <span className="text-lg mt-0.5" aria-hidden="true">🕐</span>
             <div>
               <p className="font-medium text-sm">{t('schedule')}</p>
               <p className="text-muted">{schedule}</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
-            <span className="text-lg mt-0.5">📍</span>
+            <span className="text-lg mt-0.5" aria-hidden="true">📍</span>
             <div>
               <p className="font-medium text-sm">{t('location')}</p>
               <p className="text-muted">{location}</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
-            <span className="text-lg mt-0.5">👥</span>
+            <span className="text-lg mt-0.5" aria-hidden="true">👥</span>
             <div>
               <p className="font-medium text-sm">{t('members')}</p>
               <p className="text-muted">

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { MyProfile, interestOptions, degreeLevelOptions } from '@/types/peer';
+import { isValidEmail } from '@/lib/utils/sanitize';
 
 interface ProfileFormProps {
   initialProfile?: MyProfile | null;
@@ -35,8 +36,24 @@ export default function ProfileForm({ initialProfile, onSubmit }: ProfileFormPro
     );
   }
 
+  const [validationError, setValidationError] = useState('');
+
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    setValidationError('');
+
+    // Validate email format when email is the contact method
+    if (contactMethod === 'email' && !isValidEmail(contactValue)) {
+      setValidationError('Please enter a valid email address.');
+      return;
+    }
+
+    // Basic length guards — prevent localStorage abuse
+    if (name.length > 100 || university.length > 100 || city.length > 100 || major.length > 100 || bio.length > 200) {
+      setValidationError('One or more fields exceed the maximum length.');
+      return;
+    }
+
     const profile: MyProfile = {
       id: initialProfile?.id ?? `peer-${Date.now()}`,
       name,
@@ -55,7 +72,7 @@ export default function ProfileForm({ initialProfile, onSubmit }: ProfileFormPro
     onSubmit(profile);
   }
 
-  const inputClass = 'w-full px-3 py-2 rounded-lg border border-border bg-white text-sm focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-primary-400';
+  const inputClass = 'w-full px-3.5 py-2.5 rounded-lg border border-border bg-white text-sm placeholder:text-muted/50';
   const labelClass = 'block text-sm font-medium mb-1';
 
   return (
@@ -63,40 +80,40 @@ export default function ProfileForm({ initialProfile, onSubmit }: ProfileFormPro
       {/* Name + University row */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className={labelClass}>{t('name')} *</label>
-          <input type="text" value={name} onChange={e => setName(e.target.value)} required className={inputClass} placeholder={t('namePlaceholder')} />
+          <label htmlFor="profile-name" className={labelClass}>{t('name')} *</label>
+          <input id="profile-name" type="text" value={name} onChange={e => setName(e.target.value)} required maxLength={100} className={inputClass} placeholder={t('namePlaceholder')} />
         </div>
         <div>
-          <label className={labelClass}>{t('university')} *</label>
-          <input type="text" value={university} onChange={e => setUniversity(e.target.value)} required className={inputClass} placeholder={t('universityPlaceholder')} />
+          <label htmlFor="profile-university" className={labelClass}>{t('university')} *</label>
+          <input id="profile-university" type="text" value={university} onChange={e => setUniversity(e.target.value)} required maxLength={100} className={inputClass} placeholder={t('universityPlaceholder')} />
         </div>
       </div>
 
       {/* City + Major */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className={labelClass}>{t('city')} *</label>
-          <input type="text" value={city} onChange={e => setCity(e.target.value)} required className={inputClass} placeholder={t('cityPlaceholder')} />
+          <label htmlFor="profile-city" className={labelClass}>{t('city')} *</label>
+          <input id="profile-city" type="text" value={city} onChange={e => setCity(e.target.value)} required maxLength={100} className={inputClass} placeholder={t('cityPlaceholder')} />
         </div>
         <div>
-          <label className={labelClass}>{t('major')} *</label>
-          <input type="text" value={major} onChange={e => setMajor(e.target.value)} required className={inputClass} placeholder={t('majorPlaceholder')} />
+          <label htmlFor="profile-major" className={labelClass}>{t('major')} *</label>
+          <input id="profile-major" type="text" value={major} onChange={e => setMajor(e.target.value)} required maxLength={100} className={inputClass} placeholder={t('majorPlaceholder')} />
         </div>
       </div>
 
       {/* Degree + Arrival */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className={labelClass}>{t('degreeLevel')}</label>
-          <select value={degreeLevel} onChange={e => setDegreeLevel(e.target.value as MyProfile['degreeLevel'])} className={inputClass}>
+          <label htmlFor="profile-degree" className={labelClass}>{t('degreeLevel')}</label>
+          <select id="profile-degree" value={degreeLevel} onChange={e => setDegreeLevel(e.target.value as MyProfile['degreeLevel'])} className={inputClass}>
             {degreeLevelOptions.map(d => (
               <option key={d} value={d}>{tDegree(d)}</option>
             ))}
           </select>
         </div>
         <div>
-          <label className={labelClass}>{t('arrivalSemester')}</label>
-          <input type="text" value={arrivalSemester} onChange={e => setArrivalSemester(e.target.value)} className={inputClass} placeholder="Fall 2026" />
+          <label htmlFor="profile-semester" className={labelClass}>{t('arrivalSemester')}</label>
+          <input id="profile-semester" type="text" value={arrivalSemester} onChange={e => setArrivalSemester(e.target.value)} className={inputClass} placeholder="Fall 2026" />
         </div>
       </div>
 
@@ -123,15 +140,16 @@ export default function ProfileForm({ initialProfile, onSubmit }: ProfileFormPro
 
       {/* Languages */}
       <div>
-        <label className={labelClass}>{t('languages')}</label>
-        <input type="text" value={languages} onChange={e => setLanguages(e.target.value)} className={inputClass} placeholder="中文, English" />
+        <label htmlFor="profile-languages" className={labelClass}>{t('languages')}</label>
+        <input id="profile-languages" type="text" value={languages} onChange={e => setLanguages(e.target.value)} className={inputClass} placeholder="中文, English" />
         <p className="text-xs text-muted mt-1">{t('languagesHint')}</p>
       </div>
 
       {/* Bio */}
       <div>
-        <label className={labelClass}>{t('bio')}</label>
+        <label htmlFor="profile-bio" className={labelClass}>{t('bio')}</label>
         <textarea
+          id="profile-bio"
           value={bio}
           onChange={e => setBio(e.target.value)}
           rows={3}
@@ -145,15 +163,16 @@ export default function ProfileForm({ initialProfile, onSubmit }: ProfileFormPro
       {/* Contact */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className={labelClass}>{t('contactMethod')}</label>
-          <select value={contactMethod} onChange={e => setContactMethod(e.target.value as 'wechat' | 'email')} className={inputClass}>
+          <label htmlFor="profile-contact-method" className={labelClass}>{t('contactMethod')}</label>
+          <select id="profile-contact-method" value={contactMethod} onChange={e => setContactMethod(e.target.value as 'wechat' | 'email')} className={inputClass}>
             <option value="wechat">{tCommon('wechat')}</option>
             <option value="email">{tCommon('email')}</option>
           </select>
         </div>
         <div>
-          <label className={labelClass}>{t('contactValue')} *</label>
+          <label htmlFor="profile-contact-value" className={labelClass}>{t('contactValue')} *</label>
           <input
+            id="profile-contact-value"
             type="text"
             value={contactValue}
             onChange={e => setContactValue(e.target.value)}
@@ -164,9 +183,13 @@ export default function ProfileForm({ initialProfile, onSubmit }: ProfileFormPro
         </div>
       </div>
 
+      {validationError && (
+        <p role="alert" className="text-red-500 text-sm">{validationError}</p>
+      )}
+
       <button
         type="submit"
-        className="w-full sm:w-auto px-6 py-3 bg-primary-500 text-white rounded-xl font-semibold hover:bg-primary-600 transition-colors"
+        className="w-full sm:w-auto px-7 py-3 bg-foreground text-background rounded-lg text-sm font-semibold hover:bg-foreground/85 transition-colors"
       >
         {initialProfile ? t('updateProfile') : t('createProfile')}
       </button>

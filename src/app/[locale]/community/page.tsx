@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import { getEvents } from '@/lib/data/events';
 import { getHosts, getUniqueCities, getUniqueServices } from '@/lib/data/hosts';
@@ -5,6 +6,12 @@ import EventList from '@/components/community/EventList';
 import HostGrid from '@/components/community/HostGrid';
 import WeChatGroupCard from '@/components/community/WeChatGroupCard';
 import Card from '@/components/ui/Card';
+import PageHeader from '@/components/ui/PageHeader';
+
+export const metadata: Metadata = {
+  title: 'Community 社区连接',
+  description: 'Upcoming events, volunteer hosts, and WeChat groups for Chinese international students. Meet neighbors who care.',
+};
 
 export default function CommunityPage() {
   const t = useTranslations('community');
@@ -15,10 +22,7 @@ export default function CommunityPage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
-      <div className="mb-10">
-        <h1 className="text-3xl font-bold mb-2">{t('title')}</h1>
-        <p className="text-muted">{t('subtitle')}</p>
-      </div>
+      <PageHeader title={t('title')} subtitle={t('subtitle')} />
 
       {/* Events */}
       <section className="mb-16">
@@ -59,7 +63,7 @@ export default function CommunityPage() {
           <h2 className="text-2xl font-bold mb-2">{t('askQuestion.title')}</h2>
           <p className="text-muted mb-6">{t('askQuestion.subtitle')}</p>
           <a
-            href="https://forms.gle/example"
+            href="https://forms.gle/example" // TODO: Replace with real Google Form URL
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-primary-500 text-white rounded-xl font-semibold hover:bg-primary-600 transition-colors"

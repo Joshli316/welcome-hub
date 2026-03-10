@@ -56,7 +56,7 @@ export default function ConnectPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Link href={`/${locale}/connect/browse`}>
           <Card hover className="h-full">
-            <div className="text-3xl mb-3">🤝</div>
+            <div className="text-3xl mb-3" aria-hidden="true">🤝</div>
             <h3 className="font-semibold text-lg mb-2">{t('features.findPeers.title')}</h3>
             <p className="text-sm text-muted">{t('features.findPeers.description')}</p>
             {hasProfile && (
@@ -67,7 +67,7 @@ export default function ConnectPage() {
 
         <Link href={`/${locale}/groups`}>
           <Card hover className="h-full">
-            <div className="text-3xl mb-3">👥</div>
+            <div className="text-3xl mb-3" aria-hidden="true">👥</div>
             <h3 className="font-semibold text-lg mb-2">{t('features.smallGroups.title')}</h3>
             <p className="text-sm text-muted">{t('features.smallGroups.description')}</p>
           </Card>

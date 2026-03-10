@@ -4,6 +4,7 @@ import Card from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 import { formatDate } from '@/lib/utils/date';
 import { useLocale } from 'next-intl';
+import { localized } from '@/lib/utils/localize';
 
 interface FaithArticleCardProps {
   article: FaithArticle;
@@ -12,8 +13,8 @@ interface FaithArticleCardProps {
 // Displays a card linking to a faith article
 export default function FaithArticleCard({ article }: FaithArticleCardProps) {
   const locale = useLocale();
-  const title = locale === 'zh' ? article.titleZh : article.title;
-  const summary = locale === 'zh' ? article.summaryZh : article.summary;
+  const title = localized(article, 'title', locale);
+  const summary = localized(article, 'summary', locale);
 
   return (
     <Link href={`/${locale}/faith-and-work/articles/${article.slug}`}>

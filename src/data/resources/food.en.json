@@ -1,0 +1,147 @@
+[
+  {
+    "slug": "grocery-stores-guide",
+    "categoryId": "food",
+    "title": "US Grocery Stores: Where to Shop and What to Expect",
+    "summary": "A guide to American supermarkets, Asian grocery stores, and online grocery options — so you can find everything you need.",
+    "content": [
+      { "type": "paragraph", "text": "Grocery shopping in the US can feel very different from China. Stores are larger, layouts vary, and some familiar ingredients may be hard to find at mainstream supermarkets. Here's how to navigate it all." },
+      { "type": "heading", "text": "Major supermarket chains", "level": 2 },
+      { "type": "comparison", "title": "Common Supermarkets", "items": [
+        { "label": "Walmart", "description": "Lowest prices for basics. Huge selection including household items. Quality varies. Available almost everywhere." },
+        { "label": "Kroger / Safeway / Publix", "description": "Regional chains with good quality and weekly sales. Sign up for their free loyalty card — it makes a big difference in price." },
+        { "label": "Trader Joe's", "description": "Smaller store, unique house-brand products, affordable prepared meals. Great frozen food section. Students love it." },
+        { "label": "Whole Foods", "description": "Higher quality, organic focus, higher prices. Amazon Prime members get discounts. Good for specialty items." },
+        { "label": "Costco", "description": "Bulk buying — requires $65/year membership. Amazing value for meat, produce, and household goods. Best with a car and a friend to split bulk items." },
+        { "label": "Aldi", "description": "Budget-friendly, smaller selection, surprisingly good quality. Bring your own bags and a quarter for the cart." }
+      ] },
+      { "type": "tip", "text": "Download each store's app for digital coupons and weekly ads. Prices can differ by 30-50% between stores for the same product. A little planning saves a lot of money." },
+      { "type": "heading", "text": "Asian grocery stores", "level": 2 },
+      { "type": "paragraph", "text": "For Chinese cooking ingredients, you'll want to find your nearest Asian supermarket. These carry soy sauce, doubanjiang, Lao Gan Ma, fresh tofu, Chinese vegetables, noodles, dumplings, and much more." },
+      { "type": "list", "items": [
+        "H Mart — Korean-owned but carries many Chinese ingredients. Widespread across the US.",
+        "99 Ranch Market (大华超市) — The largest Chinese supermarket chain. Mostly in California, Texas, and the East Coast.",
+        "GW Supermarket (大中华超市) — Common in the Mid-Atlantic region.",
+        "Patel Brothers — Indian grocery, but great for rice, spices, and lentils at low prices.",
+        "Local Asian markets — search Google Maps for 'Asian grocery' or 'Chinese supermarket' near you."
+      ] },
+      { "type": "tip", "text": "If there's no Asian grocery store nearby, Yamibuy (亚米网) and Weee! deliver Asian groceries online to most US addresses. Many items are the same brands you'd find in China." },
+      { "type": "heading", "text": "Online grocery shopping", "level": 2 },
+      { "type": "list", "items": [
+        "Instacart — delivers from Costco, Kroger, Aldi, and more. Great when you don't have a car.",
+        "Amazon Fresh / Whole Foods delivery — free delivery for Prime members on orders over $35.",
+        "Walmart Grocery — order online, pick up in store for free, or get delivery.",
+        "Weee! — Asian grocery delivery, often has free delivery promotions for new users."
+      ] },
+      { "type": "heading", "text": "Money-saving tips", "level": 2 },
+      { "type": "list", "items": [
+        "Buy store-brand (generic) products — usually 20-40% cheaper, same quality",
+        "Shop the weekly sale flyer and stock up when prices are low",
+        "Buy produce that's in season — much cheaper and tastes better",
+        "Frozen vegetables are just as nutritious as fresh and much cheaper",
+        "Split a Costco membership and bulk items with roommates or friends"
+      ] }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["cooking-essentials", "eating-out-guide"]
+  },
+  {
+    "slug": "cooking-essentials",
+    "categoryId": "food",
+    "title": "Setting Up Your Kitchen: Cooking Essentials for Students",
+    "summary": "What to buy for your first kitchen in the US — essential tools, pantry staples, and where to find affordable cookware.",
+    "content": [
+      { "type": "paragraph", "text": "Cooking at home is the best way to eat well and save money as a student. A home-cooked meal costs $3-5 on average, compared to $12-20 eating out. Here's how to set up your kitchen from scratch." },
+      { "type": "heading", "text": "Essential cookware and tools", "level": 2 },
+      { "type": "list", "items": [
+        "Rice cooker — your most important appliance. Zojirushi or Instant Pot are great; budget options work fine too ($20-30 at Walmart).",
+        "One good non-stick pan (10-12 inch) — for stir-frying, eggs, and everything else.",
+        "One medium pot with lid — for soups, boiling noodles, and cooking vegetables.",
+        "Cutting board and a chef's knife — don't buy a knife set; one good 8-inch knife does 95% of the work.",
+        "Basic utensils: spatula, ladle, tongs, can opener, measuring cups.",
+        "A wok (if you have a gas stove) — carbon steel woks are $20-30 at Asian grocery stores. Electric stoves don't get hot enough for proper wok cooking."
+      ] },
+      { "type": "heading", "text": "Where to buy affordable kitchen supplies", "level": 2 },
+      { "type": "comparison", "title": "Where to Shop", "items": [
+        { "label": "Walmart / Target", "description": "Best for basics — pots, pans, utensils, storage containers. Mainstays (Walmart) and Room Essentials (Target) brands are cheapest." },
+        { "label": "TJ Maxx / Marshalls / HomeGoods", "description": "Brand-name cookware at deep discounts. Great for finding quality items at 50-70% off retail." },
+        { "label": "Facebook Marketplace / campus groups", "description": "Graduating students sell full kitchen setups for very cheap. Check in April-May for the best deals." },
+        { "label": "Dollar Tree", "description": "Surprisingly useful for utensils, storage containers, cleaning supplies, and basic kitchen tools. Everything is $1.25." },
+        { "label": "Amazon", "description": "Convenient for specialty items. Check reviews carefully. Good for rice cookers and electric kettles." }
+      ] },
+      { "type": "heading", "text": "Pantry staples to always have", "level": 2 },
+      { "type": "paragraph", "text": "Stock these basics and you can always make a meal:" },
+      { "type": "list", "items": [
+        "Rice (jasmine or medium-grain) — buy the big bag, it's much cheaper per pound",
+        "Cooking oil (vegetable or canola)",
+        "Soy sauce (生抽), dark soy sauce (老抽), oyster sauce",
+        "Lao Gan Ma chili crisp (老干妈) — available at Asian stores and Amazon",
+        "Salt, black pepper, garlic, ginger",
+        "Eggs — versatile, cheap protein",
+        "Dried noodles or instant noodles for quick meals",
+        "Frozen dumplings — stock up from Asian grocery stores"
+      ] },
+      { "type": "tip", "text": "Your first grocery run will be the most expensive because you're buying everything at once. After that, weekly groceries for one person typically cost $40-70 if you cook most meals at home." },
+      { "type": "heading", "text": "Easy starter recipes", "level": 2 },
+      { "type": "paragraph", "text": "If you're new to cooking, start with these simple dishes:" },
+      { "type": "list", "items": [
+        "Egg fried rice (蛋炒饭) — leftover rice + eggs + soy sauce + any vegetables",
+        "Tomato and egg stir-fry (番茄炒蛋) — 3 ingredients, 10 minutes, tastes like home",
+        "Instant noodle upgrade — add an egg, frozen vegetables, and a splash of sesame oil",
+        "One-pot pasta — pasta + canned tomato sauce + whatever vegetables you have",
+        "Sheet pan chicken and vegetables — toss everything on a pan, bake at 400°F for 25 minutes"
+      ] },
+      { "type": "tip", "text": "Search Xiaohongshu (小红书) for '留学生快手菜' — thousands of easy recipes from Chinese students using ingredients available in the US." }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["grocery-stores-guide", "eating-out-guide"]
+  },
+  {
+    "slug": "eating-out-guide",
+    "categoryId": "food",
+    "title": "Eating Out in the US: Tipping, Ordering, and Finding Good Food",
+    "summary": "How American restaurants work — tipping culture, how to order, campus dining, and finding affordable meals.",
+    "content": [
+      { "type": "paragraph", "text": "Eating out in the US has its own set of unwritten rules that can be confusing at first. Here's everything you need to know about dining out, from fast food to sit-down restaurants." },
+      { "type": "heading", "text": "Tipping — the most important thing to know", "level": 2 },
+      { "type": "paragraph", "text": "Tipping is not optional in the US. Restaurant servers earn most of their income from tips, not their base wage. Not tipping is considered very rude." },
+      { "type": "list", "items": [
+        "Sit-down restaurants: tip 18-20% of the pre-tax bill",
+        "Buffets: tip 10-15%",
+        "Takeout / pickup: tipping is optional, 10% is nice",
+        "Coffee shops: $1-2 or skip — both are fine",
+        "Fast food (McDonald's, Chick-fil-A, etc.): no tip needed",
+        "Food delivery (DoorDash, Uber Eats): tip 15-20% or at least $3-5"
+      ] },
+      { "type": "warning", "text": "The price on the menu is NOT what you'll pay. Add ~8-10% for tax and 18-20% for tip. A $15 meal actually costs about $19-20 total. Always budget for this." },
+      { "type": "heading", "text": "How ordering works", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "Wait to be seated (sit-down restaurants)", "description": "Don't just sit down — wait at the entrance for a host to show you to a table. At fast-casual places (Chipotle, Panera), you order at the counter." },
+        { "title": "Drinks first", "description": "Your server will ask for drink orders first. Water is always free — just ask for 'water, please.' Don't be shy about it." },
+        { "title": "Order your food", "description": "It's totally fine to ask questions about the menu. 'What do you recommend?' is a common and welcome question." },
+        { "title": "Ask for the check", "description": "Servers won't bring the check until you ask. Say 'Can I get the check, please?' or make a writing-in-the-air gesture. This is normal — they're not ignoring you." },
+        { "title": "Pay and tip", "description": "You can pay with card (most common) or cash. If paying by card, write the tip amount on the receipt, add it to the total, and sign." }
+      ] },
+      { "type": "heading", "text": "Affordable eating options", "level": 2 },
+      { "type": "comparison", "title": "Budget-Friendly Options", "items": [
+        { "label": "Campus dining halls", "description": "If you have a meal plan, use it! Many schools offer all-you-can-eat dining halls. Even without a plan, some allow pay-per-visit ($8-12)." },
+        { "label": "Fast casual chains", "description": "Chipotle, Panda Express, Chick-fil-A — filling meals for $8-12. Many have student discounts or app deals." },
+        { "label": "Happy hour specials", "description": "Many restaurants offer discounted food during off-peak hours (usually 3-6 PM). Great way to try nicer restaurants cheaply." },
+        { "label": "Food trucks", "description": "Often found near campus. Usually $7-10 for a full meal. Great variety and quality." },
+        { "label": "Church and community meals", "description": "Many churches and community organizations host free or donation-based meals. A great way to get a home-cooked meal and meet local people." }
+      ] },
+      { "type": "heading", "text": "Finding Chinese food", "level": 2 },
+      { "type": "paragraph", "text": "Missing home food is real. Here's how to find good Chinese food in the US:" },
+      { "type": "list", "items": [
+        "Search Xiaohongshu (小红书) for restaurant recommendations in your city",
+        "Check Google Maps reviews — filter by 'Chinese' and look for places reviewed in Chinese",
+        "Ask other Chinese students — WeChat groups often have restaurant recommendation threads",
+        "Look for restaurants in or near Chinatown if your city has one",
+        "Don't judge by the decor — some of the best Chinese food comes from the simplest-looking places"
+      ] },
+      { "type": "tip", "text": "Many American-Chinese restaurants (Panda Express, P.F. Chang's) serve Americanized Chinese food that tastes different from what you're used to. For authentic flavors, look for restaurants where the menu has Chinese characters and the staff speaks Chinese." }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["grocery-stores-guide", "cooking-essentials"]
+  }
+]

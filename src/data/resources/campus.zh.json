@@ -1,0 +1,115 @@
+[
+  {
+    "slug": "i20-and-sevis",
+    "categoryId": "campus",
+    "title": "了解你的I-20和SEVIS记录",
+    "summary": "I-20是你在美国最重要的文件之一。这篇指南帮你了解如何保持它的有效状态。",
+    "content": [
+      { "type": "paragraph", "text": "I-20（资格证书）是学校签发的证明你学生身份的文件，与SEVIS系统绑定。SEVIS是美国国土安全部追踪所有国际学生和访问学者的数据库。" },
+      { "type": "heading", "text": "什么是SEVIS？", "level": 2 },
+      { "type": "paragraph", "text": "SEVIS（学生和交流访问者信息系统）是美国政府的数据库。每位F-1学生都有一个独特的SEVIS ID号码（以N开头）。你学校的国际学生办公室（ISO）负责管理你的SEVIS记录，包括地址变更、专业变更和注册状态等。" },
+      { "type": "heading", "text": "I-20上的关键信息", "level": 2 },
+      { "type": "list", "items": [
+        "SEVIS ID号码（N00xxxxxxxx）— 请牢记",
+        "项目开始和结束日期",
+        "学校和专业信息",
+        "预估费用和资金来源",
+        "旅行签名（第2页）— 每年需要更新"
+      ] },
+      { "type": "warning", "text": "务必保持I-20的有效和准确。如果你换专业、转学或需要延期，必须在变更之前获得新的I-20。使用过期或不准确的I-20可能会影响你的签证身份。" },
+      { "type": "heading", "text": "什么时候需要用到I-20？", "level": 2 },
+      { "type": "list", "items": [
+        "国际旅行后重新入境美国",
+        "申请OPT或CPT工作许可",
+        "转学",
+        "申请驾照（某些州需要）",
+        "证明合法身份（银行开户、租房等）"
+      ] },
+      { "type": "tip", "text": "出国旅行前，记得去ISO在I-20第2页更新旅行签名。签名有效期为一年。没有有效签名可能在重新入境时遇到问题。" },
+      { "type": "heading", "text": "I-20丢了怎么办？", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "不要慌张", "description": "你的SEVIS电子记录还在，纸质I-20可以重新打印。" },
+        { "title": "立即联系ISO", "description": "他们可以从SEVIS系统重新签发I-20。" },
+        { "title": "保留电子备份", "description": "一定要拍照或扫描I-20，保存在云端作为备份。" }
+      ] }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["campus-registration", "opt-cpt-work"]
+  },
+  {
+    "slug": "campus-registration",
+    "categoryId": "campus",
+    "title": "开学第一周：校园报到完全指南",
+    "summary": "到校第一周需要完成的所有事项：报到、迎新、学生证等。",
+    "content": [
+      { "type": "paragraph", "text": "到校第一周可能会让人有些手忙脚乱，但大多数学校都为国际学生设计了清晰的流程。按照这份清单来做，确保不会遗漏任何重要步骤。" },
+      { "type": "heading", "text": "注册步骤", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "去国际学生办公室（ISO）报到", "description": "通常在到达后几天内必须完成。带上护照、I-20和I-94记录。他们会验证你的到达并激活SEVIS记录。" },
+        { "title": "参加国际学生迎新会", "description": "大多数学校要求参加。你会了解校园资源、法律责任，还能认识其他国际同学。千万别缺席！" },
+        { "title": "办理学生证", "description": "学生证是你使用校园资源的钥匙——图书馆、健身房、食堂、楼宇出入以及校外学生优惠。" },
+        { "title": "设置学校邮箱和账号", "description": "激活学校邮箱、在线学习系统（Canvas/Blackboard）和学生门户。所有官方通知都通过学校邮箱发送。" },
+        { "title": "注册课程（如果还没在网上完成）", "description": "和学术顾问见面确定课表。F-1学生必须保持全日制注册（本科通常12学分以上，研究生9学分以上）。" },
+        { "title": "办理停车证或公交卡", "description": "很多学校提供免费或优惠的公交卡。如果开车，尽早注册车辆和停车证——很快就会卖完。" }
+      ] },
+      { "type": "warning", "text": "F-1学生每学期必须保持全日制注册。未经ISO批准而低于全日制可能会影响签证身份。退课前一定要先咨询ISO。" },
+      { "type": "heading", "text": "需要了解的重要校园资源", "level": 2 },
+      { "type": "list", "items": [
+        "国际学生办公室 — 签证和移民问题的首选资源",
+        "学生健康中心 — 生病时就诊的地方（通常免费或低价）",
+        "心理咨询中心 — 免费心理健康支持，部分提供中文服务",
+        "写作中心 — 免费帮助修改英文论文和作业",
+        "校园安保/警察 — 把他们的电话存到手机里",
+        "图书馆 — 不仅是借书：免费打印、自习室、笔记本电脑借用和研究帮助"
+      ] },
+      { "type": "tip", "text": "大部分校园服务已包含在你的学费中——你已经付过了！充分利用免费辅导、就业咨询、健身房和学生活动吧。" }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["i20-and-sevis", "opt-cpt-work"]
+  },
+  {
+    "slug": "opt-cpt-work",
+    "categoryId": "campus",
+    "title": "在美国工作：CPT、OPT和校内工作指南",
+    "summary": "F-1学生可以在美国合法工作，但有严格规定。了解CPT、OPT和校内就业的区别。",
+    "content": [
+      { "type": "paragraph", "text": "作为F-1学生，你可以在特定条件下在美国工作。尽早了解你的选择，有助于规划实习、兼职和毕业后的就业。" },
+      { "type": "heading", "text": "校内工作（On-Campus Employment）", "level": 2 },
+      { "type": "paragraph", "text": "最简单的工作方式。上课期间每周最多20小时，假期每周最多40小时。不需要特别许可——只要F-1身份有效即可。" },
+      { "type": "list", "items": [
+        "图书馆助理、食堂、研究助理、校园IT",
+        "助教（TA）或批改作业",
+        "校园书店、体育馆、学生服务中心"
+      ] },
+      { "type": "tip", "text": "校内工作名额有限，抢手很快！开学第一周就开始申请。查看学校的学生就业网站或直接询问各部门。" },
+      { "type": "heading", "text": "CPT（课程实践培训）", "level": 2 },
+      { "type": "paragraph", "text": "CPT允许你做与专业相关的实习或合作项目。必须在开始工作前获得ISO的批准。" },
+      { "type": "list", "items": [
+        "必须与你的专业直接相关",
+        "申请前需要有工作录取通知",
+        "通常需要已经全日制注册至少一个学年（研究生可能有例外）",
+        "可以兼职（≤20小时/周）或假期全职",
+        "使用超过12个月的全职CPT将无法申请OPT"
+      ] },
+      { "type": "warning", "text": "绝对不要在CPT批准日期之前开始工作。未经授权工作——哪怕只提前一天——都是严重违规，可能导致F-1身份终止。" },
+      { "type": "heading", "text": "OPT（选择性实践培训）", "level": 2 },
+      { "type": "paragraph", "text": "OPT给你毕业后12个月的工作许可。STEM专业还可以额外延长24个月（STEM OPT）。" },
+      { "type": "steps", "items": [
+        { "title": "尽早申请", "description": "最早可在毕业前90天申请。USCIS处理需要3-5个月，不要拖延。" },
+        { "title": "获得ISO推荐", "description": "ISO必须先在SEVIS系统中为你做推荐，然后你才能向USCIS提交申请。" },
+        { "title": "提交I-765表格", "description": "就业许可申请。费用约410美元（请查看当前金额）。" },
+        { "title": "收到EAD卡", "description": "在拿到就业许可文件（EAD）并且OPT开始日期之后才能开始工作。" },
+        { "title": "向ISO报告就业情况", "description": "开始工作后10天内必须报告雇主信息。失业超过90天（STEM OPT为150天）可能终止你的身份。" }
+      ] },
+      { "type": "heading", "text": "快速对比", "level": 2 },
+      { "type": "comparison", "title": "工作许可类型对比", "items": [
+        { "label": "校内工作", "description": "无需特别许可。学期中每周最多20小时。最简单的选择，但职位有限、工资较低。" },
+        { "label": "CPT", "description": "用于与专业相关的实习。必须在开始前获得批准。使用时间可能影响OPT资格。" },
+        { "label": "OPT", "description": "毕业后12个月工作许可（STEM再加24个月）。尽早申请！最常见的留美工作途径。" }
+      ] },
+      { "type": "tip", "text": "至少在毕业前6个月开始规划OPT。参加招聘会、利用学校的就业中心、练习面试。很多雇主提前一个学期就开始招聘实习生和应届生。" }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["i20-and-sevis", "campus-registration"]
+  }
+]

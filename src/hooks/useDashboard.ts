@@ -1,32 +1,48 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Contact, InteractionNote, StudentStage } from '@/types/dashboard';
 
-const CONTACTS_KEY = 'welcome-hub-dashboard-contacts';
-const PIN_KEY = 'welcome-hub-dashboard-pin';
+// Storage keys — colon-separated namespace for consistency
+const CONTACTS_KEY = 'welcome-hub:dashboard-contacts';
+const PIN_KEY = 'welcome-hub:dashboard-pin';
+const AUTH_KEY = 'welcome-hub:dashboard-auth';
 
-// Default PIN for prototype — ministry workers set their own on first use
+// Also set a cookie so middleware can gate dashboard routes server-side.
+// The cookie is not httpOnly (set from JS), so it's not tamper-proof —
+// but it prevents the dashboard HTML from being sent before auth check.
+const AUTH_COOKIE = 'welcome-hub-authed';
+
+// Prototype-only PIN gate. Default '1234' is replaced when a worker
+// changes their PIN via settings. In a real app, this would be
+// server-side auth — localStorage is intentionally insecure here.
 const DEFAULT_PIN = '1234';
 
-// --- Auth (simple PIN gate, no real auth) ---
+// --- Auth ---
 
 function getStoredPin(): string {
   if (typeof window === 'undefined') return DEFAULT_PIN;
   return localStorage.getItem(PIN_KEY) || DEFAULT_PIN;
 }
 
-function isAuthenticated(): boolean {
-  if (typeof window === 'undefined') return false;
-  return localStorage.getItem('welcome-hub-dashboard-auth') === 'true';
-}
-
 export function useDashboardAuth() {
-  const [authed, setAuthed] = useState<boolean>(isAuthenticated);
+  // Initialize as false on server AND client to avoid hydration mismatch.
+  // The real value is synced from localStorage in useEffect below.
+  const [authed, setAuthed] = useState(false);
+
+  // Sync auth state from localStorage after hydration (client-only)
+  useEffect(() => {
+    const stored = localStorage.getItem(AUTH_KEY) === 'true';
+    setAuthed(stored);
+  }, []);
 
   const login = useCallback((pin: string): boolean => {
     if (pin === getStoredPin()) {
-      localStorage.setItem('welcome-hub-dashboard-auth', 'true');
+      localStorage.setItem(AUTH_KEY, 'true');
+      // Set cookie so middleware can gate dashboard routes server-side.
+      // Secure flag ensures cookie is only sent over HTTPS in production.
+      const secure = window.location.protocol === 'https:' ? '; Secure' : '';
+      document.cookie = `${AUTH_COOKIE}=1; path=/; SameSite=Lax${secure}`;
       setAuthed(true);
       return true;
     }
@@ -34,7 +50,9 @@ export function useDashboardAuth() {
   }, []);
 
   const logout = useCallback(() => {
-    localStorage.removeItem('welcome-hub-dashboard-auth');
+    localStorage.removeItem(AUTH_KEY);
+    // Remove the auth cookie
+    document.cookie = `${AUTH_COOKIE}=; path=/; max-age=0`;
     setAuthed(false);
   }, []);
 
@@ -66,7 +84,12 @@ function saveContacts(contacts: Contact[]) {
 }
 
 export function useDashboardContacts() {
-  const [contacts, setContacts] = useState<Contact[]>(loadContacts);
+  // Initialize empty on server, sync from localStorage after hydration
+  const [contacts, setContacts] = useState<Contact[]>([]);
+
+  useEffect(() => {
+    setContacts(loadContacts());
+  }, []);
 
   const addContact = useCallback((contact: Omit<Contact, 'id' | 'createdAt' | 'notes'>) => {
     setContacts(prev => {

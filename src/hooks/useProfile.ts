@@ -1,43 +1,19 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useCallback } from 'react';
 import { MyProfile } from '@/types/peer';
-
-const STORAGE_KEY = 'welcome-hub-profile';
-
-function loadProfile(): MyProfile | null {
-  if (typeof window === 'undefined') return null;
-  const saved = localStorage.getItem(STORAGE_KEY);
-  if (saved) {
-    try {
-      return JSON.parse(saved);
-    } catch {
-      return null;
-    }
-  }
-  return null;
-}
-
-function saveProfile(profile: MyProfile | null) {
-  if (profile) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(profile));
-  } else {
-    localStorage.removeItem(STORAGE_KEY);
-  }
-}
+import { useLocalStorage } from './useLocalStorage';
 
 export function useProfile() {
-  const [profile, setProfile] = useState<MyProfile | null>(loadProfile);
+  const [profile, setProfile] = useLocalStorage<MyProfile | null>('welcome-hub:profile', null);
 
   const updateProfile = useCallback((newProfile: MyProfile) => {
     setProfile(newProfile);
-    saveProfile(newProfile);
-  }, []);
+  }, [setProfile]);
 
   const clearProfile = useCallback(() => {
     setProfile(null);
-    saveProfile(null);
-  }, []);
+  }, [setProfile]);
 
   return { profile, updateProfile, clearProfile, hasProfile: profile !== null };
 }

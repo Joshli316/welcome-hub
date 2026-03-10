@@ -1,8 +1,15 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { getStories } from '@/lib/data/returnees';
 import Card from '@/components/ui/Card';
 import StoryCard from '@/components/reentry/StoryCard';
+import PageHeader from '@/components/ui/PageHeader';
+
+export const metadata: Metadata = {
+  title: 'Re-entry Planning 回国准备',
+  description: 'Departure checklists, re-entry guides, returnee mentors, and real stories to help you prepare for going back to China.',
+};
 
 export default function ReentryPage() {
   const locale = useLocale();
@@ -11,38 +18,34 @@ export default function ReentryPage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
-      {/* Header */}
-      <div className="mb-10">
-        <h1 className="text-3xl font-bold mb-2">{t('title')}</h1>
-        <p className="text-muted text-lg">{t('subtitle')}</p>
-      </div>
+      <PageHeader title={t('title')} subtitle={t('subtitle')} large />
 
       {/* Feature cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
         <Link href={`/${locale}/reentry/checklist`}>
           <Card hover className="h-full text-center py-6">
-            <div className="text-3xl mb-2">📋</div>
+            <div className="text-3xl mb-2" aria-hidden="true">📋</div>
             <h3 className="font-semibold mb-1">{t('features.checklist.title')}</h3>
             <p className="text-sm text-muted">{t('features.checklist.description')}</p>
           </Card>
         </Link>
         <Link href={`/${locale}/reentry/resources`}>
           <Card hover className="h-full text-center py-6">
-            <div className="text-3xl mb-2">📖</div>
+            <div className="text-3xl mb-2" aria-hidden="true">📖</div>
             <h3 className="font-semibold mb-1">{t('features.resources.title')}</h3>
             <p className="text-sm text-muted">{t('features.resources.description')}</p>
           </Card>
         </Link>
         <Link href={`/${locale}/reentry/returnees`}>
           <Card hover className="h-full text-center py-6">
-            <div className="text-3xl mb-2">🤝</div>
+            <div className="text-3xl mb-2" aria-hidden="true">🤝</div>
             <h3 className="font-semibold mb-1">{t('features.returnees.title')}</h3>
             <p className="text-sm text-muted">{t('features.returnees.description')}</p>
           </Card>
         </Link>
         <Link href={`/${locale}/reentry/stories`}>
           <Card hover className="h-full text-center py-6">
-            <div className="text-3xl mb-2">💬</div>
+            <div className="text-3xl mb-2" aria-hidden="true">💬</div>
             <h3 className="font-semibold mb-1">{t('features.stories.title')}</h3>
             <p className="text-sm text-muted">{t('features.stories.description')}</p>
           </Card>

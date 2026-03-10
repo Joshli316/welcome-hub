@@ -1,15 +1,13 @@
-'use client';
-
-import { useState } from 'react';
 import Link from 'next/link';
-import { useLocale, useTranslations } from 'next-intl';
+import { getLocale, getTranslations } from 'next-intl/server';
 import LanguageToggle from './LanguageToggle';
-import MobileNav from './MobileNav';
+import MobileMenuToggle from './MobileMenuToggle';
 
-export default function Header() {
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const locale = useLocale();
-  const t = useTranslations('nav');
+// Server component — only LanguageToggle and MobileMenuToggle ship client JS.
+// Logo and desktop nav are pure HTML with zero JS overhead.
+export default async function Header() {
+  const locale = await getLocale();
+  const t = await getTranslations('nav');
 
   const navLinks = [
     { href: `/${locale}`, label: t('home') },
@@ -24,49 +22,37 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
-      <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        {/* Logo / site name */}
-        <Link href={`/${locale}`} className="flex items-center gap-2 font-bold text-lg text-primary-700">
-          <span className="text-2xl">🏡</span>
-          <span className="hidden sm:inline">{locale === 'zh' ? '欢迎之家' : 'Welcome Hub'}</span>
+    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
+      <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+        {/* Logo */}
+        <Link href={`/${locale}`} className="flex items-center gap-2 hover:opacity-75 transition-opacity">
+          <span className="text-primary-600 font-semibold text-[15px]">
+            {locale === 'zh' ? '欢迎之家' : 'Welcome Hub'}
+          </span>
         </Link>
 
-        {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-6">
+        {/* Desktop nav — server-rendered, zero JS */}
+        <nav className="hidden md:flex items-center gap-0.5">
           {navLinks.map(link => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted hover:text-foreground transition-colors"
+              className="text-[13px] text-muted hover:text-foreground px-2.5 py-1.5 rounded-md transition-colors"
             >
               {link.label}
             </Link>
           ))}
-          <LanguageToggle />
+          <div className="ml-3 pl-3 border-l border-border">
+            <LanguageToggle />
+          </div>
         </nav>
 
-        {/* Mobile menu button */}
-        <div className="flex items-center gap-3 md:hidden">
+        {/* Mobile — client islands for toggle and language */}
+        <div className="flex items-center gap-2 md:hidden">
           <LanguageToggle />
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="p-2 rounded-lg hover:bg-warm-100 transition-colors"
-            aria-label="Toggle menu"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              {mobileOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
+          <MobileMenuToggle links={navLinks} />
         </div>
       </div>
-
-      {/* Mobile nav overlay */}
-      {mobileOpen && <MobileNav links={navLinks} onClose={() => setMobileOpen(false)} />}
     </header>
   );
 }

@@ -14,11 +14,11 @@ export default function ResourceCard({ categoryId, icon, titleKey, descriptionKe
   const t = useTranslations('categories');
 
   return (
-    <Link href={`/${locale}/resources/${categoryId}`}>
-      <Card hover className="h-full flex flex-col">
-        <div className="text-3xl mb-3">{icon}</div>
-        <h3 className="font-semibold text-lg mb-1">{t(titleKey)}</h3>
-        <p className="text-sm text-muted flex-1">{t(descriptionKey)}</p>
+    <Link href={`/${locale}/resources/${categoryId}`} className="block animate-fade-up">
+      <Card hover className="h-full flex flex-col group">
+        <div className="w-9 h-9 rounded-md bg-warm-100 flex items-center justify-center text-lg mb-3 group-hover:bg-warm-200 transition-colors">{icon}</div>
+        <h3 className="font-semibold text-[15px] mb-1">{t(titleKey)}</h3>
+        <p className="text-[13px] text-muted flex-1 leading-relaxed">{t(descriptionKey)}</p>
       </Card>
     </Link>
   );

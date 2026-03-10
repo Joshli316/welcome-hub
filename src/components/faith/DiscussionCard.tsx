@@ -3,6 +3,7 @@ import { DiscussionTopic } from '@/types/faith';
 import Card from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 import { useLocale, useTranslations } from 'next-intl';
+import { localized } from '@/lib/utils/localize';
 
 interface DiscussionCardProps {
   discussion: DiscussionTopic;
@@ -12,8 +13,8 @@ interface DiscussionCardProps {
 export default function DiscussionCard({ discussion }: DiscussionCardProps) {
   const locale = useLocale();
   const t = useTranslations('faith');
-  const title = locale === 'zh' ? discussion.titleZh : discussion.title;
-  const description = locale === 'zh' ? discussion.descriptionZh : discussion.description;
+  const title = localized(discussion, 'title', locale);
+  const description = localized(discussion, 'description', locale);
   const questions = locale === 'zh' ? discussion.questionsZh : discussion.questions;
 
   return (

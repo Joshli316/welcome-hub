@@ -1,0 +1,147 @@
+[
+  {
+    "slug": "us-classroom-culture",
+    "categoryId": "academics",
+    "title": "US Classroom Culture: What's Different and How to Succeed",
+    "summary": "American classrooms emphasize participation, critical thinking, and professor relationships. Here's how to adapt and thrive.",
+    "content": [
+      { "type": "paragraph", "text": "If you're used to the Chinese education system, American classrooms will feel very different. The teaching style, expectations, and student-professor dynamic all work differently here. Understanding these differences early will help you succeed." },
+      { "type": "heading", "text": "Key differences from Chinese education", "level": 2 },
+      { "type": "comparison", "title": "China vs. US Classroom Norms", "items": [
+        { "label": "Participation", "description": "In China, listening quietly shows respect. In the US, professors expect and reward active participation — asking questions, sharing opinions, and joining discussions. Participation is often 10-20% of your grade." },
+        { "label": "Relationship with professors", "description": "US professors prefer to be approachable. They want you to visit office hours, email them questions, and call them by their preferred name (often first name). This is respectful, not rude." },
+        { "label": "Critical thinking vs. memorization", "description": "US classes emphasize analyzing, questioning, and forming your own arguments — not memorizing facts. 'I disagree because...' is encouraged, not disrespectful." },
+        { "label": "Assignments and grading", "description": "Grades come from many sources: papers, projects, presentations, participation, quizzes — not just one final exam. Consistent effort throughout the semester matters." },
+        { "label": "Group work", "description": "Collaborative projects are common. You're expected to contribute equally, communicate proactively, and sometimes evaluate your teammates." }
+      ] },
+      { "type": "heading", "text": "How to participate in class", "level": 2 },
+      { "type": "paragraph", "text": "Class participation can feel intimidating, especially in a second language. Here are practical strategies:" },
+      { "type": "list", "items": [
+        "Prepare before class — read the assigned material and write down 1-2 questions or reactions",
+        "Start small — agree with a classmate's point and add to it: 'I agree with [name], and I'd also add...'",
+        "Ask clarifying questions — 'Could you explain that further?' is always welcome",
+        "Use the chat or discussion board if speaking up feels too hard at first",
+        "Sit near the front — it's easier to engage and harder to hide",
+        "Remember: professors notice effort. Even imperfect participation counts."
+      ] },
+      { "type": "tip", "text": "If you're worried about your English in class, talk to your professor during office hours. Most are very understanding and will give you extra support. Some may even let you submit written thoughts if speaking is difficult." },
+      { "type": "heading", "text": "Office hours — your secret advantage", "level": 2 },
+      { "type": "paragraph", "text": "Office hours are set times when professors are available for one-on-one meetings. Most students don't go — which means the ones who do stand out. This is one of the biggest advantages you can use." },
+      { "type": "list", "items": [
+        "Go within the first 2 weeks to introduce yourself",
+        "Bring specific questions — about the material, assignments, or career advice",
+        "It's okay to say 'I'm an international student and adjusting to the classroom style. Can you give me advice?'",
+        "Building a relationship with professors leads to better letters of recommendation, research opportunities, and mentorship",
+        "You don't need a 'reason' to go — professors appreciate students who show up"
+      ] },
+      { "type": "warning", "text": "Never wait until you're failing to ask for help. If you're struggling with material, visit office hours or a tutoring center early. Professors are much more willing to help students who ask early versus those who wait until the last week." }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["academic-integrity", "academic-resources"]
+  },
+  {
+    "slug": "academic-integrity",
+    "categoryId": "academics",
+    "title": "Academic Integrity: What Counts as Cheating in the US",
+    "summary": "US universities take academic honesty extremely seriously. Understand the rules to protect yourself — the consequences can include expulsion.",
+    "content": [
+      { "type": "paragraph", "text": "Academic integrity is one of the most important concepts in American higher education. What's considered normal collaboration in some educational systems may be treated as cheating in the US. Understanding these boundaries is critical — violations can result in failing a course, suspension, or even expulsion, which would also affect your visa status." },
+      { "type": "heading", "text": "What counts as academic dishonesty", "level": 2 },
+      { "type": "list", "items": [
+        "Plagiarism — using someone else's words or ideas without proper citation, including copying from websites, textbooks, or other students",
+        "Self-plagiarism — resubmitting your own work from a previous class without permission",
+        "Unauthorized collaboration — working together on an assignment that was supposed to be done individually",
+        "Cheating on exams — using unauthorized notes, devices, or communication during tests",
+        "Sharing answers — giving your work to another student, even if they asked you for 'help'",
+        "Using AI tools (ChatGPT, etc.) without permission — policies vary by professor, always ask first",
+        "Fabricating data — making up sources, research results, or citations"
+      ] },
+      { "type": "warning", "text": "The #1 mistake international students make: sharing homework answers with friends. In Chinese study culture, helping a classmate with answers feels natural and generous. In the US, both the giver and receiver can be punished equally. Help friends understand concepts, but never share your actual work." },
+      { "type": "heading", "text": "How to avoid plagiarism", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "Understand citation rules", "description": "Every paper needs citations. Learn your field's citation style (APA, MLA, Chicago). Your library or writing center offers free workshops on this." },
+        { "title": "When in doubt, cite it", "description": "If you read it somewhere and it's not common knowledge, cite the source. Over-citing is always safer than under-citing." },
+        { "title": "Paraphrase properly", "description": "Changing a few words is NOT paraphrasing. You must completely rewrite the idea in your own words AND still cite the source." },
+        { "title": "Use quotation marks for direct quotes", "description": "If you use the exact words from a source, put them in quotes and include a citation with the page number." },
+        { "title": "Know your school's plagiarism detection tools", "description": "Most schools use Turnitin, which compares your paper against millions of sources. It will catch copied text." }
+      ] },
+      { "type": "heading", "text": "When collaboration IS okay", "level": 2 },
+      { "type": "list", "items": [
+        "Study groups — discussing concepts, quizzing each other, explaining ideas",
+        "Group projects — when the syllabus specifically says it's a group assignment",
+        "Tutoring centers and writing centers — they help you improve YOUR work",
+        "Office hours — asking the professor to explain a problem is always allowed",
+        "When the professor explicitly says 'you may work together on this'"
+      ] },
+      { "type": "tip", "text": "If you're ever unsure whether something counts as cheating, ask the professor BEFORE you do it. 'Is it okay if I work with a classmate on this?' takes 10 seconds and can save your academic career." },
+      { "type": "heading", "text": "What happens if you're accused", "level": 2 },
+      { "type": "paragraph", "text": "If you receive an academic integrity violation notice:" },
+      { "type": "list", "items": [
+        "Don't panic, but take it very seriously",
+        "Read the notice carefully — understand exactly what you're accused of",
+        "You usually have the right to a hearing or appeal",
+        "Contact your school's student advocacy office — they can advise you for free",
+        "Be honest in any meeting — attempting to cover up makes things much worse",
+        "First offenses are often handled with a warning or grade penalty; repeated offenses are much harsher"
+      ] }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["us-classroom-culture", "academic-resources"]
+  },
+  {
+    "slug": "academic-resources",
+    "categoryId": "academics",
+    "title": "Free Academic Resources You're Already Paying For",
+    "summary": "Your tuition pays for tutoring, writing help, career services, and more. Here's how to take full advantage of campus resources.",
+    "content": [
+      { "type": "paragraph", "text": "One of the biggest mistakes international students make is not using the resources their tuition already pays for. American universities offer an incredible amount of free academic support — you just have to know where to find it." },
+      { "type": "heading", "text": "Writing Center", "level": 2 },
+      { "type": "paragraph", "text": "The Writing Center is one of the most valuable resources for international students. Trained tutors will help you with any writing assignment — essays, research papers, lab reports, even application materials." },
+      { "type": "list", "items": [
+        "They won't write your paper for you, but they'll help you improve it",
+        "Great for grammar, structure, argumentation, and citation formatting",
+        "Book appointments early in the semester — they fill up before midterms and finals",
+        "Many centers offer online/virtual appointments",
+        "Some have tutors who specialize in working with non-native English speakers"
+      ] },
+      { "type": "heading", "text": "Tutoring services", "level": 2 },
+      { "type": "paragraph", "text": "Free tutoring is available for most introductory and core courses. Types of tutoring:" },
+      { "type": "comparison", "title": "Tutoring Options", "items": [
+        { "label": "Drop-in tutoring", "description": "Walk in during posted hours, no appointment needed. Usually for high-demand courses like math, chemistry, and physics." },
+        { "label": "Scheduled tutoring", "description": "Book regular weekly sessions with a tutor. Best for courses you find consistently challenging." },
+        { "label": "Supplemental Instruction (SI)", "description": "Study sessions led by students who previously excelled in the course. They review lectures, work through problems, and share study strategies." },
+        { "label": "Peer study groups", "description": "Organized by the tutoring center. Great way to study with classmates and make friends at the same time." }
+      ] },
+      { "type": "heading", "text": "Library — more than just books", "level": 2 },
+      { "type": "list", "items": [
+        "Research librarians — they help you find sources for papers and teach you how to use databases. Seriously underused!",
+        "Interlibrary loan — if your library doesn't have a book, they'll get it from another university for free",
+        "Study rooms — reserve private rooms for group study sessions",
+        "Technology lending — many libraries lend laptops, cameras, calculators, and chargers",
+        "Free printing — most schools give you a printing credit each semester",
+        "Workshops — citation management, research skills, presentation software, and more"
+      ] },
+      { "type": "heading", "text": "Career Center", "level": 2 },
+      { "type": "paragraph", "text": "Start using career services from your first year, not just senior year:" },
+      { "type": "list", "items": [
+        "Resume and cover letter reviews — they'll help you adapt to American format and expectations",
+        "Mock interviews — practice before real interviews, including tips specific to international students",
+        "Career fairs — your school hosts them every semester. Dress professionally, bring resumes, and practice your 30-second introduction",
+        "Job and internship databases — your school likely has its own job board (Handshake is common)",
+        "Alumni networking events — connect with graduates working in your field"
+      ] },
+      { "type": "tip", "text": "Many career centers have advisors who specialize in international student employment issues — OPT timelines, visa sponsorship questions, and which companies hire international students. Book an appointment early." },
+      { "type": "heading", "text": "Technology and software", "level": 2 },
+      { "type": "list", "items": [
+        "Microsoft Office 365 — free for students at most schools (Word, Excel, PowerPoint, OneDrive)",
+        "Adobe Creative Cloud — some schools provide free access",
+        "Google Workspace — unlimited Drive storage through your school account",
+        "VPN — your school's VPN can access restricted databases and sometimes works for accessing content in China",
+        "Discounted software — check your school's IT website for student deals on software like MATLAB, SPSS, etc."
+      ] },
+      { "type": "warning", "text": "Your school email and accounts will usually be deactivated within 6-12 months after graduation. Before you graduate, download any important files and migrate to a personal account. Transfer your cloud storage, save important emails, and update any accounts linked to your school email." }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["us-classroom-culture", "academic-integrity"]
+  }
+]

@@ -1,37 +1,15 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useCallback } from 'react';
 import { ChecklistState } from '@/types/checklist';
-
-const STORAGE_KEY = 'welcome-hub-checklist';
-
-function loadFromStorage(): ChecklistState {
-  if (typeof window === 'undefined') return {};
-  const saved = localStorage.getItem(STORAGE_KEY);
-  if (saved) {
-    try {
-      return JSON.parse(saved);
-    } catch {
-      return {};
-    }
-  }
-  return {};
-}
-
-function saveToStorage(state: ChecklistState) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-}
+import { useLocalStorage } from './useLocalStorage';
 
 export function useChecklist() {
-  const [state, setState] = useState<ChecklistState>(loadFromStorage);
+  const [state, setState] = useLocalStorage<ChecklistState>('welcome-hub:checklist', {});
 
   const toggle = useCallback((itemId: string) => {
-    setState(prev => {
-      const next = { ...prev, [itemId]: !prev[itemId] };
-      saveToStorage(next);
-      return next;
-    });
-  }, []);
+    setState({ ...state, [itemId]: !state[itemId] });
+  }, [state, setState]);
 
   const isChecked = useCallback((itemId: string): boolean => {
     return !!state[itemId];
@@ -41,8 +19,7 @@ export function useChecklist() {
 
   const resetAll = useCallback(() => {
     setState({});
-    saveToStorage({});
-  }, []);
+  }, [setState]);
 
   return { isChecked, toggle, completedCount, resetAll };
 }

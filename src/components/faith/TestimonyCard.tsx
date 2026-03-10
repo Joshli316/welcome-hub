@@ -4,6 +4,7 @@ import Card from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 import { formatDate } from '@/lib/utils/date';
 import { useLocale } from 'next-intl';
+import { localized } from '@/lib/utils/localize';
 
 interface TestimonyCardProps {
   testimony: Testimony;
@@ -12,9 +13,9 @@ interface TestimonyCardProps {
 // Displays a preview card for a testimony, linking to the full story
 export default function TestimonyCard({ testimony }: TestimonyCardProps) {
   const locale = useLocale();
-  const title = locale === 'zh' ? testimony.titleZh : testimony.title;
-  const excerpt = locale === 'zh' ? testimony.excerptZh : testimony.excerpt;
-  const role = locale === 'zh' ? testimony.authorRoleZh : testimony.authorRole;
+  const title = localized(testimony, 'title', locale);
+  const excerpt = localized(testimony, 'excerpt', locale);
+  const role = localized(testimony, 'authorRole', locale);
 
   return (
     <Link href={`/${locale}/faith-and-work/testimonies/${testimony.id}`}>

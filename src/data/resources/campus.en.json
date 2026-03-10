@@ -1,0 +1,115 @@
+[
+  {
+    "slug": "i20-and-sevis",
+    "categoryId": "campus",
+    "title": "Understanding Your I-20 and SEVIS Record",
+    "summary": "Your I-20 is one of the most important documents you'll carry in the US. Here's what you need to know to keep it valid.",
+    "content": [
+      { "type": "paragraph", "text": "The I-20 (Certificate of Eligibility) is the document your school issues that proves your student status in the US. It's tied to your SEVIS record — a government database that tracks all international students and exchange visitors." },
+      { "type": "heading", "text": "What is SEVIS?", "level": 2 },
+      { "type": "paragraph", "text": "SEVIS (Student and Exchange Visitor Information System) is a DHS database. Every F-1 student has a SEVIS record with a unique ID number (starts with N). Your school's International Student Office (ISO) manages your SEVIS record and must report changes like address updates, major changes, or enrollment status." },
+      { "type": "heading", "text": "Key things on your I-20", "level": 2 },
+      { "type": "list", "items": [
+        "Your SEVIS ID number (N00xxxxxxxx) — memorize this",
+        "Program start and end dates",
+        "Your school and program of study",
+        "Estimated costs and funding sources",
+        "Travel signature (page 2) — must be renewed every year"
+      ] },
+      { "type": "warning", "text": "Always keep your I-20 valid and up to date. If you change your major, transfer schools, or need to extend your program, you MUST get a new I-20 BEFORE the change happens. Working with an expired or inaccurate I-20 can jeopardize your visa status." },
+      { "type": "heading", "text": "When do you need your I-20?", "level": 2 },
+      { "type": "list", "items": [
+        "Re-entering the US after international travel",
+        "Applying for OPT or CPT work authorization",
+        "Transferring schools",
+        "Applying for a driver's license (some states)",
+        "Proving your legal status for banking, housing, etc."
+      ] },
+      { "type": "tip", "text": "Before traveling internationally, visit your ISO to get a fresh travel signature on page 2 of your I-20. Signatures are valid for one year. Without a valid signature, you may have trouble re-entering the US." },
+      { "type": "heading", "text": "What to do if you lose your I-20", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "Don't panic", "description": "Your SEVIS record still exists electronically. The paper I-20 can be reprinted." },
+        { "title": "Contact your ISO immediately", "description": "They can issue a replacement I-20 from the SEVIS system." },
+        { "title": "Keep digital copies", "description": "Always photograph or scan your I-20 and store it in cloud storage as a backup." }
+      ] }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["campus-registration", "opt-cpt-work"]
+  },
+  {
+    "slug": "campus-registration",
+    "categoryId": "campus",
+    "title": "First-Week Campus Registration Guide",
+    "summary": "Everything you need to do during your first week on campus: check-in, orientation, ID card, and more.",
+    "content": [
+      { "type": "paragraph", "text": "Your first week on campus can feel overwhelming, but most schools have a structured process for international students. Here's a checklist to make sure you don't miss anything." },
+      { "type": "heading", "text": "Step-by-step registration", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "Check in with the International Student Office (ISO)", "description": "This is usually mandatory within the first few days. Bring your passport, I-20, and I-94 record. They'll verify your arrival and activate your SEVIS record." },
+        { "title": "Attend international student orientation", "description": "Most schools require this. You'll learn about campus resources, legal responsibilities, and meet other international students. Don't skip it!" },
+        { "title": "Get your student ID card", "description": "Your student ID is your key to everything — library, gym, dining halls, building access, and student discounts around town." },
+        { "title": "Set up your university email and accounts", "description": "Activate your school email, learning management system (Canvas/Blackboard), and student portal. Your email is used for all official communication." },
+        { "title": "Register for classes (if not done online)", "description": "Meet with your academic advisor to finalize your course schedule. F-1 students must maintain full-time enrollment (usually 12+ credits for undergrad, 9+ for grad)." },
+        { "title": "Get your campus parking permit or transit pass", "description": "Many schools offer discounted or free transit passes. If driving, register your car and get a parking permit early — they sell out." }
+      ] },
+      { "type": "warning", "text": "F-1 students must be enrolled full-time every semester. Dropping below full-time status without ISO approval can put your visa in jeopardy. Always talk to your ISO before dropping a class." },
+      { "type": "heading", "text": "Important campus resources to locate", "level": 2 },
+      { "type": "list", "items": [
+        "International Student Office — your lifeline for visa and immigration questions",
+        "Student Health Center — where to go when you're sick (usually free or low-cost)",
+        "Counseling Center — free mental health support, often with multilingual counselors",
+        "Writing Center — free help with papers and assignments in English",
+        "Campus Safety / Police — save their number in your phone",
+        "Library — not just books: free printing, study rooms, laptop loans, and research help"
+      ] },
+      { "type": "tip", "text": "Most campus services are included in your tuition and fees — you've already paid for them! Take advantage of free tutoring, career counseling, gym access, and student events." }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["i20-and-sevis", "opt-cpt-work"]
+  },
+  {
+    "slug": "opt-cpt-work",
+    "categoryId": "campus",
+    "title": "Working in the US: CPT, OPT, and On-Campus Jobs",
+    "summary": "F-1 students can work in the US, but there are strict rules. Here's what you need to know about CPT, OPT, and on-campus employment.",
+    "content": [
+      { "type": "paragraph", "text": "As an F-1 student, you're allowed to work in the US under certain conditions. Understanding your options early helps you plan internships, part-time jobs, and post-graduation employment." },
+      { "type": "heading", "text": "On-Campus Employment", "level": 2 },
+      { "type": "paragraph", "text": "The easiest way to work. You can work up to 20 hours/week during the school year and 40 hours/week during breaks. No special authorization needed — just your valid F-1 status." },
+      { "type": "list", "items": [
+        "Library assistant, dining hall, research assistant, campus IT",
+        "Teaching assistant (TA) or grading positions",
+        "Campus bookstore, recreation center, student services"
+      ] },
+      { "type": "tip", "text": "On-campus jobs fill up fast! Apply during the first week of the semester. Check your school's student employment portal or ask departments directly." },
+      { "type": "heading", "text": "CPT (Curricular Practical Training)", "level": 2 },
+      { "type": "paragraph", "text": "CPT lets you do internships or co-ops that are part of your degree program. It must be authorized by your ISO before you start working." },
+      { "type": "list", "items": [
+        "Must be directly related to your major",
+        "Requires a job offer before applying",
+        "You must have been enrolled full-time for at least one academic year (some exceptions for grad students)",
+        "Can be part-time (≤20 hrs/week) or full-time during breaks",
+        "Using 12+ months of full-time CPT makes you ineligible for OPT"
+      ] },
+      { "type": "warning", "text": "Never start working before your CPT authorization date. Working without authorization — even one day early — is a serious violation that can end your F-1 status." },
+      { "type": "heading", "text": "OPT (Optional Practical Training)", "level": 2 },
+      { "type": "paragraph", "text": "OPT gives you 12 months of work authorization after graduation (or before, as pre-completion OPT). STEM degree holders can extend for an additional 24 months (STEM OPT)." },
+      { "type": "steps", "items": [
+        { "title": "Apply early", "description": "You can apply up to 90 days before graduation. USCIS processing takes 3-5 months, so don't wait." },
+        { "title": "Get your ISO's recommendation", "description": "Your ISO must recommend you in SEVIS before you can file with USCIS." },
+        { "title": "File Form I-765", "description": "Application for Employment Authorization. Filing fee is around $410 (check current amount)." },
+        { "title": "Receive your EAD card", "description": "You cannot work until you have your Employment Authorization Document (EAD) in hand and your OPT start date has passed." },
+        { "title": "Report employment to your ISO", "description": "You must report your employer info within 10 days of starting a job. Unemployment gaps over 90 days (150 for STEM OPT) can end your status." }
+      ] },
+      { "type": "heading", "text": "Quick Comparison", "level": 2 },
+      { "type": "comparison", "title": "Work Authorization Types", "items": [
+        { "label": "On-Campus", "description": "No special auth needed. Up to 20 hrs/week during semester. Easiest option but limited positions and lower pay." },
+        { "label": "CPT", "description": "For internships related to your degree. Must be authorized before start date. Time used may affect OPT eligibility." },
+        { "label": "OPT", "description": "12 months post-graduation work (+ 24 months for STEM). Apply early! Most common path to full-time employment in the US." }
+      ] },
+      { "type": "tip", "text": "Start planning for OPT at least 6 months before graduation. Attend career fairs, connect with your school's career center, and practice interviewing. Many employers start hiring interns and new grads a full semester in advance." }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["i20-and-sevis", "campus-registration"]
+  }
+]

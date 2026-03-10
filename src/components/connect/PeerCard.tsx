@@ -3,6 +3,7 @@ import Card from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 import MatchScore from './MatchScore';
 import { useTranslations } from 'next-intl';
+import { safeMailto } from '@/lib/utils/sanitize';
 
 interface PeerCardProps {
   peer: PeerProfile;
@@ -36,10 +37,10 @@ export default function PeerCard({ peer, matchScore }: PeerCardProps) {
       </div>
 
       <p className="text-xs text-muted mb-2">
-        📍 {peer.city} · {peer.university}
+        <span aria-hidden="true">📍</span> {peer.city} · {peer.university}
       </p>
       <p className="text-xs text-muted mb-3">
-        📅 {peer.arrivalSemester}
+        <span aria-hidden="true">📅</span> {peer.arrivalSemester}
       </p>
 
       <p className="text-sm text-foreground mb-3 flex-1">{peer.bio}</p>
@@ -55,12 +56,12 @@ export default function PeerCard({ peer, matchScore }: PeerCardProps) {
       </div>
 
       {/* Languages */}
-      <p className="text-xs text-muted mb-3">🗣 {peer.languages.join(', ')}</p>
+      <p className="text-xs text-muted mb-3"><span aria-hidden="true">🗣</span> {peer.languages.join(', ')}</p>
 
-      {/* Contact */}
-      {peer.contactMethod === 'email' ? (
+      {/* Contact — safeMailto guards against email header injection */}
+      {peer.contactMethod === 'email' && safeMailto(peer.contactValue) ? (
         <a
-          href={`mailto:${peer.contactValue}`}
+          href={safeMailto(peer.contactValue)!}
           className="text-center px-4 py-2 bg-sky-500 text-white rounded-lg text-sm font-medium hover:bg-sky-600 transition-colors"
         >
           {t('contact')}

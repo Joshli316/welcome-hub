@@ -3,6 +3,7 @@ import { SmallGroup } from '@/types/group';
 import Card from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 import { useLocale, useTranslations } from 'next-intl';
+import { localized } from '@/lib/utils/localize';
 
 interface GroupCardProps {
   group: SmallGroup;
@@ -22,10 +23,10 @@ export default function GroupCard({ group }: GroupCardProps) {
   const t = useTranslations('groups');
   const tTypes = useTranslations('groups.types');
 
-  const name = locale === 'zh' ? group.nameZh : group.name;
-  const description = locale === 'zh' ? group.descriptionZh : group.description;
-  const schedule = locale === 'zh' ? group.meetingScheduleZh : group.meetingSchedule;
-  const location = locale === 'zh' ? group.meetingLocationZh : group.meetingLocation;
+  const name = localized(group, 'name', locale);
+  const description = localized(group, 'description', locale);
+  const schedule = localized(group, 'meetingSchedule', locale);
+  const location = localized(group, 'meetingLocation', locale);
 
   return (
     <Link href={`/${locale}/groups/${group.id}`}>
@@ -39,9 +40,9 @@ export default function GroupCard({ group }: GroupCardProps) {
         <p className="text-sm text-muted mb-3 flex-1">{description}</p>
 
         <div className="text-xs text-muted space-y-1">
-          <p>📍 {location}</p>
-          <p>🕐 {schedule}</p>
-          <p>👥 {group.currentMembers}{group.maxMembers ? `/${group.maxMembers}` : ''} {t('members')}</p>
+          <p><span aria-hidden="true">📍</span> {location}</p>
+          <p><span aria-hidden="true">🕐</span> {schedule}</p>
+          <p><span aria-hidden="true">👥</span> {group.currentMembers}{group.maxMembers ? `/${group.maxMembers}` : ''} {t('members')}</p>
         </div>
       </Card>
     </Link>

@@ -1,0 +1,142 @@
+[
+  {
+    "slug": "tax-filing-guide",
+    "categoryId": "legal",
+    "title": "Tax Filing for International Students: What You Need to Know",
+    "summary": "Yes, international students must file US taxes — even if you earned $0. Here's a simple guide to filing correctly and on time.",
+    "content": [
+      { "type": "paragraph", "text": "If you're in the US on an F-1 visa, you are required to file a tax return every year — even if you had no income. This surprises many students, but it's straightforward once you understand the basics." },
+      { "type": "heading", "text": "Do I need to file taxes?", "level": 2 },
+      { "type": "paragraph", "text": "Short answer: YES. All F-1 and J-1 students must file at least Form 8843 every year they're in the US. If you earned any US income (on-campus job, TA/RA, OPT, scholarships above tuition), you also need to file Form 1040-NR." },
+      { "type": "warning", "text": "The deadline is April 15 every year (for the previous year's income). Filing late or not filing at all can cause problems with future visa applications, green card applications, and OPT approval. Take this seriously." },
+      { "type": "heading", "text": "Key tax concepts", "level": 2 },
+      { "type": "comparison", "title": "Tax Terms Explained", "items": [
+        { "label": "Form 8843", "description": "A simple form that all F-1/J-1 students must file, even with zero income. It tells the IRS you're a nonresident alien present in the US. Takes 10 minutes to fill out." },
+        { "label": "Form 1040-NR", "description": "The actual tax return for nonresident aliens who earned US income. Reports your income and calculates how much tax you owe (or get refunded)." },
+        { "label": "W-2", "description": "Your employer sends this by January 31. It shows how much you earned and how much tax was already withheld from your paychecks." },
+        { "label": "1042-S", "description": "Reports scholarship/fellowship income or tax treaty benefits. Your school may send this if you received a scholarship above tuition costs." },
+        { "label": "Tax treaty", "description": "The US-China tax treaty allows certain exemptions. For example, the first $5,000 of wages from employment may be exempt from federal tax under Article 20(c)." }
+      ] },
+      { "type": "heading", "text": "How to file — step by step", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "Gather your documents", "description": "Collect your W-2 (from employer), 1042-S (from school if applicable), passport, visa, I-20, and Social Security Number or ITIN." },
+        { "title": "Determine your residency status", "description": "Most F-1 students are 'nonresident aliens' for their first 5 calendar years in the US. This is important — it determines which forms you file." },
+        { "title": "Use tax software designed for international students", "description": "Sprintax is the most popular option ($50-60, but some schools provide free access). It walks you through everything and handles treaty benefits. Do NOT use TurboTax or H&R Block — they're for US residents and will file the wrong forms." },
+        { "title": "File Form 8843 (everyone)", "description": "Even if you had no income, mail this form to the IRS. Sprintax generates it automatically." },
+        { "title": "File Form 1040-NR (if you had income)", "description": "Sprintax will generate this with all the right schedules. You may need to mail it (e-filing isn't available for all nonresident returns)." },
+        { "title": "File state taxes if required", "description": "Most states with income tax also require a state return. Sprintax handles this too (may cost extra)." }
+      ] },
+      { "type": "tip", "text": "Check if your school provides free access to Sprintax — many universities do. Ask your International Student Office. This alone can save you $50-60." },
+      { "type": "heading", "text": "Common mistakes to avoid", "level": 2 },
+      { "type": "list", "items": [
+        "Using TurboTax — it's for residents only and will file wrong forms that can cause IRS issues later",
+        "Not filing Form 8843 — even with zero income, you must file this",
+        "Missing the US-China tax treaty benefit — Sprintax will catch this, but make sure to claim it",
+        "Not getting an ITIN — if you don't have a Social Security Number and have no income, you may still need an Individual Taxpayer Identification Number (ITIN) to file",
+        "Ignoring state taxes — some states require filing even if you owe nothing"
+      ] },
+      { "type": "heading", "text": "Getting your tax refund", "level": 2 },
+      { "type": "paragraph", "text": "If your employer withheld more tax than you owe (common for students), you'll get a refund. Federal refunds take 6-8 weeks if you mail your return. Having a US bank account makes this much easier — the IRS can deposit directly." }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["ssn-itin-guide", "know-your-rights"]
+  },
+  {
+    "slug": "ssn-itin-guide",
+    "categoryId": "legal",
+    "title": "Social Security Number (SSN) and ITIN: Do You Need One?",
+    "summary": "When you need a Social Security Number, how to apply, and what to do if you're not eligible for one.",
+    "content": [
+      { "type": "paragraph", "text": "A Social Security Number (SSN) is a 9-digit number used for tax reporting and identity verification in the US. It's not a visa or work permit — but you'll need one for many things. Here's when and how to get one." },
+      { "type": "heading", "text": "When do you need an SSN?", "level": 2 },
+      { "type": "list", "items": [
+        "You got a job (on-campus, CPT, or OPT) — your employer needs it for tax reporting",
+        "You're applying for a driver's license (required in most states)",
+        "You want to build credit history (credit cards, future apartment applications)",
+        "You're filing taxes with income"
+      ] },
+      { "type": "heading", "text": "How to apply for an SSN", "level": 2 },
+      { "type": "steps", "items": [
+        { "title": "Get a job offer first", "description": "F-1 students can only get an SSN if they have authorized employment (on-campus job, CPT, or OPT). You can't apply 'just in case.'" },
+        { "title": "Wait at least 10 days after arriving", "description": "The Social Security Administration (SSA) needs time to verify your immigration records with DHS. Applying too early results in denial." },
+        { "title": "Get a letter from your employer and ISO", "description": "Your employer provides a job offer letter. Your International Student Office provides a letter confirming your enrollment and work authorization." },
+        { "title": "Visit your local SSA office", "description": "Bring: passport, I-20, I-94, employment letter, and ISO letter. Find the nearest office at ssa.gov." },
+        { "title": "Receive your SSN card", "description": "Takes 2-4 weeks by mail. Your employer can start processing your paperwork with just the receipt — you don't need the physical card to begin working." }
+      ] },
+      { "type": "warning", "text": "Your SSN is extremely sensitive — treat it like a password. Never share it over email, text, or phone unless you're certain of the recipient. Memorize it and keep the card in a safe place at home, not in your wallet." },
+      { "type": "heading", "text": "What if you don't qualify for an SSN?", "level": 2 },
+      { "type": "paragraph", "text": "If you don't have employment authorization, you can't get an SSN. But you may still need a tax identification number:" },
+      { "type": "comparison", "title": "SSN vs ITIN", "items": [
+        { "label": "SSN", "description": "For people authorized to work in the US. Required by employers. Also used for credit, driver's license, and general ID purposes. Apply at the SSA office." },
+        { "label": "ITIN", "description": "For people who need to file taxes but aren't eligible for an SSN. Starts with 9. Apply by mailing Form W-7 to the IRS with your tax return. Takes 7-11 weeks." }
+      ] },
+      { "type": "heading", "text": "Protecting your SSN", "level": 2 },
+      { "type": "list", "items": [
+        "Only give your SSN to: employers (for tax forms), banks (opening an account), the IRS, and your school (if required)",
+        "Never email or text your full SSN",
+        "Check for SSN scams — the SSA will never call you threatening arrest or asking for payment",
+        "Monitor your credit at annualcreditreport.com (free once per year) to check for identity theft",
+        "If your SSN is stolen, report it to identitytheft.gov immediately"
+      ] }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["tax-filing-guide", "know-your-rights"]
+  },
+  {
+    "slug": "know-your-rights",
+    "categoryId": "legal",
+    "title": "Know Your Rights: Legal Basics for International Students",
+    "summary": "Your rights when dealing with police, landlords, employers, and immigration — what you're protected by and where to get free legal help.",
+    "content": [
+      { "type": "paragraph", "text": "As an international student in the US, you have legal rights — more than you might think. The US Constitution protects everyone on US soil, regardless of citizenship status. Knowing your rights helps you protect yourself." },
+      { "type": "heading", "text": "Your rights with police", "level": 2 },
+      { "type": "list", "items": [
+        "You have the right to remain silent — you don't have to answer questions beyond identifying yourself",
+        "You have the right to an attorney — if arrested, say 'I want to speak to a lawyer' and then stay silent",
+        "You do NOT have to consent to a search of your car, bag, or home — say 'I do not consent to a search'",
+        "You should carry your passport and I-20 (or copies) at all times — immigration officers can ask for these",
+        "If stopped by police: stay calm, keep hands visible, be polite, don't run. You can ask 'Am I free to go?'",
+        "You have the right to record police interactions in all 50 states"
+      ] },
+      { "type": "warning", "text": "If you are arrested or detained, do not sign anything you don't understand. Ask for an interpreter if needed. Contact your country's consulate — they can provide assistance. Your school's ISO should also be notified." },
+      { "type": "heading", "text": "Tenant rights (renting)", "level": 2 },
+      { "type": "list", "items": [
+        "Your landlord must keep the property habitable — working heat, plumbing, electricity, and pest control",
+        "Your landlord cannot enter your apartment without notice (usually 24-48 hours) except in emergencies",
+        "You cannot be evicted without proper legal process — your landlord can't just change the locks",
+        "Your security deposit must be returned within a set timeframe (varies by state, usually 30 days) after you move out, minus documented damages",
+        "Discrimination based on race, national origin, or religion in housing is illegal under federal law",
+        "Always read your lease carefully before signing. Ask questions about anything you don't understand."
+      ] },
+      { "type": "tip", "text": "Take photos of your apartment on move-in day — every wall, floor, and existing damage. Email them to yourself for a timestamped record. This protects your security deposit when you move out." },
+      { "type": "heading", "text": "Employment rights", "level": 2 },
+      { "type": "list", "items": [
+        "Minimum wage laws apply to international students — you must be paid at least the federal or state minimum, whichever is higher",
+        "Employers cannot confiscate your passport or immigration documents",
+        "You are protected from workplace discrimination and harassment regardless of visa status",
+        "If injured at work, you're entitled to workers' compensation — regardless of immigration status",
+        "Your employer must follow the work hours on your authorization (e.g., 20 hrs/week for F-1 during semester)"
+      ] },
+      { "type": "heading", "text": "Immigration-specific rules to follow", "level": 2 },
+      { "type": "list", "items": [
+        "Maintain valid F-1 status — full-time enrollment, no unauthorized work, valid I-20",
+        "Report address changes to your ISO within 10 days of moving",
+        "Don't overstay your authorized period — check your I-94 for your 'D/S' (Duration of Status) notation",
+        "Keep your passport valid at least 6 months into the future",
+        "Don't travel internationally without a valid travel signature on your I-20",
+        "Report any changes (major, degree level, funding) to your ISO before they happen"
+      ] },
+      { "type": "heading", "text": "Where to get free legal help", "level": 2 },
+      { "type": "comparison", "title": "Legal Resources", "items": [
+        { "label": "International Student Office", "description": "Your first stop for any immigration questions. They know the rules and can connect you with resources." },
+        { "label": "University legal services", "description": "Many schools offer free legal consultations for students — landlord disputes, traffic tickets, consumer issues." },
+        { "label": "Legal Aid societies", "description": "Free legal help for low-income individuals. Search 'legal aid [your city]' or visit lawhelp.org." },
+        { "label": "Chinese consulate", "description": "If you're in serious legal trouble, your consulate can provide assistance, connect you with attorneys, and notify your family." },
+        { "label": "ACLU / immigration legal orgs", "description": "Free resources for understanding your rights. Especially helpful if you face discrimination or immigration enforcement." }
+      ] },
+      { "type": "tip", "text": "Save these numbers in your phone: your school's ISO, campus police non-emergency line, nearest Chinese consulate, and a free legal aid hotline. You probably won't need them, but having them ready gives you peace of mind." }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["tax-filing-guide", "ssn-itin-guide"]
+  }
+]

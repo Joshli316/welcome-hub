@@ -1,0 +1,148 @@
+[
+  {
+    "slug": "shopping-guide",
+    "categoryId": "daily-life",
+    "title": "Shopping in the US: Where to Buy Everything You Need",
+    "summary": "From furniture to clothes to electronics — where to find the best deals, how returns work, and money-saving tips.",
+    "content": [
+      { "type": "paragraph", "text": "Shopping in the US is very different from China. There's no Taobao with next-day delivery for everything, but once you know where to go, you can find great deals — especially as a student on a budget." },
+      { "type": "heading", "text": "Where to shop for what", "level": 2 },
+      { "type": "comparison", "title": "Shopping by Category", "items": [
+        { "label": "Furniture & home", "description": "IKEA (affordable, self-assembly), Walmart, Target, Facebook Marketplace (used furniture from graduating students — best deals in April-May)." },
+        { "label": "Clothes", "description": "TJ Maxx/Marshalls (brand names at 50-70% off), Old Navy, Uniqlo, H&M for basics. Thrift stores (Goodwill, Salvation Army) for amazing deals." },
+        { "label": "Electronics", "description": "Best Buy, Amazon, Apple (student pricing). Micro Center for computer parts. Wait for Black Friday/Prime Day for big savings." },
+        { "label": "Household essentials", "description": "Dollar Tree ($1.25 for basics), Walmart, Target. Don't overbuy on day one — you'll figure out what you actually need." },
+        { "label": "Textbooks", "description": "Never buy new from the campus bookstore. Check: library reserves (free), Chegg/Amazon rentals, older editions, PDF versions, or buy used from upperclassmen." }
+      ] },
+      { "type": "heading", "text": "Online shopping essentials", "level": 2 },
+      { "type": "list", "items": [
+        "Amazon Prime — free student trial for 6 months, then 50% off. Free 2-day shipping, streaming, and more.",
+        "Amazon Warehouse — open-box and returned items at 20-40% off. Usually in perfect condition.",
+        "Facebook Marketplace — the best place for used furniture, bikes, and electronics locally.",
+        "Craigslist — similar to Marketplace but older. Use caution and meet in public places.",
+        "Honey browser extension — automatically finds and applies coupon codes at checkout."
+      ] },
+      { "type": "heading", "text": "Returns — the best thing about US shopping", "level": 2 },
+      { "type": "paragraph", "text": "Return policies in the US are incredibly generous compared to China. Most stores allow returns within 30-90 days with receipt, no questions asked." },
+      { "type": "list", "items": [
+        "Costco — almost unlimited return policy (except electronics: 90 days)",
+        "Amazon — 30 days for most items, free return shipping",
+        "Target/Walmart — 90 days with receipt",
+        "Clothes — keep tags on until you're sure. Most stores accept returns even if worn once.",
+        "Keep all receipts (or use the store's app which saves them digitally)"
+      ] },
+      { "type": "tip", "text": "If you buy something and the price drops within 2 weeks, many stores will refund the difference. This is called a 'price adjustment' — just bring your receipt or call customer service." },
+      { "type": "heading", "text": "Saving money", "level": 2 },
+      { "type": "list", "items": [
+        "Student discounts — always ask! Apple, Spotify, Amazon Prime, software, museums, movies, and many stores offer 10-20% off with a .edu email.",
+        "Cash-back apps — Rakuten gives 1-10% back at hundreds of stores. Sign up with your email.",
+        "Buy Nothing groups — Facebook groups where neighbors give away items for free. Search 'Buy Nothing [your city]'.",
+        "Seasonal sales — Black Friday (November), Prime Day (July), back-to-school (August), and end-of-season clearance.",
+        "Price match — Target and Best Buy will match competitors' prices. Just show the lower price on your phone."
+      ] }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["social-skills", "entertainment-guide"]
+  },
+  {
+    "slug": "social-skills",
+    "categoryId": "daily-life",
+    "title": "American Social Norms: The Unwritten Rules",
+    "summary": "Small talk, personal space, making friends — the unspoken social rules that nobody teaches you but everyone expects you to know.",
+    "content": [
+      { "type": "paragraph", "text": "The hardest part of living in the US isn't the language — it's the unwritten social rules. Things that are perfectly normal in China can seem odd here, and vice versa. This guide covers the social norms that will help you feel more comfortable." },
+      { "type": "heading", "text": "Small talk — the American art form", "level": 2 },
+      { "type": "paragraph", "text": "Americans love small talk. It's not meaningless — it's how relationships start. You'll hear 'How are you?' dozens of times a day. The expected answer is 'Good, how are you?' — not an actual health update." },
+      { "type": "list", "items": [
+        "'How are you?' = a greeting, not a real question. Answer: 'Good, thanks! You?'",
+        "Safe small talk topics: weather, classes, sports, weekend plans, food",
+        "Avoid asking about: salary, age, weight, political views, or religion (unless they bring it up)",
+        "Compliments are common and casual — 'I like your jacket!' Just say 'Thanks!'",
+        "It's okay to say 'I'm good, thanks' to end a conversation — Americans don't consider this rude"
+      ] },
+      { "type": "heading", "text": "Personal space and physical contact", "level": 2 },
+      { "type": "list", "items": [
+        "Americans stand about an arm's length apart during conversation — closer feels uncomfortable",
+        "Handshakes are standard for introductions — firm grip, brief, with eye contact",
+        "Hugs are common between friends but not on first meeting. Follow their lead.",
+        "Don't touch someone's head, shoulder, or back unless you know them well",
+        "In lines (queues), leave at least 2 feet between you and the next person"
+      ] },
+      { "type": "heading", "text": "Making American friends", "level": 2 },
+      { "type": "paragraph", "text": "Many international students say Americans are 'friendly but hard to befriend.' Here's what's going on and how to navigate it:" },
+      { "type": "comparison", "title": "Friendship Differences", "items": [
+        { "label": "Surface-level friendliness", "description": "Americans are very friendly to strangers, which can feel like friendship. But casual friendliness (saying hi, chatting in class) doesn't mean deep friendship yet. This is normal, not fake." },
+        { "label": "Invitation culture", "description": "Americans 'make plans' — friendship happens through scheduled activities, not spontaneous drop-ins. Suggest: 'Want to grab coffee this week?' or 'Let's study together Thursday.'" },
+        { "label": "Follow through matters", "description": "'We should hang out sometime' is often just politeness. Real interest shows when someone suggests a specific time and place. You can be the one to do this!" },
+        { "label": "Shared activities", "description": "The fastest way to make friends: join clubs, intramural sports, study groups, or volunteer. Repeated casual contact builds real friendships over time." }
+      ] },
+      { "type": "tip", "text": "Don't only hang out with other Chinese students. It's comfortable but limits your experience. Aim for a mix — some Chinese friends for cultural comfort, some American/international friends for language practice and cultural exchange." },
+      { "type": "heading", "text": "Common social situations", "level": 2 },
+      { "type": "list", "items": [
+        "Potluck — everyone brings a dish to share. Bring something you can cook or even store-bought snacks are fine.",
+        "BYOB — 'Bring Your Own Beverage/Beer.' If invited to a party, bring what you want to drink.",
+        "Splitting the bill — at restaurants, Americans typically split evenly or each person pays for their own order. Use Venmo or Zelle to transfer money easily.",
+        "Being on time — for classes and work: be on time or early. For parties: arriving 15-30 minutes 'late' is actually normal.",
+        "Saying no — it's okay to decline invitations. 'Thanks for the invite, but I can't make it this time' is perfectly polite."
+      ] },
+      { "type": "warning", "text": "Alcohol laws are strict. The legal drinking age is 21 (not 18). Fake IDs are a criminal offense. If you're under 21, you will be asked for ID and turned away — this applies everywhere, no exceptions." }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["shopping-guide", "entertainment-guide"]
+  },
+  {
+    "slug": "entertainment-guide",
+    "categoryId": "daily-life",
+    "title": "Entertainment, Apps, and Staying Connected",
+    "summary": "Essential apps every student needs, how to stay connected with China, entertainment options, and managing your digital life in the US.",
+    "content": [
+      { "type": "paragraph", "text": "Setting up your digital life in the US means downloading new apps, finding replacements for Chinese services, and figuring out how to stay connected with home. Here's everything you need." },
+      { "type": "heading", "text": "Essential apps for daily life", "level": 2 },
+      { "type": "comparison", "title": "Must-Have Apps", "items": [
+        { "label": "Google Maps", "description": "Navigation, public transit directions, restaurant reviews, business hours. The #1 most useful app in the US." },
+        { "label": "Venmo / Zelle", "description": "How Americans send money to each other. Splitting bills, paying rent to roommates, buying things from people. Like WeChat Pay but for the US." },
+        { "label": "Uber / Lyft", "description": "Ride-hailing apps. Essential when you don't have a car." },
+        { "label": "DoorDash / Uber Eats", "description": "Food delivery. Expensive with fees and tips, but useful in bad weather or late nights." },
+        { "label": "GroupMe / Discord", "description": "American students use these for class group chats and club communication. You'll be added to some during orientation." }
+      ] },
+      { "type": "heading", "text": "Staying connected with China", "level": 2 },
+      { "type": "list", "items": [
+        "WeChat — still essential for family and Chinese friend groups. Works fine in the US.",
+        "VPN — you'll need one to access some Chinese websites and apps (Bilibili, certain banking apps). Popular options: Astrill, ExpressVPN, Surfshark.",
+        "Video calls — WeChat video, FaceTime, or Zoom. Schedule regular times with family considering the 12-16 hour time difference.",
+        "Xiaohongshu (小红书) — great for finding Chinese student tips, restaurant reviews, and lifestyle content specific to your US city.",
+        "Chinese streaming — Bilibili, iQIYI, and Youku work in the US (some content may be region-locked; a VPN to China can help)."
+      ] },
+      { "type": "tip", "text": "The time difference with China is 12-16 hours depending on your US time zone. A good overlap window: your morning (8-10 AM) is their evening (8-10 PM). Set a weekly video call time with family." },
+      { "type": "heading", "text": "Entertainment and things to do", "level": 2 },
+      { "type": "list", "items": [
+        "Streaming — Netflix, Hulu, Disney+, HBO Max. Student bundles available. Spotify/Apple Music for music ($5.99/month student plan).",
+        "Campus events — free concerts, movie nights, game days, cultural festivals. Check your school's events calendar weekly.",
+        "Outdoor activities — hiking, biking, parks are free. The US has incredible national and state parks. Many offer free admission for students.",
+        "Libraries — free books, movies, museum passes, and even free streaming services through your local public library card (get one — it's free!).",
+        "Sports — college sports are a huge part of campus culture. Football and basketball games are exciting social events (often free with student ID).",
+        "Museums and attractions — many offer free or discounted student admission. Some have free days monthly."
+      ] },
+      { "type": "heading", "text": "Managing subscriptions", "level": 2 },
+      { "type": "paragraph", "text": "Subscriptions add up fast in the US. Keep track of what you're paying for:" },
+      { "type": "list", "items": [
+        "Always sign up for student pricing when available",
+        "Share family plans with friends — Spotify, YouTube Premium, and Apple Music allow 5-6 users",
+        "Free trials — set a reminder to cancel before they charge you",
+        "Your school may provide free access to: New York Times, Wall Street Journal, LinkedIn Learning, Headspace",
+        "Use your school email (.edu) for sign-ups — it often unlocks student pricing automatically"
+      ] },
+      { "type": "heading", "text": "Mailing and packages", "level": 2 },
+      { "type": "list", "items": [
+        "Amazon delivers to most addresses; on-campus mailrooms accept packages too",
+        "USPS, UPS, and FedEx are the three main carriers. Amazon has its own delivery service.",
+        "Need a PO Box? Your school mailroom probably assigns you one for free.",
+        "Sending packages to China: USPS is cheapest for small items, DHL/FedEx for speed. Expect $30-60 for a small box.",
+        "Receiving packages from China: shipping takes 2-4 weeks for standard, 5-10 days for express. Customs may add delays."
+      ] },
+      { "type": "tip", "text": "Amazon Locker is a great option if you're worried about package theft. Packages are delivered to a secure locker at a nearby location (often at Whole Foods or convenience stores) and you pick them up with a code." }
+    ],
+    "lastUpdated": "2026-03-01",
+    "relatedSlugs": ["shopping-guide", "social-skills"]
+  }
+]

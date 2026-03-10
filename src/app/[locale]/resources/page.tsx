@@ -1,6 +1,13 @@
+import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import { getCategoriesByPhase } from '@/lib/data/resources';
 import ResourceGrid from '@/components/resources/ResourceGrid';
+import PageHeader from '@/components/ui/PageHeader';
+
+export const metadata: Metadata = {
+  title: 'Practical Guides 实用指南',
+  description: 'Step-by-step guides for banking, housing, phone, campus life, and more — organized by urgency for newly arrived Chinese international students.',
+};
 
 export default function ResourcesPage() {
   const t = useTranslations('resources');
@@ -9,10 +16,7 @@ export default function ResourcesPage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
-      <div className="mb-10">
-        <h1 className="text-3xl font-bold mb-2">{t('title')}</h1>
-        <p className="text-muted">{t('subtitle')}</p>
-      </div>
+      <PageHeader title={t('title')} subtitle={t('subtitle')} />
 
       {phases.map(phase => {
         const cats = getCategoriesByPhase(phase);

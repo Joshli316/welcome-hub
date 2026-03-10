@@ -4,6 +4,7 @@ import Card from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 import { formatDate } from '@/lib/utils/date';
 import { useLocale } from 'next-intl';
+import { localized } from '@/lib/utils/localize';
 
 interface StoryCardProps {
   story: ReturneeStory;
@@ -11,8 +12,8 @@ interface StoryCardProps {
 
 export default function StoryCard({ story }: StoryCardProps) {
   const locale = useLocale();
-  const title = locale === 'zh' ? story.titleZh : story.title;
-  const excerpt = locale === 'zh' ? story.excerptZh : story.excerpt;
+  const title = localized(story, 'title', locale);
+  const excerpt = localized(story, 'excerpt', locale);
 
   return (
     <Link href={`/${locale}/reentry/stories/${story.id}`}>
