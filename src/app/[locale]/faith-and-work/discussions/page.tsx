@@ -1,6 +1,12 @@
+import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import { getDiscussions } from '@/lib/data/faith';
 import DiscussionCard from '@/components/faith/DiscussionCard';
+
+export const metadata: Metadata = {
+  title: 'Discussion Topics 讨论话题',
+  description: 'Thoughtful questions for small group conversations about meaning, identity, and purpose. 关于意义、身份和使命的深度对话问题。',
+};
 
 // Displays all discussion topics for small group conversations
 export default function DiscussionsPage() {

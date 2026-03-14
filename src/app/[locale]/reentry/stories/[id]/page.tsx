@@ -1,9 +1,24 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { getStoryById } from '@/lib/data/returnees';
 import Badge from '@/components/ui/Badge';
 import { formatDate } from '@/lib/utils/date';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  const locale = await getLocale();
+  const story = getStoryById(id);
+  if (!story) return {};
+  return {
+    title: locale === 'zh' ? story.titleZh : story.title,
+  };
+}
 
 export default async function StoryDetailPage({
   params,

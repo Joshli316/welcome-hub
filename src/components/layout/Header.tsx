@@ -26,15 +26,15 @@ export default async function Header() {
         {/* Logo */}
         <Link href={`/${locale}`} className="flex items-center gap-2.5 hover:opacity-80 transition-opacity">
           <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-primary-500 to-amber-500 flex items-center justify-center shadow-glow-primary">
-            <span className="text-[#2a2520] text-sm font-extrabold">W</span>
+            <span className="text-[#2a2520] text-sm font-extrabold">C</span>
           </div>
           <span className="text-white/90 font-bold text-lg tracking-tight">
-            {locale === 'zh' ? '欢迎之家' : 'Welcome Hub'}
+            {locale === 'zh' ? '与你同行' : 'Companion'}
           </span>
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-0.5">
+        <nav aria-label="Main navigation" className="hidden md:flex items-center gap-0.5">
           {navLinks.map(link => (
             <Link
               key={link.href}

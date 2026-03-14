@@ -1,9 +1,24 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { getTestimonyById } from '@/lib/data/faith';
 import Badge from '@/components/ui/Badge';
 import { formatDate } from '@/lib/utils/date';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  const locale = await getLocale();
+  const testimony = getTestimonyById(id);
+  if (!testimony) return {};
+  return {
+    title: locale === 'zh' ? testimony.titleZh : testimony.title,
+  };
+}
 
 // Detail page for a single testimony — renders full story with paragraphs
 export default async function TestimonyDetailPage({

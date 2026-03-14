@@ -1,6 +1,12 @@
+import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import { getCityGuides } from '@/lib/data/faith';
 import CityGuideCard from '@/components/faith/CityGuideCard';
+
+export const metadata: Metadata = {
+  title: 'City Guide 城市指南',
+  description: 'Find faith communities and resources in major Chinese cities. 在中国主要城市寻找信仰社区和资源。',
+};
 
 // City-by-city guide to faith communities and resources in China
 export default function CityGuidePage() {

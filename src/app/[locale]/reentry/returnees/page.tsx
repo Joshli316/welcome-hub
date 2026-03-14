@@ -1,6 +1,12 @@
+import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import { getReturnees, getUniqueReturneeLocations, getUniqueReturneeTopics } from '@/lib/data/returnees';
 import ReturneeGrid from '@/components/reentry/ReturneeGrid';
+
+export const metadata: Metadata = {
+  title: 'Returnee Mentors 回国导师',
+  description: 'Connect with alumni who have already returned to China for firsthand advice on jobs, culture, and life. 认识已经回国的学长学姐，获取一手经验。',
+};
 
 export default function ReturneesPage() {
   const t = useTranslations('reentry.returnees');

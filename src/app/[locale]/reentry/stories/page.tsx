@@ -1,6 +1,12 @@
+import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import { getStories } from '@/lib/data/returnees';
 import StoryCard from '@/components/reentry/StoryCard';
+
+export const metadata: Metadata = {
+  title: 'Returnee Stories 回国故事',
+  description: 'Real voices from people who have returned to China — honest sharing about the transition. 真实的声音，来自已经走过这段路的人。',
+};
 
 export default function StoriesPage() {
   const t = useTranslations('reentry.stories');

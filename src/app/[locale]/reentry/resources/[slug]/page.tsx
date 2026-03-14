@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getLocale, getTranslations } from 'next-intl/server';
@@ -11,6 +12,22 @@ async function getReentryArticles(locale: string): Promise<ResourceArticle[]> {
     ? await import('@/data/resources/reentry.zh.json')
     : await import('@/data/resources/reentry.en.json');
   return data.default as ResourceArticle[];
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const locale = await getLocale();
+  const articles = await getReentryArticles(locale);
+  const article = articles.find(a => a.slug === slug);
+  if (!article) return {};
+  return {
+    title: article.title,
+    description: article.summary,
+  };
 }
 
 export default async function ReentryArticlePage({

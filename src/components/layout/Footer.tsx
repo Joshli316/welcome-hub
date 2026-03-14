@@ -16,17 +16,17 @@ export default function Footer() {
           <div className="max-w-sm">
             <Link href={`/${locale}`} className="inline-flex items-center gap-2.5 mb-4 hover:opacity-80 transition-opacity">
               <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-primary-500 to-amber-500 flex items-center justify-center shadow-glow-primary">
-                <span className="text-[#2a2520] text-sm font-extrabold">W</span>
+                <span className="text-[#2a2520] text-sm font-extrabold">C</span>
               </div>
               <span className="text-white/90 font-bold text-lg tracking-tight">
-                {locale === 'zh' ? '欢迎之家' : 'Welcome Hub'}
+                {locale === 'zh' ? '与你同行' : 'Companion'}
               </span>
             </Link>
             <p className="text-lg text-[#a8a29e] leading-relaxed">{t('tagline')}</p>
           </div>
 
           {/* Nav */}
-          <nav className="flex flex-wrap gap-x-8 gap-y-4 text-base">
+          <nav aria-label="Footer navigation" className="flex flex-wrap gap-x-8 gap-y-4 text-base">
             <Link href={`/${locale}/resources`} className="text-white/40 font-medium hover:text-white transition-colors">{tNav('resources')}</Link>
             <Link href={`/${locale}/checklist`} className="text-white/40 font-medium hover:text-white transition-colors">{tNav('checklist')}</Link>
             <Link href={`/${locale}/connect`} className="text-white/40 font-medium hover:text-white transition-colors">{tNav('connect')}</Link>
@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/8 flex items-center justify-between text-sm text-white/30">
-          <span>&copy; {new Date().getFullYear()} Welcome Hub</span>
+          <span>&copy; {new Date().getFullYear()} Companion</span>
           <Link href={`/${locale}/dashboard`} className="hover:text-white/60 transition-colors">
             {locale === 'zh' ? '管理面板' : 'Dashboard'}
           </Link>

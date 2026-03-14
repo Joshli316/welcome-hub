@@ -1,8 +1,14 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { ResourceArticle } from '@/types/resource';
 import Card from '@/components/ui/Card';
 import { formatDate } from '@/lib/utils/date';
+
+export const metadata: Metadata = {
+  title: 'Re-entry Guides 回国指南',
+  description: 'Reverse culture shock, job hunting, shipping belongings, and more — practical guides for returning to China. 逆向文化冲击、求职、运送行李等实用指南。',
+};
 
 async function getReentryArticles(locale: string): Promise<ResourceArticle[]> {
   const data = locale === 'zh'

@@ -69,7 +69,7 @@ export default function CommunityPage() {
             <h2 className="text-2xl font-bold mb-3">{t('askQuestion.title')}</h2>
             <p className="text-muted mb-6">{t('askQuestion.subtitle')}</p>
             <a
-              href="mailto:welcome@example.com"
+              href="mailto:welcome@example.com" /* TODO: Replace with real org email */
               className="inline-block px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-xl font-bold shadow-glow-primary hover:shadow-elevated hover:-translate-y-0.5 transition-all duration-300"
             >
               {t('askQuestion.button')}

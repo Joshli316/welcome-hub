@@ -37,9 +37,11 @@ export default function ProfileForm({ initialProfile, onSubmit }: ProfileFormPro
   }
 
   const [validationError, setValidationError] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    if (isSubmitting) return;
     setValidationError('');
 
     // Validate email format when email is the contact method
@@ -54,6 +56,7 @@ export default function ProfileForm({ initialProfile, onSubmit }: ProfileFormPro
       return;
     }
 
+    setIsSubmitting(true);
     const profile: MyProfile = {
       id: initialProfile?.id ?? `peer-${Date.now()}`,
       name,
@@ -70,6 +73,7 @@ export default function ProfileForm({ initialProfile, onSubmit }: ProfileFormPro
       createdAt: initialProfile?.createdAt ?? new Date().toISOString().split('T')[0],
     };
     onSubmit(profile);
+    setIsSubmitting(false);
   }
 
   const inputClass = 'w-full px-3.5 py-2.5 rounded-lg border border-border bg-white text-sm placeholder:text-muted/50';
@@ -189,7 +193,8 @@ export default function ProfileForm({ initialProfile, onSubmit }: ProfileFormPro
 
       <button
         type="submit"
-        className="w-full sm:w-auto px-7 py-3 bg-foreground text-background rounded-lg text-sm font-semibold hover:bg-foreground/85 transition-colors"
+        disabled={isSubmitting}
+        className="w-full sm:w-auto px-7 py-3 bg-foreground text-background rounded-lg text-sm font-semibold hover:bg-foreground/85 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {initialProfile ? t('updateProfile') : t('createProfile')}
       </button>

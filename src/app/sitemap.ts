@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
+import { SITE_URL } from '@/lib/config/site';
 
-const BASE_URL = 'https://welcome-hub.yellow-longitudinal.workers.dev';
+const BASE_URL = SITE_URL;
 
 // Generates sitemap.xml for search engine indexing
 export default function sitemap(): MetadataRoute.Sitemap {

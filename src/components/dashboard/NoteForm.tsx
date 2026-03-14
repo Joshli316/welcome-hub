@@ -16,14 +16,17 @@ export default function NoteForm({ onSubmit, onCancel, locale }: NoteFormProps) 
   const [content, setContent] = useState('');
   const [type, setType] = useState<InteractionNote['type']>('meeting');
   const [date, setDate] = useState(new Date().toISOString().split('T')[0]);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const lang = locale === 'zh' ? 'zh' : 'en';
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!content.trim()) return;
+    if (!content.trim() || isSubmitting) return;
+    setIsSubmitting(true);
     onSubmit({ content: content.trim(), type, date });
     setContent('');
+    setIsSubmitting(false);
   };
 
   return (
@@ -70,7 +73,8 @@ export default function NoteForm({ onSubmit, onCancel, locale }: NoteFormProps) 
       <div className="flex gap-2">
         <button
           type="submit"
-          className="bg-primary-600 text-white px-4 py-1.5 rounded-lg text-sm font-medium hover:bg-primary-700 transition-colors"
+          disabled={isSubmitting}
+          className="bg-primary-600 text-white px-4 py-1.5 rounded-lg text-sm font-medium hover:bg-primary-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {t('notes.add')}
         </button>

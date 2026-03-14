@@ -1,10 +1,11 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useMemo } from 'react';
 import { PeerProfile } from '@/types/peer';
 import { calculateMatch } from '@/lib/data/peers';
 import PeerCard from './PeerCard';
 import { useTranslations } from 'next-intl';
+import { useFilteredList } from '@/hooks/useFilteredList';
 
 interface PeerGridProps {
   peers: PeerProfile[];
@@ -14,24 +15,31 @@ interface PeerGridProps {
 }
 
 export default function PeerGrid({ peers, myProfile, cities, universities }: PeerGridProps) {
-  const [cityFilter, setCityFilter] = useState('');
-  const [universityFilter, setUniversityFilter] = useState('');
   const t = useTranslations('connect.browse');
+
+  // Exclude self from the list before filtering
+  const visiblePeers = useMemo(
+    () => peers.filter(p => myProfile ? p.id !== myProfile.id : true),
+    [peers, myProfile],
+  );
+
+  const filters = useMemo(() => [
+    { key: 'city', getter: (p: PeerProfile) => p.city },
+    { key: 'university', getter: (p: PeerProfile) => p.university },
+  ], []);
+
+  const { filtered, filterA: cityFilter, setFilterA: setCityFilter, filterB: universityFilter, setFilterB: setUniversityFilter } =
+    useFilteredList({ items: visiblePeers, filters });
 
   // Calculate match scores and sort by best match
   const peersWithScores = useMemo(() => {
-    const filtered = peers
-      .filter(p => myProfile ? p.id !== myProfile.id : true) // exclude self
-      .filter(p => !cityFilter || p.city === cityFilter)
-      .filter(p => !universityFilter || p.university === universityFilter);
-
     if (myProfile) {
       return filtered
         .map(p => ({ peer: p, score: calculateMatch(myProfile, p) }))
         .sort((a, b) => b.score - a.score);
     }
     return filtered.map(p => ({ peer: p, score: undefined }));
-  }, [peers, myProfile, cityFilter, universityFilter]);
+  }, [filtered, myProfile]);
 
   return (
     <div>

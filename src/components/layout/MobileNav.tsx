@@ -9,7 +9,7 @@ interface MobileNavProps {
 
 export default function MobileNav({ links, onClose }: MobileNavProps) {
   return (
-    <div className="md:hidden border-t border-white/10 bg-[#2a2520]/98 backdrop-blur-xl animate-fade-up">
+    <div role="dialog" aria-label="Navigation menu" className="md:hidden border-t border-white/10 bg-[#2a2520]/98 backdrop-blur-xl animate-fade-up">
       <nav className="flex flex-col py-2 px-2">
         {links.map(link => (
           <Link

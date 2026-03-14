@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getLocale, getTranslations } from 'next-intl/server';
@@ -5,6 +6,22 @@ import { getCategoryById, getArticle, getArticlesByCategory } from '@/lib/data/r
 import ArticleRenderer from '@/components/resources/ArticleRenderer';
 import Card from '@/components/ui/Card';
 import { formatDate } from '@/lib/utils/date';
+
+// Dynamic metadata — uses the article title and summary
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ category: string; slug: string }>;
+}): Promise<Metadata> {
+  const { category, slug } = await params;
+  const locale = await getLocale();
+  const article = await getArticle(category, slug, locale);
+  if (!article) return {};
+  return {
+    title: article.title,
+    description: article.summary,
+  };
+}
 
 export default async function ArticlePage({
   params,

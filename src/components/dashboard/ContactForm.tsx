@@ -25,9 +25,11 @@ export default function ContactForm({ onSubmit, onCancel, initial, locale }: Con
   const [selectedTags, setSelectedTags] = useState<string[]>(initial?.tags ?? []);
 
   const [validationError, setValidationError] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (isSubmitting) return;
     setValidationError('');
 
     // Validate email format if provided
@@ -42,6 +44,7 @@ export default function ContactForm({ onSubmit, onCancel, initial, locale }: Con
       return;
     }
 
+    setIsSubmitting(true);
     onSubmit({
       name,
       type,
@@ -53,6 +56,7 @@ export default function ContactForm({ onSubmit, onCancel, initial, locale }: Con
       tags: selectedTags,
       lastContactedAt: initial?.lastContactedAt,
     });
+    setIsSubmitting(false);
   };
 
   const toggleTag = (tag: string) => {
@@ -187,7 +191,8 @@ export default function ContactForm({ onSubmit, onCancel, initial, locale }: Con
       <div className="flex gap-3 pt-2">
         <button
           type="submit"
-          className="bg-primary-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-primary-700 transition-colors"
+          disabled={isSubmitting}
+          className="bg-primary-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-primary-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {initial ? t('form.update') : t('form.create')}
         </button>

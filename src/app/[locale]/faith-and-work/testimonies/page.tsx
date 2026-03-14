@@ -1,6 +1,12 @@
+import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import { getTestimonies } from '@/lib/data/faith';
 import TestimonyCard from '@/components/faith/TestimonyCard';
+
+export const metadata: Metadata = {
+  title: 'Testimonies 见证故事',
+  description: 'Real stories from returnees navigating faith and work in China. 海归们在中国经历信仰与工作的真实故事。',
+};
 
 // Lists all testimonies, sorted by newest first
 export default function TestimoniesPage() {

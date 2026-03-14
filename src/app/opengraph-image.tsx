@@ -3,7 +3,7 @@ import { ImageResponse } from 'next/og';
 // OG image generated from code — no need for a static PNG file.
 // Next.js renders this JSX to a 1200×630 image at /opengraph-image.
 export const runtime = 'edge';
-export const alt = 'Welcome Hub 欢迎之家';
+export const alt = 'Companion 与你同行';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -51,7 +51,7 @@ export default function OGImage() {
               letterSpacing: '-0.01em',
             }}
           >
-            Welcome Hub
+            Companion
           </div>
           <div
             style={{
@@ -61,7 +61,7 @@ export default function OGImage() {
               lineHeight: 1.1,
             }}
           >
-            欢迎之家
+            与你同行
           </div>
         </div>
 

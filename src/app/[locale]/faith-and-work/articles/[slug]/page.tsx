@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getLocale, getTranslations } from 'next-intl/server';
@@ -5,6 +6,20 @@ import { getFaithArticleBySlug, getFaithArticles } from '@/lib/data/faith';
 import ArticleRenderer from '@/components/resources/ArticleRenderer';
 import FaithArticleCard from '@/components/faith/FaithArticleCard';
 import { formatDate } from '@/lib/utils/date';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const locale = await getLocale();
+  const article = getFaithArticleBySlug(slug);
+  if (!article) return {};
+  return {
+    title: locale === 'zh' ? article.titleZh : article.title,
+  };
+}
 
 // Detail page for a single faith article — reuses ArticleRenderer from Phase 1
 export default async function FaithArticleDetailPage({

@@ -4,7 +4,7 @@ import Card from '@/components/ui/Card';
 import PageHeader from '@/components/ui/PageHeader';
 
 export const metadata: Metadata = {
-  title: 'About Us 关于我们',
+  title: 'About Us 关于我们 | Companion',
   description: 'We are neighbors who welcome international students with practical help and genuine community.',
 };
 
@@ -58,6 +58,7 @@ export default function AboutPage() {
                 <span aria-hidden="true">📧</span>
                 <div>
                   <span className="text-sm font-medium text-muted">{t('contact.email')}: </span>
+                  {/* TODO: Replace with real org email */}
                   <a href="mailto:welcome@example.com" className="text-primary-600 hover:text-primary-700 link-hover">
                     welcome@example.com
                   </a>

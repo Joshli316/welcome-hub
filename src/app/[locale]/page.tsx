@@ -9,7 +9,7 @@ import EventCard from '@/components/community/EventCard';
 import Card from '@/components/ui/Card';
 
 export const metadata: Metadata = {
-  title: 'Welcome Hub 欢迎之家 — Resources for Chinese International Students',
+  title: 'Companion 与你同行 — Resources for Chinese International Students',
   description: 'Practical arrival guides, community events, and peer connections for Chinese international students in the US. 为来美国的中国留学生提供实用资源和温暖社区。',
 };
 

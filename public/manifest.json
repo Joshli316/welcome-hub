@@ -1,0 +1,16 @@
+{
+  "name": "Companion 与你同行",
+  "short_name": "Companion",
+  "description": "Practical resources and community for Chinese international students in the US",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf8f5",
+  "theme_color": "#d4763a",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
+    }
+  ]
+}

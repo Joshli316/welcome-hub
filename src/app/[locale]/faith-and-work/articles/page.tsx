@@ -1,6 +1,12 @@
+import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import { getFaithArticles } from '@/lib/data/faith';
 import FaithArticleCard from '@/components/faith/FaithArticleCard';
+
+export const metadata: Metadata = {
+  title: 'Articles & Guides 文章与指南',
+  description: 'Practical wisdom for living out your faith in China\'s workplace and culture. 在中国职场和文化中活出信仰的实用智慧。',
+};
 
 // Lists all faith & work articles
 export default function FaithArticlesPage() {

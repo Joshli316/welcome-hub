@@ -1,9 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { useMemo } from 'react';
 import { ReturneeProfile } from '@/types/returnee';
 import ReturneeCard from './ReturneeCard';
 import { useTranslations } from 'next-intl';
+import { useFilteredList } from '@/hooks/useFilteredList';
 
 interface ReturneeGridProps {
   returnees: ReturneeProfile[];
@@ -12,14 +13,16 @@ interface ReturneeGridProps {
 }
 
 export default function ReturneeGrid({ returnees, cities, topics }: ReturneeGridProps) {
-  const [cityFilter, setCityFilter] = useState('');
-  const [topicFilter, setTopicFilter] = useState('');
   const t = useTranslations('reentry.returnees');
   const tTopics = useTranslations('reentry.topics');
 
-  const filtered = returnees
-    .filter(r => !cityFilter || r.currentCity === cityFilter)
-    .filter(r => !topicFilter || r.topics.includes(topicFilter));
+  const filters = useMemo(() => [
+    { key: 'city', getter: (r: ReturneeProfile) => r.currentCity },
+    { key: 'topic', getter: (r: ReturneeProfile) => r.topics },
+  ], []);
+
+  const { filtered, filterA: cityFilter, setFilterA: setCityFilter, filterB: topicFilter, setFilterB: setTopicFilter } =
+    useFilteredList({ items: returnees, filters });
 
   return (
     <div>

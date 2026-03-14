@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og';
 
 // Twitter card image — same design as the OG image
 export const runtime = 'edge';
-export const alt = 'Welcome Hub 欢迎之家';
+export const alt = 'Companion 与你同行';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -48,7 +48,7 @@ export default function TwitterImage() {
               letterSpacing: '-0.01em',
             }}
           >
-            Welcome Hub
+            Companion
           </div>
           <div
             style={{
@@ -58,7 +58,7 @@ export default function TwitterImage() {
               lineHeight: 1.1,
             }}
           >
-            欢迎之家
+            与你同行
           </div>
         </div>
 

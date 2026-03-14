@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 
@@ -15,11 +16,22 @@ export default function ChecklistItem({ titleKey, descriptionKey, checked, onTog
   const locale = useLocale();
   const t = useTranslations('checklistItems');
   const tChecklist = useTranslations('checklist');
+  const [toggling, setToggling] = useState(false);
 
   return (
-    <div className={`flex items-start gap-4 px-5 py-4 rounded-xl transition-all duration-200 ${checked ? 'bg-sage-50/60' : 'hover:bg-warm-50/40'}`}>
+    <div
+      role="checkbox"
+      aria-checked={checked}
+      className={`flex items-start gap-4 px-5 py-4 rounded-xl transition-all duration-200 ${checked ? 'bg-sage-50/60' : 'hover:bg-warm-50/40'}`}
+    >
       <button
-        onClick={onToggle}
+        onClick={() => {
+          if (toggling) return;
+          setToggling(true);
+          onToggle();
+          // Reset after a short delay to prevent rapid double-clicks
+          setTimeout(() => setToggling(false), 300);
+        }}
         className={`flex-shrink-0 w-6 h-6 mt-0.5 rounded-md border-2 flex items-center justify-center transition-all duration-200 ${
           checked
             ? 'bg-sage-500 border-sage-500 text-white shadow-glow-sage'

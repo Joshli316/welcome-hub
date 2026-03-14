@@ -1,9 +1,27 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { getGroupById } from '@/lib/data/groups';
 import Card from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
+
+// Dynamic metadata — uses the group name
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  const locale = await getLocale();
+  const group = getGroupById(id);
+  if (!group) return {};
+  const name = locale === 'zh' ? group.nameZh : group.name;
+  return {
+    title: name,
+    description: locale === 'zh' ? group.descriptionZh : group.description,
+  };
+}
 
 const typeBadgeVariant: Record<string, 'default' | 'primary' | 'sage' | 'sky'> = {
   study: 'sky',

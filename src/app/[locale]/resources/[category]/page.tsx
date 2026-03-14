@@ -1,9 +1,26 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { getCategoryById, getArticlesByCategory } from '@/lib/data/resources';
 import Card from '@/components/ui/Card';
 import { formatDate } from '@/lib/utils/date';
+
+// Dynamic metadata — uses the category name as the page title
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ category: string }>;
+}): Promise<Metadata> {
+  const { category } = await params;
+  const tCat = await getTranslations('categories');
+  const cat = getCategoryById(category);
+  if (!cat) return {};
+  return {
+    title: tCat(cat.titleKey),
+    description: tCat(cat.descriptionKey),
+  };
+}
 
 export default async function CategoryPage({
   params,

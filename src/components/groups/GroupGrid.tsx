@@ -1,9 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { useMemo } from 'react';
 import { SmallGroup } from '@/types/group';
 import GroupCard from './GroupCard';
 import { useTranslations } from 'next-intl';
+import { useFilteredList } from '@/hooks/useFilteredList';
 
 interface GroupGridProps {
   groups: SmallGroup[];
@@ -12,14 +13,16 @@ interface GroupGridProps {
 }
 
 export default function GroupGrid({ groups, cities, types }: GroupGridProps) {
-  const [cityFilter, setCityFilter] = useState('');
-  const [typeFilter, setTypeFilter] = useState('');
   const t = useTranslations('groups');
   const tTypes = useTranslations('groups.types');
 
-  const filtered = groups
-    .filter(g => !cityFilter || g.city === cityFilter)
-    .filter(g => !typeFilter || g.type === typeFilter);
+  const filters = useMemo(() => [
+    { key: 'city', getter: (g: SmallGroup) => g.city },
+    { key: 'type', getter: (g: SmallGroup) => g.type },
+  ], []);
+
+  const { filtered, filterA: cityFilter, setFilterA: setCityFilter, filterB: typeFilter, setFilterB: setTypeFilter } =
+    useFilteredList({ items: groups, filters });
 
   return (
     <div>
