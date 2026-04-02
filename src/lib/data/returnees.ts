@@ -9,10 +9,6 @@ export function getReturnees(): ReturneeProfile[] {
   return returneesData as ReturneeProfile[];
 }
 
-export function getReturneeById(id: string): ReturneeProfile | undefined {
-  return getReturnees().find(r => r.id === id);
-}
-
 export function getUniqueReturneeLocations(): string[] {
   return [...new Set(getReturnees().map(r => r.currentCity))];
 }

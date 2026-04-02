@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 
 interface FilterConfig<T> {
   items: T[];
@@ -11,36 +11,33 @@ interface FilterConfig<T> {
 }
 
 /**
- * Shared hook for two-dropdown filter logic used across grid components.
+ * Shared hook for multi-dropdown filter logic used across grid components.
  * Each filter matches against a string field or checks inclusion in an array field.
+ * Supports any number of filters via filterValues array.
  */
 export function useFilteredList<T>({ items, filters }: FilterConfig<T>) {
-  // Create state for each filter — always exactly 2 filters
-  const [filterA, setFilterA] = useState('');
-  const [filterB, setFilterB] = useState('');
+  const [filterValues, setFilterValues] = useState<string[]>(() =>
+    filters.map(() => '')
+  );
+
+  const setFilter = useCallback((index: number, value: string) => {
+    setFilterValues(prev => {
+      const next = [...prev];
+      next[index] = value;
+      return next;
+    });
+  }, []);
 
   const filtered = useMemo(() => {
-    return items.filter(item => {
-      const [a, b] = filters;
-      if (filterA) {
-        const val = a.getter(item);
-        const match = Array.isArray(val) ? val.includes(filterA) : val === filterA;
-        if (!match) return false;
-      }
-      if (filterB) {
-        const val = b.getter(item);
-        const match = Array.isArray(val) ? val.includes(filterB) : val === filterB;
-        if (!match) return false;
-      }
-      return true;
-    });
-  }, [items, filters, filterA, filterB]);
+    return items.filter(item =>
+      filters.every((f, i) => {
+        const value = filterValues[i];
+        if (!value) return true;
+        const field = f.getter(item);
+        return Array.isArray(field) ? field.includes(value) : field === value;
+      })
+    );
+  }, [items, filters, filterValues]);
 
-  return {
-    filtered,
-    filterA,
-    setFilterA,
-    filterB,
-    setFilterB,
-  };
+  return { filtered, filterValues, setFilter };
 }

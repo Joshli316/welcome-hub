@@ -5,18 +5,6 @@ export function getPeers(): PeerProfile[] {
   return peersData as PeerProfile[];
 }
 
-export function getPeerById(id: string): PeerProfile | undefined {
-  return getPeers().find(p => p.id === id);
-}
-
-export function getPeersByCity(city: string): PeerProfile[] {
-  return getPeers().filter(p => p.city === city);
-}
-
-export function getPeersByUniversity(university: string): PeerProfile[] {
-  return getPeers().filter(p => p.university === university);
-}
-
 export function getUniquePeerCities(): string[] {
   return [...new Set(getPeers().map(p => p.city))];
 }
@@ -45,8 +33,10 @@ export function calculateMatch(profileA: PeerProfile, profileB: PeerProfile): nu
   if (profileA.university === profileB.university) score += 20;
 
   // Jaccard similarity for interests: |A ∩ B| / |A ∪ B|
-  const shared = profileA.interests.filter(i => profileB.interests.includes(i));
-  const union = new Set([...profileA.interests, ...profileB.interests]).size;
+  const interestsA = Array.isArray(profileA.interests) ? profileA.interests : [];
+  const interestsB = Array.isArray(profileB.interests) ? profileB.interests : [];
+  const shared = interestsA.filter(i => interestsB.includes(i));
+  const union = new Set([...interestsA, ...interestsB]).size;
   if (union > 0) {
     score += Math.round((shared.length / union) * 35);
   }

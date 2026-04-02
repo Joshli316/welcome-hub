@@ -6,6 +6,10 @@ import { useState, useCallback } from 'react';
  * Generic localStorage hook. Handles SSR safety, JSON parsing, and
  * corrupted-data recovery automatically.
  *
+ * Accepts both direct values and functional updaters (same API as React's setState):
+ *   set(newValue)
+ *   set(prev => ({ ...prev, key: newValue }))
+ *
  * Usage:
  *   const [value, setValue] = useLocalStorage<MyType>('key', defaultValue);
  */
@@ -25,13 +29,18 @@ export function useLocalStorage<T>(key: string, fallback: T) {
     return fallback;
   });
 
-  const set = useCallback((next: T) => {
-    setValue(next);
-    if (next === null || next === undefined) {
-      localStorage.removeItem(key);
-    } else {
-      localStorage.setItem(key, JSON.stringify(next));
-    }
+  const set = useCallback((next: T | ((prev: T) => T)) => {
+    // Use React's functional updater to get the latest value without capturing
+    // it in the closure — this makes the returned `set` stable across renders.
+    setValue(current => {
+      const nextValue = typeof next === 'function' ? (next as (prev: T) => T)(current) : next;
+      if (nextValue === null || nextValue === undefined) {
+        localStorage.removeItem(key);
+      } else {
+        localStorage.setItem(key, JSON.stringify(nextValue));
+      }
+      return nextValue;
+    });
   }, [key]);
 
   return [value, set] as const;

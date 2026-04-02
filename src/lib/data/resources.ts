@@ -86,11 +86,10 @@ export async function getArticle(categoryId: string, slug: string, locale: strin
   return articles.find(a => a.slug === slug);
 }
 
-export async function getAllArticles(locale: string): Promise<ResourceArticle[]> {
-  const allArticles: ResourceArticle[] = [];
-  for (const categoryId of Object.keys(resourceFiles)) {
-    const articles = await getArticlesByCategory(categoryId, locale);
-    allArticles.push(...articles);
-  }
-  return allArticles;
+export async function getReentryResources(locale: string): Promise<ResourceArticle[]> {
+  const data = locale === 'zh'
+    ? await import('@/data/resources/reentry.zh.json')
+    : await import('@/data/resources/reentry.en.json');
+  return data.default as ResourceArticle[];
 }
+

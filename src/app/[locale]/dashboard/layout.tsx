@@ -25,7 +25,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         <div className="h-14 border-b border-border bg-white px-6 flex items-center justify-end gap-4">
           <LanguageToggle />
           <button
-            onClick={logout}
+            onClick={() => void logout()}
             className="text-xs text-muted hover:text-foreground transition-colors"
           >
             {tCommon('logout')}

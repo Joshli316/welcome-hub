@@ -4,7 +4,7 @@ import { useState, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 
 interface DashboardLoginProps {
-  onLogin: (pin: string) => boolean;
+  onLogin: (pin: string) => Promise<boolean>;
 }
 
 // Max failed attempts before temporary lockout
@@ -19,11 +19,11 @@ export default function DashboardLogin({ onLogin }: DashboardLoginProps) {
   const [locked, setLocked] = useState(false);
   const attemptsRef = useRef(0);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (locked) return;
 
-    const success = onLogin(pin);
+    const success = await onLogin(pin);
     if (!success) {
       attemptsRef.current += 1;
       setError(true);
@@ -55,6 +55,7 @@ export default function DashboardLogin({ onLogin }: DashboardLoginProps) {
           <input
             id="dashboard-pin"
             type="password"
+            inputMode="numeric"
             value={pin}
             onChange={e => { setPin(e.target.value); setError(false); }}
             placeholder={t('pinPlaceholder')}
@@ -67,9 +68,7 @@ export default function DashboardLogin({ onLogin }: DashboardLoginProps) {
             <p id="pin-error" role="alert" className="text-red-500 text-sm text-center mb-3">{t('wrongPin')}</p>
           )}
           {locked && (
-            <p role="alert" className="text-red-500 text-sm text-center mb-3">
-              Too many attempts. Please wait 30 seconds.
-            </p>
+            <p role="alert" className="text-red-500 text-sm text-center mb-3">{t('lockoutMessage')}</p>
           )}
           <button
             type="submit"

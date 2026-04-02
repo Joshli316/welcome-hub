@@ -4,12 +4,12 @@ import { useCallback } from 'react';
 import { ChecklistState } from '@/types/checklist';
 import { useLocalStorage } from './useLocalStorage';
 
-export function useChecklist() {
-  const [state, setState] = useLocalStorage<ChecklistState>('welcome-hub:checklist', {});
+export function useChecklist(storageKey = 'welcome-hub:checklist') {
+  const [state, setState] = useLocalStorage<ChecklistState>(storageKey, {});
 
   const toggle = useCallback((itemId: string) => {
-    setState({ ...state, [itemId]: !state[itemId] });
-  }, [state, setState]);
+    setState(prev => ({ ...prev, [itemId]: !prev[itemId] }));
+  }, [setState]);
 
   const isChecked = useCallback((itemId: string): boolean => {
     return !!state[itemId];

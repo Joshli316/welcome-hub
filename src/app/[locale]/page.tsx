@@ -125,6 +125,7 @@ export default async function HomePage() {
           fill
           className="object-cover"
           sizes="100vw"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-[#2a2520]/50" />
         <div className="absolute inset-0 bg-gradient-to-r from-dark-950/60 via-transparent to-dark-950/40" />
@@ -152,6 +153,7 @@ export default async function HomePage() {
                   width={600}
                   height={400}
                   className="w-full h-auto object-cover"
+                  loading="lazy"
                 />
               </div>
             </div>

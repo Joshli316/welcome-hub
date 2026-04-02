@@ -13,6 +13,3 @@ export function getUpcomingEvents(limit?: number): CommunityEvent[] {
   return limit ? upcoming.slice(0, limit) : upcoming;
 }
 
-export function getEventById(id: string): CommunityEvent | undefined {
-  return getEvents().find(e => e.id === id);
-}

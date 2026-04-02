@@ -58,7 +58,7 @@ export default function ProfileForm({ initialProfile, onSubmit }: ProfileFormPro
 
     setIsSubmitting(true);
     const profile: MyProfile = {
-      id: initialProfile?.id ?? `peer-${Date.now()}`,
+      id: initialProfile?.id ?? `peer-${crypto.randomUUID()}`,
       name,
       university,
       city,
@@ -76,7 +76,7 @@ export default function ProfileForm({ initialProfile, onSubmit }: ProfileFormPro
     setIsSubmitting(false);
   }
 
-  const inputClass = 'w-full px-3.5 py-2.5 rounded-lg border border-border bg-white text-sm placeholder:text-muted/50';
+  const inputClass = 'w-full px-3.5 py-2.5 rounded-lg border border-border bg-white text-sm placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary-300';
   const labelClass = 'block text-sm font-medium mb-1';
 
   return (
@@ -123,16 +123,19 @@ export default function ProfileForm({ initialProfile, onSubmit }: ProfileFormPro
 
       {/* Interests */}
       <div>
-        <label className={labelClass}>{t('interests')} ({t('selectUpTo', { max: 6 })})</label>
+        <label className={labelClass}>{t('interests')} ({interests.length}/6)</label>
         <div className="flex flex-wrap gap-2 mt-2">
           {interestOptions.map(interest => (
             <button
               key={interest}
               type="button"
               onClick={() => toggleInterest(interest)}
+              disabled={!interests.includes(interest) && interests.length >= 6}
               className={`px-3 py-1.5 rounded-full text-sm border transition-colors ${
                 interests.includes(interest)
                   ? 'bg-primary-500 text-white border-primary-500'
+                  : interests.length >= 6
+                  ? 'bg-white border-border text-muted/40 cursor-not-allowed'
                   : 'bg-white border-border text-muted hover:border-primary-300'
               }`}
             >

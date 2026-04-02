@@ -466,6 +466,7 @@
     "loginSubtitle": "Enter your PIN to access the dashboard",
     "pinPlaceholder": "Enter PIN",
     "wrongPin": "Incorrect PIN. Please try again.",
+    "lockoutMessage": "Too many attempts. Please wait 30 seconds.",
     "login": "Login",
     "defaultPinHint": "Default PIN: 1234",
     "backToSite": "Back to main site",

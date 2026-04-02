@@ -2,17 +2,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getLocale, getTranslations } from 'next-intl/server';
-import { ResourceArticle } from '@/types/resource';
 import ArticleRenderer from '@/components/resources/ArticleRenderer';
 import Card from '@/components/ui/Card';
 import { formatDate } from '@/lib/utils/date';
-
-async function getReentryArticles(locale: string): Promise<ResourceArticle[]> {
-  const data = locale === 'zh'
-    ? await import('@/data/resources/reentry.zh.json')
-    : await import('@/data/resources/reentry.en.json');
-  return data.default as ResourceArticle[];
-}
+import { getReentryResources } from '@/lib/data/resources';
 
 export async function generateMetadata({
   params,
@@ -21,7 +14,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const locale = await getLocale();
-  const articles = await getReentryArticles(locale);
+  const articles = await getReentryResources(locale);
   const article = articles.find(a => a.slug === slug);
   if (!article) return {};
   return {
@@ -39,7 +32,7 @@ export default async function ReentryArticlePage({
   const locale = await getLocale();
   const t = await getTranslations('reentry.resources');
 
-  const articles = await getReentryArticles(locale);
+  const articles = await getReentryResources(locale);
   const article = articles.find(a => a.slug === slug);
   if (!article) notFound();
 

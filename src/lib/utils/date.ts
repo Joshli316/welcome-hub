@@ -12,11 +12,3 @@ export function formatDate(dateStr: string, locale: string): string {
 export function isFutureDate(dateStr: string): boolean {
   return new Date(dateStr) > new Date();
 }
-
-// Check if an event is within the next N days
-export function isWithinDays(dateStr: string, days: number): boolean {
-  const eventDate = new Date(dateStr);
-  const now = new Date();
-  const future = new Date(now.getTime() + days * 24 * 60 * 60 * 1000);
-  return eventDate >= now && eventDate <= future;
-}

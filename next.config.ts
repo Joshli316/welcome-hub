@@ -1,10 +1,19 @@
 import type { NextConfig } from 'next';
-import createNextIntlPlugin from 'next-intl/plugin';
 
-const withNextIntl = createNextIntlPlugin('./src/lib/i18n/request.ts');
+const securityHeaders = [
+  // Prevent clickjacking — deny framing from all origins
+  { key: 'X-Frame-Options', value: 'DENY' },
+  // Stop browsers from sniffing content type
+  { key: 'X-Content-Type-Options', value: 'nosniff' },
+  // Disable Referer header leaking for cross-origin navigation
+  { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+  // Restrict permission-granting APIs not needed by this app
+  { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+];
 
 const nextConfig: NextConfig = {
   images: {
+    // Allow Next.js Image to optimize these external sources
     remotePatterns: [
       {
         protocol: 'https',
@@ -16,15 +25,10 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/(.*)',
-        headers: [
-          { key: 'X-Content-Type-Options', value: 'nosniff' },
-          { key: 'X-Frame-Options', value: 'DENY' },
-          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
-          { key: 'X-DNS-Prefetch-Control', value: 'on' },
-        ],
+        headers: securityHeaders,
       },
     ];
   },
 };
 
-export default withNextIntl(nextConfig);
+export default nextConfig;

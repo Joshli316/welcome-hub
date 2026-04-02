@@ -21,15 +21,15 @@ export default function ReturneeGrid({ returnees, cities, topics }: ReturneeGrid
     { key: 'topic', getter: (r: ReturneeProfile) => r.topics },
   ], []);
 
-  const { filtered, filterA: cityFilter, setFilterA: setCityFilter, filterB: topicFilter, setFilterB: setTopicFilter } =
-    useFilteredList({ items: returnees, filters });
+  const { filtered, filterValues, setFilter } = useFilteredList({ items: returnees, filters });
+  const [cityFilter, topicFilter] = filterValues;
 
   return (
     <div>
       <div className="flex flex-wrap gap-3 mb-6">
         <select
           value={cityFilter}
-          onChange={e => setCityFilter(e.target.value)}
+          onChange={e => setFilter(0, e.target.value)}
           className="px-3 py-2 rounded-lg border border-border bg-white text-sm"
         >
           <option value="">{t('allCities')}</option>
@@ -39,7 +39,7 @@ export default function ReturneeGrid({ returnees, cities, topics }: ReturneeGrid
         </select>
         <select
           value={topicFilter}
-          onChange={e => setTopicFilter(e.target.value)}
+          onChange={e => setFilter(1, e.target.value)}
           className="px-3 py-2 rounded-lg border border-border bg-white text-sm"
         >
           <option value="">{t('allTopics')}</option>

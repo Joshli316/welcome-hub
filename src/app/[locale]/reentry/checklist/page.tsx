@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { getReentryChecklist, reentryPhases } from '@/lib/data/returnees';
-import { useReentryChecklist } from '@/hooks/useReentryChecklist';
+import { useChecklist } from '@/hooks/useChecklist';
 import ReentryChecklistItem from '@/components/reentry/ReentryChecklistItem';
 import ProgressBar from '@/components/ui/ProgressBar';
 
@@ -10,7 +10,7 @@ export default function ReentryChecklistPage() {
   const t = useTranslations('reentry.checklist');
   const tPhases = useTranslations('reentry.checklist.phases');
   const items = getReentryChecklist();
-  const { isChecked, toggle, completedCount, resetAll } = useReentryChecklist();
+  const { isChecked, toggle, completedCount, resetAll } = useChecklist('welcome-hub:reentry-checklist');
 
   const percentage = items.length > 0 ? Math.round((completedCount / items.length) * 100) : 0;
 

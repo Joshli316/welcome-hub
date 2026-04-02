@@ -3,7 +3,7 @@
 import { useMemo } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { useDashboardContacts } from '@/hooks/useDashboard';
-import { StudentStage } from '@/types/dashboard';
+import { StudentStage, STUDENT_STAGES } from '@/types/dashboard';
 import Card from '@/components/ui/Card';
 import StagePipeline from '@/components/dashboard/StagePipeline';
 
@@ -14,8 +14,7 @@ export default function AnalyticsPage() {
   const { contacts } = useDashboardContacts();
 
   const stats = useMemo(() => {
-    const stages: StudentStage[] = ['pre-arrival', 'arrival', 'adjustment', 'community', 'reentry', 'returned'];
-    const byStage = stages.reduce((acc, s) => {
+    const byStage = STUDENT_STAGES.reduce((acc, s) => {
       acc[s] = contacts.filter(c => c.stage === s).length;
       return acc;
     }, {} as Record<StudentStage, number>);

@@ -26,6 +26,15 @@ export type StudentStage =
   | 'reentry'
   | 'returned';
 
+export const STUDENT_STAGES: StudentStage[] = [
+  'pre-arrival',
+  'arrival',
+  'adjustment',
+  'community',
+  'reentry',
+  'returned',
+];
+
 // An interaction note logged by a ministry worker
 export interface InteractionNote {
   id: string;

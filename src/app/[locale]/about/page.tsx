@@ -4,7 +4,7 @@ import Card from '@/components/ui/Card';
 import PageHeader from '@/components/ui/PageHeader';
 
 export const metadata: Metadata = {
-  title: 'About Us 关于我们 | Companion',
+  title: 'About Us 关于我们',
   description: 'We are neighbors who welcome international students with practical help and genuine community.',
 };
 

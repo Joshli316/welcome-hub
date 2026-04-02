@@ -5,25 +5,12 @@ import { Contact, InteractionNote, StudentStage } from '@/types/dashboard';
 
 // Storage keys — colon-separated namespace for consistency
 const CONTACTS_KEY = 'welcome-hub:dashboard-contacts';
-const PIN_KEY = 'welcome-hub:dashboard-pin';
 const AUTH_KEY = 'welcome-hub:dashboard-auth';
 
-// Also set a cookie so middleware can gate dashboard routes server-side.
-// The cookie is not httpOnly (set from JS), so it's not tamper-proof —
-// but it prevents the dashboard HTML from being sent before auth check.
-const AUTH_COOKIE = 'welcome-hub-authed';
-
-// Prototype-only PIN gate. Default '1234' is replaced when a worker
-// changes their PIN via settings. In a real app, this would be
-// server-side auth — localStorage is intentionally insecure here.
-const DEFAULT_PIN = '1234';
+const CONTACTS_VERSION_KEY = 'welcome-hub:dashboard-contacts-version';
+const CONTACTS_SCHEMA_VERSION = 1; // increment when Contact schema changes
 
 // --- Auth ---
-
-function getStoredPin(): string {
-  if (typeof window === 'undefined') return DEFAULT_PIN;
-  return localStorage.getItem(PIN_KEY) || DEFAULT_PIN;
-}
 
 export function useDashboardAuth() {
   // Initialize as false on server AND client to avoid hydration mismatch.
@@ -36,35 +23,31 @@ export function useDashboardAuth() {
     setAuthed(stored);
   }, []);
 
-  const login = useCallback((pin: string): boolean => {
-    if (pin === getStoredPin()) {
-      localStorage.setItem(AUTH_KEY, 'true');
-      // Set cookie so middleware can gate dashboard routes server-side.
-      // Secure flag ensures cookie is only sent over HTTPS in production.
-      const secure = window.location.protocol === 'https:' ? '; Secure' : '';
-      document.cookie = `${AUTH_COOKIE}=1; path=/; SameSite=Lax${secure}`;
-      setAuthed(true);
-      return true;
+  const login = useCallback(async (pin: string): Promise<boolean> => {
+    try {
+      const res = await fetch('/api/auth', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ pin }),
+      });
+      if (res.ok) {
+        localStorage.setItem(AUTH_KEY, 'true');
+        setAuthed(true);
+        return true;
+      }
+    } catch {
+      // Network error — fall through to return false
     }
     return false;
   }, []);
 
-  const logout = useCallback(() => {
+  const logout = useCallback(async () => {
+    await fetch('/api/auth', { method: 'DELETE' }).catch(() => {});
     localStorage.removeItem(AUTH_KEY);
-    // Remove the auth cookie
-    document.cookie = `${AUTH_COOKIE}=; path=/; max-age=0`;
     setAuthed(false);
   }, []);
 
-  const changePin = useCallback((oldPin: string, newPin: string): boolean => {
-    if (oldPin === getStoredPin()) {
-      localStorage.setItem(PIN_KEY, newPin);
-      return true;
-    }
-    return false;
-  }, []);
-
-  return { authed, login, logout, changePin };
+  return { authed, login, logout };
 }
 
 // --- Contacts CRUD ---
@@ -72,6 +55,14 @@ export function useDashboardAuth() {
 function loadContacts(): Contact[] {
   if (typeof window === 'undefined') return [];
   try {
+    const storedVersion = parseInt(localStorage.getItem(CONTACTS_VERSION_KEY) ?? '0', 10);
+    if (storedVersion !== CONTACTS_SCHEMA_VERSION) {
+      // Schema version mismatch — clear stale data to prevent silent failures.
+      // Increment CONTACTS_SCHEMA_VERSION whenever the Contact type changes.
+      localStorage.removeItem(CONTACTS_KEY);
+      localStorage.setItem(CONTACTS_VERSION_KEY, String(CONTACTS_SCHEMA_VERSION));
+      return [];
+    }
     const raw = localStorage.getItem(CONTACTS_KEY);
     return raw ? JSON.parse(raw) : [];
   } catch {
@@ -81,6 +72,7 @@ function loadContacts(): Contact[] {
 
 function saveContacts(contacts: Contact[]) {
   localStorage.setItem(CONTACTS_KEY, JSON.stringify(contacts));
+  localStorage.setItem(CONTACTS_VERSION_KEY, String(CONTACTS_SCHEMA_VERSION));
 }
 
 export function useDashboardContacts() {
@@ -95,7 +87,7 @@ export function useDashboardContacts() {
     setContacts(prev => {
       const newContact: Contact = {
         ...contact,
-        id: `contact-${Date.now()}`,
+        id: `contact-${crypto.randomUUID()}`,
         notes: [],
         createdAt: new Date().toISOString(),
       };
@@ -127,7 +119,7 @@ export function useDashboardContacts() {
         if (c.id !== contactId) return c;
         const newNote: InteractionNote = {
           ...note,
-          id: `note-${Date.now()}`,
+          id: `note-${crypto.randomUUID()}`,
           contactId,
           createdAt: new Date().toISOString(),
         };
@@ -146,7 +138,16 @@ export function useDashboardContacts() {
     setContacts(prev => {
       const next = prev.map(c => {
         if (c.id !== contactId) return c;
-        return { ...c, notes: c.notes.filter(n => n.id !== noteId) };
+        const remainingNotes = c.notes.filter(n => n.id !== noteId);
+        // Recalculate lastContactedAt from remaining notes after deletion
+        const lastNote = remainingNotes.length > 0
+          ? remainingNotes.reduce((latest, n) => n.date > latest.date ? n : latest)
+          : null;
+        return {
+          ...c,
+          notes: remainingNotes,
+          lastContactedAt: lastNote?.date,
+        };
       });
       saveContacts(next);
       return next;

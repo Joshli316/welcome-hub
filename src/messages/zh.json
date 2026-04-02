@@ -466,6 +466,7 @@
     "loginSubtitle": "输入 PIN 码访问管理面板",
     "pinPlaceholder": "输入 PIN 码",
     "wrongPin": "PIN 码错误，请重试。",
+    "lockoutMessage": "尝试次数过多，请等待 30 秒。",
     "login": "登录",
     "defaultPinHint": "默认 PIN: 1234",
     "backToSite": "返回主站",

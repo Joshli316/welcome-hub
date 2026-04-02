@@ -28,8 +28,8 @@ export default function PeerGrid({ peers, myProfile, cities, universities }: Pee
     { key: 'university', getter: (p: PeerProfile) => p.university },
   ], []);
 
-  const { filtered, filterA: cityFilter, setFilterA: setCityFilter, filterB: universityFilter, setFilterB: setUniversityFilter } =
-    useFilteredList({ items: visiblePeers, filters });
+  const { filtered, filterValues, setFilter } = useFilteredList({ items: visiblePeers, filters });
+  const [cityFilter, universityFilter] = filterValues;
 
   // Calculate match scores and sort by best match
   const peersWithScores = useMemo(() => {
@@ -47,7 +47,7 @@ export default function PeerGrid({ peers, myProfile, cities, universities }: Pee
       <div className="flex flex-wrap gap-3 mb-6">
         <select
           value={cityFilter}
-          onChange={e => setCityFilter(e.target.value)}
+          onChange={e => setFilter(0, e.target.value)}
           className="px-3 py-2 rounded-lg border border-border bg-white text-sm"
         >
           <option value="">{t('allCities')}</option>
@@ -57,7 +57,7 @@ export default function PeerGrid({ peers, myProfile, cities, universities }: Pee
         </select>
         <select
           value={universityFilter}
-          onChange={e => setUniversityFilter(e.target.value)}
+          onChange={e => setFilter(1, e.target.value)}
           className="px-3 py-2 rounded-lg border border-border bg-white text-sm"
         >
           <option value="">{t('allUniversities')}</option>

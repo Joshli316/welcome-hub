@@ -21,8 +21,8 @@ export default function GroupGrid({ groups, cities, types }: GroupGridProps) {
     { key: 'type', getter: (g: SmallGroup) => g.type },
   ], []);
 
-  const { filtered, filterA: cityFilter, setFilterA: setCityFilter, filterB: typeFilter, setFilterB: setTypeFilter } =
-    useFilteredList({ items: groups, filters });
+  const { filtered, filterValues, setFilter } = useFilteredList({ items: groups, filters });
+  const [cityFilter, typeFilter] = filterValues;
 
   return (
     <div>
@@ -30,7 +30,7 @@ export default function GroupGrid({ groups, cities, types }: GroupGridProps) {
       <div className="flex flex-wrap gap-3 mb-6">
         <select
           value={cityFilter}
-          onChange={e => setCityFilter(e.target.value)}
+          onChange={e => setFilter(0, e.target.value)}
           className="px-3 py-2 rounded-lg border border-border bg-white text-sm"
         >
           <option value="">{t('allCities')}</option>
@@ -40,7 +40,7 @@ export default function GroupGrid({ groups, cities, types }: GroupGridProps) {
         </select>
         <select
           value={typeFilter}
-          onChange={e => setTypeFilter(e.target.value)}
+          onChange={e => setFilter(1, e.target.value)}
           className="px-3 py-2 rounded-lg border border-border bg-white text-sm"
         >
           <option value="">{t('allTypes')}</option>

@@ -32,16 +32,8 @@ export function getDiscussions(): DiscussionTopic[] {
   return discussionsData as DiscussionTopic[];
 }
 
-export function getDiscussionById(id: string): DiscussionTopic | undefined {
-  return getDiscussions().find(d => d.id === id);
-}
-
 // --- City Guides ---
 
 export function getCityGuides(): CityGuide[] {
   return cityGuidesData as unknown as CityGuide[];
-}
-
-export function getCityGuideById(id: string): CityGuide | undefined {
-  return getCityGuides().find(g => g.id === id);
 }
